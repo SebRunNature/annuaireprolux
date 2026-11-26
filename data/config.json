@@ -1,0 +1,26 @@
+{
+  "nom_site": "Annuaire Pro Luxembourg",
+  "url_site": "https://sebrunnature.github.io/annuaireprolux",
+  "base_path": "/annuaireprolux",
+  "domaine_perso": "",
+  "formulaire_action": "https://formspree.io/f/REMPLACER_PAR_VOTRE_ID",
+  "offres": [
+    {
+      "nom": "Fiche Premium",
+      "prix": "à définir",
+      "detail": "Votre fiche en tête de catégorie, avec description étendue et lien sponsorisé.",
+      "lien_paiement": ""
+    },
+    {
+      "nom": "Article sponsorisé",
+      "prix": "à définir",
+      "detail": "Un article ou une liste thématique présentant votre entreprise, avec lien sponsorisé.",
+      "lien_paiement": ""
+    }
+  ],
+  "legal": {
+    "editeur": "À COMPLÉTER",
+    "adresse": "À COMPLÉTER",
+    "contact": "À COMPLÉTER"
+  }
+}
