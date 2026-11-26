@@ -171,7 +171,7 @@ def build():
     )
     corps = f"""
 <section class="hero">
-  <h1>L'annuaire professionnel du Luxembourg</h1>
+  <h1>L'annuaire des professionnels au Luxembourg</h1>
   <input id="q" type="search" placeholder="Rechercher une entreprise, un métier, une ville…" autocomplete="off">
   <div class="filters">
     <label><input id="f-web" type="checkbox"> Avec site web</label>
@@ -187,7 +187,7 @@ def build():
 <script>window.SITE_SEARCH = "{url('/search.json')}";</script>
 <script src="{url('/search.js')}" defer></script>
 """
-    ecrire("/", page(f"{SITE_NAME} – L'annuaire professionnel du Luxembourg",
+    ecrire("/", page(f"{SITE_NAME} – L'annuaire des professionnels au Luxembourg",
                      "Trouvez une entreprise au Luxembourg par métier ou par ville : coordonnées, site web et e-mail.",
                      "/", corps))
 
@@ -264,7 +264,7 @@ def build():
 """
     urls.append("/ajouter/")
     ecrire("/ajouter/", page(f"Ajouter votre entreprise – {SITE_NAME}",
-                             "Inscrivez gratuitement votre entreprise dans l'annuaire professionnel du Luxembourg.",
+                             "Inscrivez gratuitement votre entreprise dans l'annuaire des professionnels au Luxembourg.",
                              "/ajouter/", corps))
 
     # Visibilité (offre payante) — tarifs à compléter dans data/config.json
