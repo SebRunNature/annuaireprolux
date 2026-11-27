@@ -215,6 +215,21 @@ def logo_html(e, classe):
             f'alt="Logo de {esc(e["nom"])}" loading="lazy"></span>')
 
 
+def description_html(e, rel):
+    """Description de fiche ; pour une fiche Premium, l'ancre (phrase présente dans le texte) devient un lien vers le site."""
+    texte = esc(e.get("description", ""))
+    if e["premium"]:
+        nb = len(e.get("description", "").split())
+        if not 100 <= nb <= 115:
+            print(f"ATTENTION : description Premium de {e['nom']} = {nb} mots (cible : 100 à 115)")
+        ancre = e.get("ancre", "")
+        if ancre and e.get("site"):
+            if esc(ancre) not in texte:
+                raise SystemExit(f"L'ancre « {ancre} » doit figurer dans la description de {e['nom']}")
+            texte = texte.replace(esc(ancre), f'<a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc(ancre)}</a>', 1)
+    return texte
+
+
 def carte(e):
     lignes = [f'<h3>{logo_html(e, "logo-mini")}<a href="{url("/entreprise/" + e["slug"] + "/")}">{esc(e["nom"])}</a>'
               + (' <span class="badge">Premium</span>' if e["premium"] else "") + "</h3>"]
@@ -387,7 +402,7 @@ def build():
         if e.get("email"):
             lignes.append(f'<dt>E-mail</dt><dd><a href="mailto:{esc(e["email"])}">{esc(e["email"])}</a></dd>')
         if e.get("site"):
-            lignes.append(f'<dt>Site web</dt><dd><a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc((e.get("ancre") if e["premium"] else "") or e["site"])}</a></dd>')
+            lignes.append(f'<dt>Site web</dt><dd><a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc(e["site"])}</a></dd>')
         ld = {
             "@context": "https://schema.org", "@type": "LocalBusiness", "name": e["nom"],
             "address": {"@type": "PostalAddress", "streetAddress": e.get("adresse", ""),
@@ -413,7 +428,7 @@ def build():
 <h1>{esc(e['nom'])}{' <span class="badge">Premium</span>' if e['premium'] else ''}</h1>
 <p class="meta">{esc(e['metier_nom'])} · {esc(e['ville'])}</p>
 </div></div>
-<p>{esc(e.get('description', ''))}</p>
+<p>{description_html(e, rel)}</p>
 {banniere}
 <dl class="infos">{''.join(lignes)}</dl>
 <p class="small">Une information est incorrecte ? <a href="{url('/ajouter/')}">Écrivez-nous</a> pour la corriger ou la supprimer.</p>
@@ -475,7 +490,7 @@ def build():
   <li><strong>Des visiteurs qualifiés :</strong> des internautes qui cherchent justement votre métier et peuvent cliquer vers votre site.</li>
   <li><strong>Une citation d'entreprise :</strong> vos coordonnées (nom, adresse, téléphone) publiées de façon cohérente sur un annuaire luxembourgeois.</li>
   <li><strong>Votre logo :</strong> avec la fiche Premium, votre logo s'affiche en tête de votre fiche et dans les listes, quelle que soit sa taille ou sa forme.</li>
-  <li><strong>Un lien avec le texte de votre choix :</strong> le lien vers votre site utilise l'intitulé que vous choisissez (par exemple le nom de votre activité), balisé <code>rel="sponsored"</code>.</li>
+  <li><strong>Un lien dans le texte de votre fiche :</strong> la description Premium (100 à 115 mots) contient un lien vers votre site avec l'intitulé que vous choisissez, en plus de l'adresse complète de votre site. Les deux liens sont balisés <code>rel="sponsored"</code>.</li>
   <li><strong>Une mention de marque :</strong> votre nom associé à un site spécialisé sur les professionnels du Luxembourg.</li>
 </ul>
 
@@ -498,7 +513,7 @@ def build():
 <details><summary>Quelles entreprises acceptez-vous ?</summary><p>Des entreprises et des professionnels réels, avec un contenu légal et pertinent pour l'annuaire. Nous refusons les contenus trompeurs, illégaux ou sans rapport avec l'activité de l'entreprise.</p></details>
 <details><summary>Je suis une agence ou un indépendant, puis-je commander pour mes clients ?</summary><p>Oui, le pack agences et indépendants est prévu pour cela. Écrivez-nous avec le nombre de clients ou de projets concernés.</p></details>
 <details><summary>Quel logo dois-je envoyer ?</summary><p>Le logo que vous avez, en PNG, SVG, WebP ou JPG, de préférence avec un fond transparent et d'au moins 300 pixels de large. Nous l'adaptons à la fiche, quelles que soient ses proportions. Il est affiché sans déformation.</p></details>
-<details><summary>Puis-je choisir le texte du lien vers mon site ?</summary><p>Oui, avec la fiche Premium. Choisissez un intitulé court et descriptif (le nom de votre activité, par exemple). Nous pouvons refuser un intitulé trompeur ou composé uniquement de mots-clés.</p></details>
+<details><summary>Puis-je choisir le texte du lien vers mon site ?</summary><p>Oui, avec la fiche Premium. Votre description (100 à 115 mots) contient un lien dont vous choisissez l'intitulé : court, descriptif, en rapport avec votre activité. L'adresse complète de votre site reste affichée dans vos informations. Nous pouvons refuser un intitulé trompeur ou composé uniquement de mots-clés.</p></details>
 <details><summary>Quels sont les tarifs ?</summary><p>Les tarifs dépendent de l'offre et du volume. Demandez un devis par e-mail : <a href="mailto:{esc(contact)}">{esc(contact)}</a>.</p></details>
 
 <p style="margin-top:28px">{cta("Fiche Premium ou article sponsorisé")}</p>

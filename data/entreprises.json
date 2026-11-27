@@ -31807,8 +31807,8 @@
     "site": "https://run-nature.com/",
     "premium": true,
     "source": "Inscription",
-    "description": "Run Nature est un blog consacré au trail, à la course à pied, à l'ultra-trail et aux activités de plein air au Luxembourg et dans la Grande Région. Il rassemble des retours d'expérience de courses et d'entraînements, des parcours avec traces GPX, des tests de matériel, des articles sur la nutrition et l'entraînement, des idées de randonnée et des outils pour les coureurs. Le blog est tenu par un pratiquant passionné, qui n'est ni médecin du sport, ni diététicien, ni entraîneur diplômé. Les articles s'appuient sur des données réelles et sur le vécu de l'auteur, et distinguent son expérience personnelle de ce qui vaut pour tout le monde.",
-    "ancre": "Run Nature, blog trail et ultra-trail au Luxembourg",
+    "description": "Run Nature est un blog de trail et d'ultra-trail au Luxembourg, consacré aussi à la course à pied et aux activités de plein air dans la Grande Région. Vous y trouverez des retours d'expérience de courses et d'entraînements, des parcours avec traces GPX, des tests de matériel, des articles sur la nutrition et l'entraînement, des idées de randonnée et des outils pour les coureurs. Le blog est tenu par un pratiquant passionné, qui n'est ni médecin du sport, ni diététicien, ni entraîneur diplômé. Les articles s'appuient sur des données réelles et sur le vécu de l'auteur, et distinguent son expérience personnelle de ce qui vaut pour tout le monde. L'auteur peut être contacté par e-mail.",
+    "ancre": "blog de trail et d'ultra-trail au Luxembourg",
     "logo": "run-nature.webp"
   },
   {
@@ -31821,10 +31821,10 @@
     "telephone": "",
     "email": "montredevie@proton.me",
     "site": "https://montre-de-vie.com/",
-    "ancre": "Montre de Vie, calculateur d'âge biologique",
+    "ancre": "calculateur d'âge biologique",
     "logo": "montre-de-vie.webp",
     "premium": true,
     "source": "Inscription",
-    "description": "Montre de Vie est un calculateur d'âge biologique et d'espérance de vie sur mesure. Un seul outil, deux informations : vous remplissez un formulaire sur votre mode de vie et vos biomarqueurs, puis un algorithme calcule votre âge biologique et votre espérance de vie, avec une réponse qui se veut honnête. L'outil vous indique ensuite trois leviers prioritaires sur lesquels agir. Son slogan : « Ta vie en temps réel ». Il s'agit d'un outil d'information, qui ne remplace pas l'avis d'un médecin."
+    "description": "Montre de Vie est un calculateur d'âge biologique et d'espérance de vie sur mesure. Un seul outil, deux informations : vous remplissez un formulaire sur votre mode de vie et vos biomarqueurs, puis un algorithme calcule votre âge biologique et votre espérance de vie, avec une seule réponse, qui se veut honnête. L'outil vous indique ensuite trois leviers prioritaires sur lesquels agir. Son slogan résume l'idée : « Ta vie en temps réel ». Montre de Vie est un outil d'information, qui ne remplace pas l'avis d'un médecin. Vous pouvez contacter son éditeur par e-mail pour toute question sur l'outil ou sur son fonctionnement."
   }
 ]

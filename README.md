@@ -28,7 +28,7 @@ Pour une fiche Premium, ajouter dans `data/entreprises.json` : `"premium": true`
 Le logo s'affiche dans une boîte fixe (200 × 110 px sur la fiche, petite vignette dans les listes) avec `object-fit: contain` : toute taille ou proportion convient, sans déformation.
 Pour préparer un logo (rognage des marges, réduction à 600 × 300 px max, WebP, transparence conservée) :
 `python3 -I tools/logo.py <image> <nom>` puis renseigner `"logo": "<nom>.webp"`. Un SVG se copie tel quel dans `assets/logos/`.
-L'ancre est le texte du lien vers le site (rel="sponsored") : court, descriptif, sans bourrage de mots-clés. Sans ancre, l'URL est affichée.
+`ancre` : phrase **présente dans la description** (100 à 115 mots) qui devient un lien vers le site (rel="sponsored"). L'URL complète reste affichée dans la ligne « Site web ». Ancre courte, descriptive, sans bourrage de mots-clés.
 Une bannière 1200 × 400 px reste possible en option (`"banniere"` dans `assets/bannieres/`).
 
 ## Données OpenStreetMap
