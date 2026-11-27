@@ -1,8 +1,8 @@
 {
   "nom_site": "Annuaire Pro Luxembourg",
-  "url_site": "https://sebrunnature.github.io/annuaireprolux",
-  "base_path": "/annuaireprolux",
-  "domaine_perso": "",
+  "url_site": "https://annuaireproluxembourg.eu",
+  "base_path": "",
+  "domaine_perso": "annuaireproluxembourg.eu",
   "formulaire_action": "https://formspree.io/f/REMPLACER_PAR_VOTRE_ID",
   "offres": [
     {

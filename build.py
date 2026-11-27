@@ -344,8 +344,9 @@ conformément aux recommandations de Google.</p>
 <h1>Mentions légales</h1>
 <h2>1. Éditeur du site</h2>
 <p>Le site {esc(SITE_NAME)} est édité par {editeur}, depuis le {esc(L['lieu'])}. Pour toute question, écrivez à {mail}.</p>
+<p>L'éditeur dispose d'une autorisation d'établissement délivrée par le ministère de l'Économie du Luxembourg. Il n'est pas assujetti à la TVA (régime de franchise, sous le seuil de chiffre d'affaires applicable).</p>
 <h2>2. Hébergement</h2>
-<p>Le site est hébergé par GitHub Pages (GitHub, Inc., San Francisco, États-Unis).</p>
+<p>Le site est hébergé par GitHub Pages (GitHub, Inc., San Francisco, États-Unis). Le nom de domaine est enregistré chez EuroDNS.</p>
 <h2>3. Objet du site</h2>
 <p>{esc(SITE_NAME)} est un annuaire gratuit d'entreprises et de professionnels installés au Luxembourg. Il permet de les trouver par catégorie ou par commune et d'accéder à leurs coordonnées professionnelles.</p>
 <p>L'inscription d'une entreprise est gratuite. Des options payantes (fiche Premium, article sponsorisé) existent : les liens correspondants portent l'attribut <code>rel="sponsored"</code> et la fiche ou l'article est signalé comme tel. Un contenu sponsorisé n'est pas une recommandation de l'éditeur.</p>
