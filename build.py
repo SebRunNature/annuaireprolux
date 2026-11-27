@@ -385,6 +385,9 @@ def build():
     bann_src = os.path.join(ROOT, "assets", "bannieres")
     if os.path.isdir(bann_src):
         shutil.copytree(bann_src, os.path.join(OUT, "bannieres"))
+    blog_src = os.path.join(ROOT, "assets", "blog")
+    if os.path.isdir(blog_src):
+        shutil.copytree(blog_src, os.path.join(OUT, "blog-img"))
     if CFG.get("domaine_perso"):
         with open(os.path.join(OUT, "CNAME"), "w") as f:
             f.write(CFG["domaine_perso"] + "\n")
@@ -704,18 +707,30 @@ def build():
               "publisher": {"@type": "Organization", "name": SITE_NAME}}
         if a.get("auteur"):
             ld["author"] = {"@type": "Person", "name": a["auteur"]}
+        img_html, img_head = "", ""
+        if a.get("image"):
+            if not os.path.isfile(os.path.join(ROOT, "assets", "blog", a["image"])):
+                raise SystemExit(f"Image introuvable : assets/blog/{a['image']} ({a['titre']})")
+            png = os.path.splitext(a["image"])[0] + ".png"  # X/LinkedIn/Facebook n'acceptent pas le SVG pour l'aperçu
+            og = png if os.path.isfile(os.path.join(ROOT, "assets", "blog", png)) else a["image"]
+            img_url = f"{SITE_URL}/blog-img/{og}"
+            ld["image"] = img_url
+            alt = esc(a.get("image_alt", a["titre"]))
+            img_html = f'<p><img class="art-img" src="{url("/blog-img/" + a["image"])}" alt="{alt}" width="1200" height="630"></p>'
+            img_head = f'<meta property="og:image" content="{esc(img_url)}">\n<meta property="og:title" content="{esc(a["titre"])}">\n<meta name="twitter:card" content="summary_large_image">\n'
         corps = f"""
 <p class="meta"><a href="{url('/blog/')}">Blog</a> › {esc(a['titre'])}</p>
 <article>
 <h1>{esc(a['titre'])}</h1>
 <p class="meta">Publié le {date_fr(a['date'])}{(' · par ' + auteur) if auteur else ''}</p>
 {bandeau}
+{img_html}
 {md_html(a['corps'], rel)}
 </article>
 <p class="small">Vous souhaitez publier un article sur l'annuaire ? <a href="{url('/blog/')}#publier">Découvrez les conditions</a>.</p>
 """
         ecrire(ch, page(f"{a['titre']} – {SITE_NAME}", a["resume"], ch, corps,
-                        extra_head='<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"))
+                        extra_head=img_head + '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"))
         urls.append(ch)
         cartes += (f'<li class="card"><h3><a href="{url(ch)}">{esc(a["titre"])}</a>'
                    + (' <span class="badge">Sponsorisé</span>' if a["sponsorise"] else "")
