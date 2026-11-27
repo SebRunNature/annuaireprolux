@@ -117,6 +117,11 @@ def classer(t):
     if shop in ("beauty", "nails", "massage", "tattoo", "cosmetics") or am == "spa" or leis == "sauna":
         return ("beaute-loisirs", "institut-beaute")
     if leis in ("fitness_centre", "sports_centre", "sports_hall", "swimming_pool") and t.get("name"):
+        n = t["name"].lower()
+        if re.search(r"bowling|laser game", n):
+            return ("beaute-loisirs", "loisirs")
+        if re.search(r"club|archery|boulodrome|d[eë]schtennis|[eé]questre|ver[aä]insbau|ancien", n):
+            return None  # clubs et associations : hors annuaire (salles communales et salles pro conservées)
         return ("beaute-loisirs", "salle-sport")
     if am in ("cinema", "theatre", "arts_centre", "nightclub", "casino") or leis in ("bowling_alley", "escape_game", "amusement_arcade", "miniature_golf", "water_park", "trampoline_park", "adult_gaming_centre", "dance") or tour in ("museum", "zoo", "theme_park", "aquarium", "attraction"):
         return ("beaute-loisirs", "loisirs")
