@@ -7,15 +7,37 @@
   "offres": [
     {
       "nom": "Fiche Premium",
-      "prix": "à définir",
-      "detail": "Votre fiche en tête de catégorie, avec description étendue et lien sponsorisé.",
-      "lien_paiement": ""
+      "prix": "Sur demande",
+      "public": "Entreprises, indépendants, solopreneurs",
+      "detail": "Votre fiche en tête de sa catégorie et de sa commune.",
+      "inclus": [
+        "Placement prioritaire et badge Premium",
+        "Description étendue",
+        "Lien vers votre site balisé rel=\"sponsored\"",
+        "Mise à jour de la fiche sur demande"
+      ]
     },
     {
       "nom": "Article sponsorisé",
-      "prix": "à définir",
-      "detail": "Un article ou une liste thématique présentant votre entreprise, avec lien sponsorisé.",
-      "lien_paiement": ""
+      "prix": "Sur demande",
+      "public": "Entreprises, agences, indépendants",
+      "detail": "Un article ou une liste thématique qui présente votre entreprise ou celle de votre client.",
+      "inclus": [
+        "Article publié sur le site, signalé « Contenu sponsorisé »",
+        "Un ou deux liens balisés rel=\"sponsored\"",
+        "Texte rédigé ou relu avant publication"
+      ]
+    },
+    {
+      "nom": "Pack agences et indépendants",
+      "prix": "Sur demande",
+      "public": "Agences SEO, freelances, solopreneurs",
+      "detail": "Pour ceux qui gèrent la visibilité de plusieurs clients ou de plusieurs projets.",
+      "inclus": [
+        "Plusieurs fiches ou articles commandés en une fois",
+        "Un seul interlocuteur",
+        "Liste des pages publiées à la livraison"
+      ]
     }
   ],
   "legal": {

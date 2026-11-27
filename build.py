@@ -324,22 +324,59 @@ def build():
                              "Inscrivez gratuitement votre entreprise dans l'annuaire des professionnels au Luxembourg.",
                              "/ajouter/", corps))
 
-    # Visibilité (offre payante) — tarifs à compléter dans data/config.json
+    # Visibilité (offres payantes) — tarifs et contenu dans data/config.json
+    from urllib.parse import quote
+    contact = CFG["legal"]["contact"]
+
+    def cta(nom):
+        sujet = quote(f"Demande de devis - {nom}")
+        return f'<a class="btn" href="mailto:{esc(contact)}?subject={sujet}">Demander un devis</a>'
+
     offres = "".join(
-        f'<li class="card"><h3>{esc(o["nom"])} — {esc(o["prix"])}</h3><p>{esc(o["detail"])}</p>'
-        + (f'<p><a class="btn" href="{esc(o["lien_paiement"])}">Commander</a></p>' if o.get("lien_paiement") else "")
-        + "</li>"
+        f'<li class="card"><h3>{esc(o["nom"])}</h3>'
+        f'<p class="meta">{esc(o["public"])} · {esc(o["prix"])}</p>'
+        f'<p>{esc(o["detail"])}</p>'
+        '<ul class="check">' + "".join(f"<li>{esc(x)}</li>" for x in o["inclus"]) + "</ul>"
+        f"<p>{cta(o['nom'])}</p></li>"
         for o in CFG["offres"]
     )
     corps = f"""
-<h1>Boostez votre visibilité</h1>
-<p>Les liens des fiches Premium et des articles sponsorisés portent l'attribut <code>rel="sponsored"</code>,
-conformément aux recommandations de Google.</p>
+<h1>Boostez votre visibilité au Luxembourg</h1>
+<p class="lead">Une fiche Premium ou un article sponsorisé vous rend plus visible auprès des internautes qui cherchent un professionnel au Luxembourg, en France et en Belgique. Nos offres s'adressent aux entreprises, aux agences SEO, aux freelances et aux solopreneurs.</p>
+
+<h2>Ce que vous obtenez</h2>
+<ul class="check">
+  <li><strong>De la visibilité locale :</strong> votre entreprise apparaît en tête de sa catégorie et de sa commune.</li>
+  <li><strong>Des visiteurs qualifiés :</strong> des internautes qui cherchent justement votre métier et peuvent cliquer vers votre site.</li>
+  <li><strong>Une citation d'entreprise :</strong> vos coordonnées (nom, adresse, téléphone) publiées de façon cohérente sur un annuaire luxembourgeois.</li>
+  <li><strong>Une mention de marque :</strong> votre nom associé à un site spécialisé sur les professionnels du Luxembourg.</li>
+</ul>
+
+<h2>Nos offres</h2>
 <ul class="list">{offres}</ul>
+
+<h2>Transparence sur les liens</h2>
+<p>Les liens des fiches Premium et des articles sponsorisés sont balisés <code>rel="sponsored"</code>, conformément aux consignes de Google, et les contenus concernés sont signalés comme tels. Nous ne vendons pas de liens cachés et nous ne garantissons aucun classement dans les moteurs de recherche : ce que vous achetez, c'est de la visibilité et de l'audience.</p>
+
+<h2>Comment ça marche</h2>
+<ol>
+  <li>Vous nous écrivez en indiquant l'offre qui vous intéresse.</li>
+  <li>Nous convenons du contenu et du tarif.</li>
+  <li>Nous publions la fiche ou l'article, puis nous vous envoyons le lien de la page en ligne.</li>
+</ol>
+
+<h2>Questions fréquentes</h2>
+<details><summary>Les liens sont-ils « dofollow » ?</summary><p>Non. Les liens payants portent l'attribut <code>rel="sponsored"</code>. C'est ce que demande Google pour les liens sponsorisés.</p></details>
+<details><summary>Cela améliore-t-il mon classement sur Google ?</summary><p>Nous ne promettons aucun classement. Une fiche ou un article sponsorisé apporte de la visibilité, des visiteurs et une citation locale, qui complètent un travail de référencement.</p></details>
+<details><summary>Quelles entreprises acceptez-vous ?</summary><p>Des entreprises et des professionnels réels, avec un contenu légal et pertinent pour l'annuaire. Nous refusons les contenus trompeurs, illégaux ou sans rapport avec l'activité de l'entreprise.</p></details>
+<details><summary>Je suis une agence ou un indépendant, puis-je commander pour mes clients ?</summary><p>Oui, le pack agences et indépendants est prévu pour cela. Écrivez-nous avec le nombre de clients ou de projets concernés.</p></details>
+<details><summary>Quels sont les tarifs ?</summary><p>Les tarifs dépendent de l'offre et du volume. Demandez un devis par e-mail : <a href="mailto:{esc(contact)}">{esc(contact)}</a>.</p></details>
+
+<p style="margin-top:28px">{cta("Fiche Premium ou article sponsorisé")}</p>
 """
     urls.append("/visibilite/")
-    ecrire("/visibilite/", page(f"Boostez votre visibilité – {SITE_NAME}",
-                                "Fiche Premium et article sponsorisé pour gagner en visibilité au Luxembourg.",
+    ecrire("/visibilite/", page(f"Boostez votre visibilité au Luxembourg – {SITE_NAME}",
+                                "Fiche Premium, article sponsorisé et pack agences : gagnez en visibilité locale auprès des clients du Luxembourg, de la France et de la Belgique.",
                                 "/visibilite/", corps))
 
     # Pages légales

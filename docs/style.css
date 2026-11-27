@@ -50,3 +50,11 @@ button, .btn { background: var(--accent); color: #fff; border: 0; padding: 10px 
 .chips { margin: 22px 0; }
 .about { max-width: 780px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--bord); color: #334155; font-size: .97rem; }
 .about h2 { font-size: 1.2rem; color: #0f172a; margin-top: 0; }
+.lead { font-size: 1.08rem; color: #334155; }
+ul.check { list-style: none; padding: 0; margin: 10px 0; }
+ul.check li { position: relative; padding: 3px 0 3px 26px; }
+ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+details { border: 1px solid var(--bord); border-radius: 8px; padding: 10px 14px; margin: 8px 0; background: var(--fond); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 8px 0 0; }
+ol { padding-left: 22px; }
