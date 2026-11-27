@@ -110,7 +110,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
     <a href="{url('/visibilite/')}">Boostez votre visibilité</a> ·
     <a href="{url('/mentions-legales/')}">Mentions légales</a> ·
     <a href="{url('/confidentialite/')}">Confidentialité</a>
-    <p>© {date.today().year} {esc(SITE_NAME)}</p>
+    <p>© {date.today().year} {esc(SITE_NAME)} · Certaines données : © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">contributeurs OpenStreetMap</a></p>
   </div>
 </footer>
 </body>
@@ -150,6 +150,9 @@ def build():
     # CSS + recherche
     shutil.copy(os.path.join(ROOT, "assets", "style.css"), os.path.join(OUT, "style.css"))
     shutil.copy(os.path.join(ROOT, "assets", "search.js"), os.path.join(OUT, "search.js"))
+    bann_src = os.path.join(ROOT, "assets", "bannieres")
+    if os.path.isdir(bann_src):
+        shutil.copytree(bann_src, os.path.join(OUT, "bannieres"))
     if CFG.get("domaine_perso"):
         with open(os.path.join(OUT, "CNAME"), "w") as f:
             f.write(CFG["domaine_perso"] + "\n")
@@ -291,11 +294,18 @@ def build():
         extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
         ville_crumb = (f'<a href="{url("/ville/" + e["ville_slug"] + "/")}">{esc(e["ville"])}</a>'
                        if e["ville_slug"] in PAGES_VILLE else esc(e["ville"]))
+        banniere = ""
+        if e["premium"] and e.get("banniere"):
+            if not os.path.isfile(os.path.join(ROOT, "assets", "bannieres", e["banniere"])):
+                raise SystemExit(f"Bannière introuvable : assets/bannieres/{e['banniere']} ({e['nom']})")
+            alt = e.get("banniere_alt") or f"{e['nom']} – {e['metier_nom']} à {e['ville']}"
+            banniere = f'<img class="banniere" src="{url("/bannieres/" + e["banniere"])}" alt="{esc(alt)}" width="1200" height="400">'
         corps = f"""
 <p class="crumbs"><a href="{url('/')}">Accueil</a> › <a href="{url('/categorie/' + e['groupe'] + '/')}">{esc(e['groupe_nom'])}</a> › {ville_crumb}</p>
 <h1>{esc(e['nom'])}{' <span class="badge">Premium</span>' if e['premium'] else ''}</h1>
 <p class="meta">{esc(e['metier_nom'])} · {esc(e['ville'])}</p>
 <p>{esc(e.get('description', ''))}</p>
+{banniere}
 <dl class="infos">{''.join(lignes)}</dl>
 <p class="small">Une information est incorrecte ? <a href="{url('/ajouter/')}">Écrivez-nous</a> pour la corriger ou la supprimer.</p>
 """
@@ -401,6 +411,7 @@ def build():
 <p>L'inscription d'une entreprise est gratuite. Des options payantes (fiche Premium, article sponsorisé) existent : les liens correspondants portent l'attribut <code>rel="sponsored"</code> et la fiche ou l'article est signalé comme tel. Un contenu sponsorisé n'est pas une recommandation de l'éditeur.</p>
 <h2>4. Exactitude des informations</h2>
 <p>Les fiches reprennent des informations professionnelles publiques (nom, adresse, téléphone, e-mail, site web) fournies par les entreprises ou collectées dans des sources publiques. L'éditeur s'efforce de les tenir à jour mais ne garantit ni leur exactitude ni leur exhaustivité. Une information erronée peut être corrigée ou supprimée sur simple demande à {mail}.</p>
+<p>Certaines données proviennent d'OpenStreetMap (© contributeurs OpenStreetMap, licence ODbL).</p>
 <h2>5. Propriété intellectuelle</h2>
 <p>La structure du site, ses textes et ses éléments graphiques appartiennent à l'éditeur, sauf mention contraire. Les noms, marques et coordonnées des entreprises référencées restent la propriété de leurs titulaires. Toute reproduction non autorisée est interdite ; une courte citation accompagnée d'un lien vers la page d'origine est tolérée.</p>
 <h2>6. Données personnelles et cookies</h2>

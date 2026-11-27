@@ -17,7 +17,12 @@
       "electricien": "Électriciens",
       "chauffagiste": "Chauffagistes",
       "peintre": "Peintres",
-      "menuisier": "Menuisiers"
+      "menuisier": "Menuisiers",
+      "couvreur": "Couvreurs et charpentiers",
+      "carreleur": "Carreleurs",
+      "vitrier": "Vitriers",
+      "platrier": "Plâtriers et façadiers",
+      "construction": "Entreprises de construction"
     }
   },
   "restauration": {

@@ -1,0 +1,460 @@
+[
+  {
+    "nom": "Aquatechnic S.A.",
+    "groupe": "batiment",
+    "metier": "chauffagiste",
+    "site": "https://aquatechnic.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/34074820"
+  },
+  {
+    "nom": "Bamolux",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "source": "OpenStreetMap",
+    "osm": "node/7817280687"
+  },
+  {
+    "nom": "Baumert",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "node/2149813029"
+  },
+  {
+    "nom": "Brucher",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368038"
+  },
+  {
+    "nom": "CBL",
+    "groupe": "batiment",
+    "metier": "construction",
+    "source": "OpenStreetMap",
+    "osm": "way/546665627"
+  },
+  {
+    "nom": "Charpente Goebel",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "site": "https://www.charpente-goebel.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/863501738"
+  },
+  {
+    "nom": "Charpente Therres",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "site": "https://www.charpente.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/9786594046"
+  },
+  {
+    "nom": "Chauffage Haas",
+    "groupe": "batiment",
+    "metier": "chauffagiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734294"
+  },
+  {
+    "nom": "City-electric",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/2406454996"
+  },
+  {
+    "nom": "De Narda",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846689"
+  },
+  {
+    "nom": "DEG",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "source": "OpenStreetMap",
+    "osm": "way/85283801"
+  },
+  {
+    "nom": "Electricité Kyll SA",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "way/647529030"
+  },
+  {
+    "nom": "Electricité Peiffer",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "telephone": "+352 39 00 68 - 1",
+    "site": "http://www.elec-peiffer.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/4894008934"
+  },
+  {
+    "nom": "Electro Cruz Frères",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/11847814499"
+  },
+  {
+    "nom": "Electro-Sani CP",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/11391589326"
+  },
+  {
+    "nom": "emb",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/2045158820"
+  },
+  {
+    "nom": "Emb électricité",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "way/649202485"
+  },
+  {
+    "nom": "Feltus",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "source": "OpenStreetMap",
+    "osm": "node/14400073446"
+  },
+  {
+    "nom": "Georges Electricité",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/11228737712"
+  },
+  {
+    "nom": "Hafeco",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846709"
+  },
+  {
+    "nom": "Hagergroup",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327616"
+  },
+  {
+    "nom": "Heiles Fassaden & Raumgestaltung",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "telephone": "+352 26108844",
+    "site": "https://www.heiles.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/10287781778"
+  },
+  {
+    "nom": "Instalfit",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368051"
+  },
+  {
+    "nom": "Instaltec",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "telephone": "+352 43 63 471",
+    "email": "info@instaltec.lu",
+    "site": "https://instaltec.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/2302715443"
+  },
+  {
+    "nom": "J.J. Burnotte Lux Sàrl",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "telephone": "+352 26 95 80 28",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734352"
+  },
+  {
+    "nom": "Jos Dostert",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "site": "https://dostertsa.lu/de/",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351471"
+  },
+  {
+    "nom": "Kaufmann & Biesen",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/6371879107"
+  },
+  {
+    "nom": "Kutten Alain s.à r.l",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "source": "OpenStreetMap",
+    "osm": "node/3750575902"
+  },
+  {
+    "nom": "La Manufacture des Ardennes Sàrl",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "source": "OpenStreetMap",
+    "osm": "node/8356988946"
+  },
+  {
+    "nom": "Langehegermann",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "site": "https://langehegermann.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/91903799"
+  },
+  {
+    "nom": "Lucas sàrl",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "telephone": "+352 39 70 83 1",
+    "site": "https://www.lucas.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2899760776"
+  },
+  {
+    "nom": "Mannelli & Associés S.A",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/13905259410"
+  },
+  {
+    "nom": "Menuiserie Fellens Jean",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "site": "https://www.fellens.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2208157261"
+  },
+  {
+    "nom": "Menuiserie Guy Morheng",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "site": "https://mgm.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/85173320"
+  },
+  {
+    "nom": "Menuiserie Hermes",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "telephone": "+352 83 95 52",
+    "email": "mehermes@pt.lu",
+    "site": "https://www.menuiserie-hermes.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/173019416"
+  },
+  {
+    "nom": "Minusines",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/8745243475"
+  },
+  {
+    "nom": "Morheng Peinture Décoration Restauration",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "source": "OpenStreetMap",
+    "osm": "node/13917534851"
+  },
+  {
+    "nom": "Muno",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "way/1339185101"
+  },
+  {
+    "nom": "New Elektriker",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/14052171475"
+  },
+  {
+    "nom": "Nord Décors",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "source": "OpenStreetMap",
+    "osm": "node/11847814500"
+  },
+  {
+    "nom": "Peinture Geimer",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368056"
+  },
+  {
+    "nom": "Peinture Oesterreicher",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "site": "https://www.oestreicher.lu",
+    "source": "OpenStreetMap",
+    "osm": "way/34257201"
+  },
+  {
+    "nom": "Peinture Weibler",
+    "groupe": "batiment",
+    "metier": "peintre",
+    "site": "https://www.weibler.eu/kontakt/",
+    "source": "OpenStreetMap",
+    "osm": "node/8753113792"
+  },
+  {
+    "nom": "Prefalux",
+    "groupe": "batiment",
+    "metier": "construction",
+    "site": "https://www.prefalux.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/85636193"
+  },
+  {
+    "nom": "Ramirez Electro",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "site": "https://www.ramirez.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540994"
+  },
+  {
+    "nom": "Reckinger",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "site": "https://www.reckinger-alfred.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/82892380"
+  },
+  {
+    "nom": "RM&Co",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846742"
+  },
+  {
+    "nom": "Rollinger",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "way/96756281"
+  },
+  {
+    "nom": "Rucken",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/8775803623"
+  },
+  {
+    "nom": "Sanichaufer Toitures",
+    "groupe": "batiment",
+    "metier": "chauffagiste",
+    "site": "https://www.sanichaufer-toitures.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6195651740"
+  },
+  {
+    "nom": "Silbereisen",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "telephone": "+352 48 02 91",
+    "site": "https://silbereisen.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12916814531"
+  },
+  {
+    "nom": "Solalux SA",
+    "groupe": "batiment",
+    "metier": "construction",
+    "source": "OpenStreetMap",
+    "osm": "node/8356988981"
+  },
+  {
+    "nom": "SPIE",
+    "groupe": "batiment",
+    "metier": "chauffagiste",
+    "site": "https://www.spie.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193541009"
+  },
+  {
+    "nom": "Technopol",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "site": "https://www.technopol.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6189833687"
+  },
+  {
+    "nom": "Toiture Générale Emile Nilles & Fils Sàrl",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "source": "OpenStreetMap",
+    "osm": "node/4258249964"
+  },
+  {
+    "nom": "Toiture Jean Goerens",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846750"
+  },
+  {
+    "nom": "Toitures Gregorius",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "source": "OpenStreetMap",
+    "osm": "node/8959458240"
+  },
+  {
+    "nom": "Toitures Nilles",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "source": "OpenStreetMap",
+    "osm": "way/66472543"
+  },
+  {
+    "nom": "Weyer",
+    "groupe": "batiment",
+    "metier": "plombier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846753"
+  },
+  {
+    "nom": "Éclairages Jos Ries",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "site": "https://www.ejr-ries.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1180135310"
+  },
+  {
+    "nom": "Électricité Back S.A.",
+    "groupe": "batiment",
+    "metier": "electricien",
+    "source": "OpenStreetMap",
+    "osm": "node/290095623"
+  }
+]

@@ -21,3 +21,12 @@ Annuaire professionnel statique pour le Luxembourg, hébergé sur GitHub Pages.
 - Une page métier ou commune n'est créée qu'à partir de `seuil_pages` fiches (3 par défaut, dans `data/config.json`) ; un groupe vide est en `noindex`.
 - Les fiches Premium et articles sponsorisés utilisent `rel="sponsored"`, les fiches gratuites `rel="nofollow"`.
 - Les fiches du fichier de données sont des **exemples fictifs** à remplacer.
+
+## Bannière des fiches Premium
+
+Pour une fiche Premium, ajouter dans `data/entreprises.json` : `"premium": true`, `"banniere": "nom-du-fichier.jpg"` et, si possible, `"banniere_alt": "description de l'image"`.
+L'image se place dans `assets/bannieres/` (format conseillé : 1200 × 400 px, JPG ou WebP, moins de 200 Ko). Elle s'affiche au-dessus du bloc d'informations de la fiche.
+
+## Données OpenStreetMap
+
+Une partie des fiches (champ `"source": "OpenStreetMap"`) provient d'OpenStreetMap : © contributeurs OpenStreetMap, licence ODbL (https://www.openstreetmap.org/copyright). L'attribution est affichée dans le pied de page du site. Les entreprises sans commune sont dans `data/osm_a_completer.json`. Le script d'import est `tools/import_osm.py`.
