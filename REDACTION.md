@@ -77,6 +77,16 @@ Le site est un annuaire professionnel : plus sobre que le blog de Run Nature.
 - Aucune fausse personnalisation. Si on cite un fait sur l'entreprise, il est vérifié.
 - Respect du RGPD : une adresse professionnelle publique, un message ciblé, un lien ou une phrase pour ne plus être contacté. Pas de relance en rafale.
 
+### 5.7 Recherche IA (AI Overviews, mode IA, assistants) : mêmes règles que le SEO
+- Pas de « GEO » séparé. Selon la page de Google sur les fonctions IA dans la Recherche (mise à jour affichée : 10 décembre 2025), aucune optimisation spécifique n'est requise pour apparaître dans les AI Overviews ou le mode IA : les bonnes pratiques SEO classiques suffisent. Pas de fichier `llms.txt`, pas de balisage dédié aux IA.
+- Écrire pour des lecteurs : réponse directe dans les premières phrases, une idée par section, titres qui disent ce que la section contient. Ne pas découper un texte artificiellement pour « plaire aux IA ».
+- Contenu important toujours en texte (pas seulement dans une image). Images et vidéos en appui, avec un texte alternatif utile.
+- Noms propres complets à la première mention (entreprise, lieu, avec la commune ou le pays), faits vérifiables, sources réelles en fin d'article.
+- Données structurées (JSON-LD) seulement si elles correspondent au texte visible de la page.
+- Ne rien promettre : respecter les consignes ne garantit ni l'indexation ni l'affichage, ni une citation par une IA. Ne jamais l'écrire comme argument de vente (pas de « soyez cité par ChatGPT »).
+- Contrôle technique : robots.txt ouvert, pages importantes dans le sitemap et liées entre elles, suivi dans Search Console (les pages citées dans les fonctions IA apparaissent dans le rapport de performances « Web »).
+- À revérifier de temps en temps sur Google Search Central : ces consignes évoluent.
+
 ## 6. Ce que Claude ne doit pas faire
 - Accroches sensationnalistes, conclusions qui répètent le texte, listes de trois systématiques, « ce n'est pas X, c'est Y » partout, paragraphes tous construits pareil.
 - Ton de coach, enthousiasme publicitaire permanent, métaphores grandiloquentes, mots à la mode.
