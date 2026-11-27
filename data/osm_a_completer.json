@@ -28969,5 +28969,1011 @@
     "metier": "conseil",
     "source": "OpenStreetMap",
     "osm": "way/159598119"
+  },
+  {
+    "nom": "Kieser Training",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2045158786"
+  },
+  {
+    "nom": "Inlingua",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803069"
+  },
+  {
+    "nom": "Luclin",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2140152401"
+  },
+  {
+    "nom": "Cavem",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2149813034"
+  },
+  {
+    "nom": "Etude",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846693"
+  },
+  {
+    "nom": "Il Était Une Fois",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846715"
+  },
+  {
+    "nom": "La Luciole",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846723"
+  },
+  {
+    "nom": "Crèche Barbara",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://www.crechebarbara.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2220046196"
+  },
+  {
+    "nom": "La Licorne",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2260738753"
+  },
+  {
+    "nom": "Cocoon",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2273120064"
+  },
+  {
+    "nom": "Crèche Luna",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2321325668"
+  },
+  {
+    "nom": "Centre d'Education de Luxembourg",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019621"
+  },
+  {
+    "nom": "Crèche Molli",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026100"
+  },
+  {
+    "nom": "KidsCare",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2406454995"
+  },
+  {
+    "nom": "Crèche Pikasso",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/2406698339"
+  },
+  {
+    "nom": "Comptoir Anti-feu",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327603"
+  },
+  {
+    "nom": "Sweet Lily",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327651"
+  },
+  {
+    "nom": "Music Factory",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/2562758546"
+  },
+  {
+    "nom": "Wallerich",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+352 2617 3010",
+    "site": "https://www.wallerichlux.eu/",
+    "source": "OpenStreetMap",
+    "osm": "node/3051830542"
+  },
+  {
+    "nom": "DSD International Contractors",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+352 57 48 48-1",
+    "email": "dsdic@dsd-steel.com",
+    "site": "https://www.dsd-steel.com/",
+    "horaires": "Lun 08:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/3051830543"
+  },
+  {
+    "nom": "Cometal",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+352 26 51 58-1",
+    "source": "OpenStreetMap",
+    "osm": "node/3051830544"
+  },
+  {
+    "nom": "École régionale de musique de la Ville de Dudelange",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/3856092579"
+  },
+  {
+    "nom": "Centre de Formation National (CFN)",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/4167089253"
+  },
+  {
+    "nom": "Crèche Cocon",
+    "groupe": "education",
+    "metier": "creche",
+    "horaires": "Lun-Ven 06:30-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5107543456"
+  },
+  {
+    "nom": "Saturne Technology",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "http://www.saturne-technology.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/5569820649"
+  },
+  {
+    "nom": "L'enfant roi",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/5725955344"
+  },
+  {
+    "nom": "L'Enfant Roi",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/5972915094"
+  },
+  {
+    "nom": "Crèche Moutfort",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/6167003088"
+  },
+  {
+    "nom": "Stilux",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.stilux.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540479"
+  },
+  {
+    "nom": "Da Costa Almeida",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540480"
+  },
+  {
+    "nom": "Lux Fermetures",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.luxfermetures.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540993"
+  },
+  {
+    "nom": "T.S. Lux SA",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "site": "https://www.tslux.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193541005"
+  },
+  {
+    "nom": "CLC Machining",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "http://www.clcmachining.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/6195651745"
+  },
+  {
+    "nom": "Pétronille",
+    "groupe": "education",
+    "metier": "creche",
+    "telephone": "+352 26 10 37 05",
+    "site": "https://www.crechepetronille.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6609095820"
+  },
+  {
+    "nom": "eMa music school",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "telephone": "+352 691 992 862",
+    "email": "contactemusic@gmail.com",
+    "site": "https://www.emamusicschool.com/",
+    "horaires": "08:30-12:30, 15:30-20:00 ; Lun-Ven 13:00-20:00 ; Sam 09:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/6918758147"
+  },
+  {
+    "nom": "ACTinBlack",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+352 20301030",
+    "site": "https://www.actinblack.com",
+    "horaires": "Lun-Ven 07:30-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/7305967162"
+  },
+  {
+    "nom": "LuxScan Technologies",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+352 54 04 16",
+    "site": "http://www.luxscan.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/7305967163"
+  },
+  {
+    "nom": "Ernster Logistique",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "node/7362212092"
+  },
+  {
+    "nom": "Proufsall Foulschter Musik",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/8189017203"
+  },
+  {
+    "nom": "Crèche Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/8298080620"
+  },
+  {
+    "nom": "CITIM",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/8308391253"
+  },
+  {
+    "nom": "an Hennessen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/8309476647"
+  },
+  {
+    "nom": "LEO Energy",
+    "groupe": "industrie",
+    "metier": "energie",
+    "source": "OpenStreetMap",
+    "osm": "node/8617012088"
+  },
+  {
+    "nom": "Les Ptits Bouchons",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://lesptitsbouchons.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8771214866"
+  },
+  {
+    "nom": "Felux",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/8771576332"
+  },
+  {
+    "nom": "Luxforge",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734234"
+  },
+  {
+    "nom": "EEM Steel",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734301"
+  },
+  {
+    "nom": "Bohlen Constructions Metalliques",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/8776512970"
+  },
+  {
+    "nom": "Maison Relais Uewersauer",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/8946399875"
+  },
+  {
+    "nom": "Ateliers Acloque",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/8956252730"
+  },
+  {
+    "nom": "L’Enfant Roi",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/8990403912"
+  },
+  {
+    "nom": "Maison Relais Bettendorf",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/9742129014"
+  },
+  {
+    "nom": "UniPop Université populaire Luxembourg",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/9743758503"
+  },
+  {
+    "nom": "Crèche l'Enfant Roi",
+    "groupe": "education",
+    "metier": "creche",
+    "telephone": "+352 2732251",
+    "email": "info@lenfant-roi.lu",
+    "site": "https://www.lenfant-roi.lu",
+    "horaires": "Lun-Ven 07:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/10287497752"
+  },
+  {
+    "nom": "Musikschoul Canton Réiden",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "telephone": "+352 23 62 08 76",
+    "site": "https://www.emcr.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/10311696508"
+  },
+  {
+    "nom": "Regional Museksschoul Munneref",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "node/11005806052"
+  },
+  {
+    "nom": "Duhr Frères",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "source": "OpenStreetMap",
+    "osm": "node/11368835068"
+  },
+  {
+    "nom": "Maison Relais",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/11391538036"
+  },
+  {
+    "nom": "Tavares",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "node/11391589325"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/11805210340"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://butzemillen.lu/de/structures/creche-pommerloch-2/",
+    "source": "OpenStreetMap",
+    "osm": "node/12426035231"
+  },
+  {
+    "nom": "Crèche Born",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/12570809021"
+  },
+  {
+    "nom": "Domaine Goldbierg - Benoît & Claude",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "telephone": "+352 621 661 949",
+    "email": "contact@benoitclaude.lu",
+    "site": "https://benoitclaude.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12603704982"
+  },
+  {
+    "nom": "Sudstroum",
+    "groupe": "industrie",
+    "metier": "energie",
+    "telephone": "+352 26783787686",
+    "email": "backoffice@sudstroum.lu",
+    "site": "https://www.sudstroum.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12604246661"
+  },
+  {
+    "nom": "Crèche Charles et Julie",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://www.cjf.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/12735262048"
+  },
+  {
+    "nom": "Steinmetz",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "source": "OpenStreetMap",
+    "osm": "node/13078144450"
+  },
+  {
+    "nom": "Berna",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "source": "OpenStreetMap",
+    "osm": "node/13078208704"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/13308724166"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/13453002517"
+  },
+  {
+    "nom": "nascht",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/13917573481"
+  },
+  {
+    "nom": "Royal Kids",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/13917596159"
+  },
+  {
+    "nom": "Huser Kannerstuff",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://sispolo.lu/bildung-unterricht/kindertagesstaette/",
+    "source": "OpenStreetMap",
+    "osm": "node/14006029706"
+  },
+  {
+    "nom": "Am Spatzennascht",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://sispolo.lu/bildung-unterricht/kindertagesstaette/",
+    "source": "OpenStreetMap",
+    "osm": "node/14006029707"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/14052171452"
+  },
+  {
+    "nom": "Baby Bird",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://www.crechebabybird.lu/copie-de-acceuil-2",
+    "source": "OpenStreetMap",
+    "osm": "node/14078827753"
+  },
+  {
+    "nom": "Butzemillen",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/14335473151"
+  },
+  {
+    "nom": "Crèche Klengen Haas",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "node/14340223529"
+  },
+  {
+    "nom": "B09",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "way/29144492"
+  },
+  {
+    "nom": "Chemolux (McBride)",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "telephone": "+35 2 57 48 49 1",
+    "source": "OpenStreetMap",
+    "osm": "way/29375352"
+  },
+  {
+    "nom": "Mondo Luxembourg",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.mondoworldwide.com/",
+    "source": "OpenStreetMap",
+    "osm": "way/29375382"
+  },
+  {
+    "nom": "Hyosung",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/29403651"
+  },
+  {
+    "nom": "Power Panels",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/34872940"
+  },
+  {
+    "nom": "ArcelorMittal Dommeldange",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/37786158"
+  },
+  {
+    "nom": "Luxlait",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.luxlait.lu",
+    "source": "OpenStreetMap",
+    "osm": "way/49707786"
+  },
+  {
+    "nom": "De Schweesspunkt",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/55784034"
+  },
+  {
+    "nom": "Imecolux",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/82892382"
+  },
+  {
+    "nom": "Constructions Métalliques Guy Gardula & Associés S.A.",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://gardula.com/",
+    "source": "OpenStreetMap",
+    "osm": "way/86300601"
+  },
+  {
+    "nom": "Euro-Composites",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.euro-composites.com/",
+    "source": "OpenStreetMap",
+    "osm": "way/87831078"
+  },
+  {
+    "nom": "ArcelorMittal",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/93359252"
+  },
+  {
+    "nom": "Daco",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/95542162"
+  },
+  {
+    "nom": "Maison relais Holzwiermercher",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://www.hesperange.lu/fr/citoyens/enseignement/maisons-relais",
+    "source": "OpenStreetMap",
+    "osm": "way/110527663"
+  },
+  {
+    "nom": "Maison Relais",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "way/127263922"
+  },
+  {
+    "nom": "Domaine Henri Ruppert",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "source": "OpenStreetMap",
+    "osm": "way/152176685"
+  },
+  {
+    "nom": "École de Musique Wiltz",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "site": "https://www.emw.lu/fr",
+    "source": "OpenStreetMap",
+    "osm": "way/153611912"
+  },
+  {
+    "nom": "B02",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "way/161776163"
+  },
+  {
+    "nom": "DPD",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/162872119"
+  },
+  {
+    "nom": "Rémy Cointreau",
+    "groupe": "industrie",
+    "metier": "brasserie",
+    "source": "OpenStreetMap",
+    "osm": "way/164329317"
+  },
+  {
+    "nom": "Lactalis",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/178815951"
+  },
+  {
+    "nom": "Lindab",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/187498695"
+  },
+  {
+    "nom": "Museksschoul Syrdall",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "way/218465711"
+  },
+  {
+    "nom": "Lenkeschléi",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "way/219684602"
+  },
+  {
+    "nom": "Brasserie Nationale",
+    "groupe": "industrie",
+    "metier": "brasserie",
+    "site": "https://www.bofferding.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/233871035"
+  },
+  {
+    "nom": "Transaliance Europe",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/255678159"
+  },
+  {
+    "nom": "Goodyear",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/256500442"
+  },
+  {
+    "nom": "Bei de Steekauzen",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://weiler-la-tour.lu/services-communaux/maison-relais-bei-de-steekauzen/",
+    "source": "OpenStreetMap",
+    "osm": "way/258368836"
+  },
+  {
+    "nom": "Haut fourneau B",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/294357960"
+  },
+  {
+    "nom": "Château Wirtgen (École de musique)",
+    "groupe": "education",
+    "metier": "ecole-formation",
+    "source": "OpenStreetMap",
+    "osm": "way/298801125"
+  },
+  {
+    "nom": "Bëschcrèche",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "way/314141520"
+  },
+  {
+    "nom": "Maison Relais",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "way/322914957"
+  },
+  {
+    "nom": "Ampacet Europe Warehouse",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/327467604"
+  },
+  {
+    "nom": "Créche Communale Route d'Arlon",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "way/327593022"
+  },
+  {
+    "nom": "Creos",
+    "groupe": "industrie",
+    "metier": "energie",
+    "source": "OpenStreetMap",
+    "osm": "way/407666373"
+  },
+  {
+    "nom": "CFL Logistics S.A.",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/410097054"
+  },
+  {
+    "nom": "Kaefer Wanner",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/442798043"
+  },
+  {
+    "nom": "GN Logistics",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/504516344"
+  },
+  {
+    "nom": "Caves Crémants Poll-Fabaire",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "source": "OpenStreetMap",
+    "osm": "way/551150940"
+  },
+  {
+    "nom": "Cimalux",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/632255848"
+  },
+  {
+    "nom": "Calumite",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/632570684"
+  },
+  {
+    "nom": "TRAX Trailers",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "http://www.tr-ax.com/",
+    "source": "OpenStreetMap",
+    "osm": "way/661780886"
+  },
+  {
+    "nom": "Auchan Luxembourg (Warehouse)",
+    "groupe": "industrie",
+    "metier": "logistique",
+    "source": "OpenStreetMap",
+    "osm": "way/708139864"
+  },
+  {
+    "nom": "Bare Brewing",
+    "groupe": "industrie",
+    "metier": "brasserie",
+    "source": "OpenStreetMap",
+    "osm": "way/716695123"
+  },
+  {
+    "nom": "Difrulux",
+    "groupe": "industrie",
+    "metier": "brasserie",
+    "telephone": "+352 7900311",
+    "site": "https://www.difrulux.lu/de/",
+    "source": "OpenStreetMap",
+    "osm": "way/750530501"
+  },
+  {
+    "nom": "Kiowatt S.A.",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/834727628"
+  },
+  {
+    "nom": "Nordparts",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "site": "https://www.nordparts.lu/de",
+    "source": "OpenStreetMap",
+    "osm": "way/844802768"
+  },
+  {
+    "nom": "Maison Relais Niederanven",
+    "groupe": "education",
+    "metier": "creche",
+    "telephone": "+352 26340068-1",
+    "site": "https://www.arcus.lu/profile/20/maison-relais-niederanven",
+    "horaires": "Lun-Ven 07:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "way/846673542"
+  },
+  {
+    "nom": "Telus",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/891363159"
+  },
+  {
+    "nom": "Service technique de la commune Weiler-la-Tour",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/915811260"
+  },
+  {
+    "nom": "IVC Luxembourg",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/948091778"
+  },
+  {
+    "nom": "SIDERE",
+    "groupe": "industrie",
+    "metier": "fabrication",
+    "source": "OpenStreetMap",
+    "osm": "way/968422741"
+  },
+  {
+    "nom": "Crèche Muselnascht",
+    "groupe": "education",
+    "metier": "creche",
+    "telephone": "+352 23 69 97 15",
+    "site": "https://bierger.remich.lu/fr/ville-de-remich/schulwesen/kindertagesstatte-muselnascht/",
+    "source": "OpenStreetMap",
+    "osm": "way/1083158536"
+  },
+  {
+    "nom": "Caves Desom",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "telephone": "+352 2360401",
+    "email": "info@desom.lu",
+    "site": "http://www.desom.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1204183384"
+  },
+  {
+    "nom": "Happyland",
+    "groupe": "education",
+    "metier": "creche",
+    "site": "https://www.happyland.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1222279680"
+  },
+  {
+    "nom": "Bar à Vin",
+    "groupe": "industrie",
+    "metier": "viticulture",
+    "telephone": "+352 26 26 21 26",
+    "email": "info@baravin.lu",
+    "site": "https://www.baravin.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1286040848"
+  },
+  {
+    "nom": "Foyer scolaire Bonnevoie Verger",
+    "groupe": "education",
+    "metier": "creche",
+    "source": "OpenStreetMap",
+    "osm": "relation/1690622"
   }
 ]

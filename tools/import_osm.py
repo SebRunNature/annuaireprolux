@@ -57,6 +57,8 @@ SINGULIER = {
     "depannage-informatique": "Dépannage informatique", "agence-web": "Agence web", "marketing": "Agence de marketing et communication",
     "conseil": "Cabinet de conseil", "ressources-humaines": "Agence de recrutement et d'intérim", "nettoyage": "Entreprise de nettoyage",
     "traduction": "Service de traduction", "coworking": "Espace de coworking",
+    "creche": "Crèche ou garde d'enfants", "ecole-formation": "École ou centre de formation", "cours-particuliers": "Cours particuliers",
+    "viticulture": "Vigneron", "brasserie": "Brasserie ou distillerie", "fabrication": "Fabricant", "logistique": "Entreprise de logistique", "energie": "Entreprise d'énergie",
     "garage": "Garage", "concessionnaire": "Concessionnaire", "pieces-auto": "Magasin de pièces auto", "auto-ecole": "Auto-école",
     "lavage-auto": "Station de lavage auto", "controle-technique": "Centre de contrôle technique", "taxi": "Taxi",
     "demenagement": "Entreprise de déménagement", "location-vehicules": "Location de véhicules",
@@ -179,6 +181,24 @@ def classer(t):
         return ("services-entreprises", "coworking")
     if off in ("advertising_agency", "marketing", "graphic_design"):
         return ("services-entreprises", "marketing")
+    ind = t.get("industrial", "")
+    cr = t.get("craft", "")
+    if am in ("childcare",) :
+        return ("education", "creche")
+    if am in ("language_school", "music_school", "dancing_school", "training", "prep_school", "tutoring") or off == "educational_institution":
+        return ("education", "cours-particuliers" if am in ("prep_school", "tutoring") else "ecole-formation")
+    if cr == "winery":
+        return ("industrie", "viticulture")
+    if cr in ("brewery", "distillery"):
+        return ("industrie", "brasserie")
+    if cr in ("cheese_maker", "sawmill", "metal_construction", "stonemason", "upholsterer", "blacksmith", "confectionery"):
+        return ("industrie", "fabrication")
+    if ind in ("factory", "manufacturing") or t.get("man_made") == "works":
+        return ("industrie", "fabrication")
+    if ind in ("warehouse", "logistics", "distributor") or off == "logistics":
+        return ("industrie", "logistique")
+    if off in ("energy_supplier", "energy"):
+        return ("industrie", "energie")
     if off == "estate_agent" or shop == "estate_agent":
         return ("immobilier", "agence-immobiliere")
     if off in ("property_management", "syndic"):

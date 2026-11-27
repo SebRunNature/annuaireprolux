@@ -133,7 +133,9 @@
     "metiers": {
       "fabrication": "Fabricants et producteurs",
       "logistique": "Logistique et entrepôts",
-      "energie": "Énergie et environnement"
+      "energie": "Énergie et environnement",
+      "viticulture": "Vignerons et caves",
+      "brasserie": "Brasseries et distilleries"
     }
   }
 }

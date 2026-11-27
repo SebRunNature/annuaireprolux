@@ -100,6 +100,13 @@ ENSEIGNES = [
     ("The Office", [r"the office.*"], ["theoffice.lu"]),
     ("LIP", [r"lip event.*", r"lip.*"], ["lipluxembourg.lu"]),
     ("Kelly Services", [r"kelly services"], []),
+    ("Butzemillen", [r"butzemillen.*"], ["butzemillen.lu"]),
+    ("Crèche L'Enfant Roi", [r"l enfant roi", r"creche l enfant roi"], ["lenfant-roi.lu"]),
+    ("Nascht", [r"nascht", r"creche nascht.*"], ["nascht.lu"]),
+    ("Crèche Boumba", [r"creche boumba", r"boumba"], ["boumba.lu"]),
+    ("Hakuna Matata", [r"hakuna matata"], ["hakunamatata.lu"]),
+    ("Crèche Barbara", [r"creche barbara.*"], ["crechebarbara.lu"]),
+    ("Crèche Internationale aux Enfants Gâtés", [r"creche internationale aux enfants gates"], []),
     ("Laboratoires Réunis", [r"laboratoires reunis"], ["labo.lu"]),
 ]
 # Métiers où chaque enseigne (même nom) n'a qu'une fiche
@@ -114,6 +121,7 @@ LIBELLES = {
     "electronique": "Magasin d'électronique et informatique", "librairie-cadeaux": "Librairie, papeterie ou cadeaux",
     "conseil": "Cabinet de conseil", "ressources-humaines": "Agence de recrutement et d'intérim", "nettoyage": "Entreprise de nettoyage",
     "traduction": "Service de traduction", "coworking": "Espace de coworking",
+    "creche": "Crèche", "viticulture": "Vigneron", "brasserie": "Brasserie ou distillerie",
     "garage": "Garage", "concessionnaire": "Concessionnaire", "pieces-auto": "Magasin de pièces auto",
     "controle-technique": "Centre de contrôle technique", "location-vehicules": "Location de véhicules", "agence-immobiliere": "Agence immobilière", "fleuriste": "Fleuriste", "animaux": "Animalerie", "clinique": "Clinique ou centre médical",
 }
