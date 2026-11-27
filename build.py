@@ -59,6 +59,14 @@ for e in ENTREPRISES:
     e["ville_slug"] = slugify(e["ville"])
     e["premium"] = bool(e.get("premium"))
 
+_vus = {}
+for e in ENTREPRISES:  # slugs uniques : un même nom dans une même commune reçoit l'adresse en suffixe
+    if e["slug"] in _vus:
+        e["slug"] = slugify(f"{e['nom']}-{e.get('adresse') or ''}-{e['ville']}")
+        if e["slug"] in _vus:
+            e["slug"] += f"-{len(_vus)}"
+    _vus[e["slug"]] = True
+
 SEUIL_INDEX = int(CFG.get("seuil_index", 3))  # nb d'informations pour qu'une fiche soit indexée par Google
 
 
