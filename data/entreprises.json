@@ -31794,5 +31794,19 @@
     "description": "Restaurant à Luxembourg.",
     "source": "OpenStreetMap",
     "osm": "way/174547317"
+  },
+  {
+    "nom": "Run Nature",
+    "groupe": "beaute-loisirs",
+    "metier": "sport-plein-air",
+    "ville": "Bereldange",
+    "adresse": "",
+    "code_postal": "",
+    "telephone": "",
+    "email": "sebrunnature@gmail.com",
+    "site": "https://run-nature.com/",
+    "premium": true,
+    "source": "Inscription",
+    "description": "Run Nature est un blog consacré au trail, à la course à pied, à l'ultra-trail et aux activités de plein air au Luxembourg et dans la Grande Région. Il rassemble des retours d'expérience de courses et d'entraînements, des parcours avec traces GPX, des tests de matériel, des articles sur la nutrition et l'entraînement, des idées de randonnée et des outils pour les coureurs. Le blog est tenu par un pratiquant passionné, qui n'est ni médecin du sport, ni diététicien, ni entraîneur diplômé. Les articles s'appuient sur des données réelles et sur le vécu de l'auteur, et distinguent son expérience personnelle de ce qui vaut pour tout le monde."
   }
 ]
