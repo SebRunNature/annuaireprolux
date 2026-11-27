@@ -58,3 +58,6 @@ details { border: 1px solid var(--bord); border-radius: 8px; padding: 10px 14px;
 summary { cursor: pointer; font-weight: 600; }
 details p { margin: 8px 0 0; }
 ol { padding-left: 22px; }
+main p, main details p, main li { text-align: justify; hyphens: auto; }
+main .band, main .band span, main .chips, main .meta, main .crumbs, main .small, main .hero p { text-align: center; hyphens: none; }
+main .plain li, main .tiles li, main .card h3 { text-align: left; hyphens: none; }
