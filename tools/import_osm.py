@@ -44,6 +44,9 @@ SINGULIER = {
     "fleuriste": "Fleuriste", "electronique": "Magasin d'électronique et informatique",
     "sport-loisirs": "Magasin de sport et loisirs", "librairie-cadeaux": "Librairie, papeterie ou cadeaux",
     "animaux": "Animalerie",
+    "restaurant": "Restaurant", "cafe": "Café ou bar", "hotel": "Hôtel ou hébergement",
+    "coiffeur": "Salon de coiffure", "institut-beaute": "Institut de beauté et bien-être",
+    "salle-sport": "Salle de sport ou piscine", "loisirs": "Lieu de loisirs",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
 SHOP = {
@@ -102,6 +105,21 @@ def classer(t):
         return ("sante", "autre-sante")
     if shop in SHOP_INV:
         return ("commerces", SHOP_INV[shop])
+    tour, leis = t.get("tourism", ""), t.get("leisure", "")
+    if am in ("restaurant", "fast_food", "food_court"):
+        return ("restauration", "restaurant")
+    if am in ("cafe", "bar", "pub", "biergarten", "ice_cream"):
+        return ("restauration", "cafe")
+    if tour in ("hotel", "guest_house", "hostel", "motel", "apartment", "chalet"):
+        return ("restauration", "hotel")
+    if shop == "hairdresser":
+        return ("beaute-loisirs", "coiffeur")
+    if shop in ("beauty", "nails", "massage", "tattoo", "cosmetics") or am == "spa" or leis == "sauna":
+        return ("beaute-loisirs", "institut-beaute")
+    if leis in ("fitness_centre", "sports_centre", "sports_hall", "swimming_pool") and t.get("name"):
+        return ("beaute-loisirs", "salle-sport")
+    if am in ("cinema", "theatre", "arts_centre", "nightclub", "casino") or leis in ("bowling_alley", "escape_game", "amusement_arcade", "miniature_golf", "water_park", "trampoline_park", "adult_gaming_centre", "dance") or tour in ("museum", "zoo", "theme_park", "aquarium", "attraction"):
+        return ("beaute-loisirs", "loisirs")
     return None
 
 

@@ -6292,7 +6292,8 @@
     "site": "https://www.cactus.lu/fr/nos-magasins/cactus-shoppi-esch-centre",
     "description": "Commerce d'alimentation à ESCH-SUR-ALZETTE.",
     "source": "OpenStreetMap",
-    "osm": "node/14344802937"
+    "osm": "node/14344802937",
+    "horaires": "Lun-Jeu,Sam 08:00-20:00 ; Ven 08:00-21:00 ; Dim 08:00-13:00"
   },
   {
     "nom": "Cactus",
