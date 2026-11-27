@@ -19,9 +19,11 @@
     }
   ],
   "legal": {
-    "editeur": "À COMPLÉTER",
-    "adresse": "À COMPLÉTER",
-    "contact": "rpvisibility@proton.me"
+    "editeur": "Agence R-P Visibility",
+    "editeur_url": "https://relationspubliquesagences.wordpress.com/",
+    "lieu": "Luxembourg",
+    "contact": "rpvisibility@proton.me",
+    "maj": "novembre 2026"
   },
   "seuil_pages": 3
 }

@@ -336,21 +336,45 @@ conformément aux recommandations de Google.</p>
                                 "Fiche Premium et article sponsorisé pour gagner en visibilité au Luxembourg.",
                                 "/visibilite/", corps))
 
-    # Pages légales (à compléter avant lancement)
-    legal = CFG["legal"]
+    # Pages légales
+    L = CFG["legal"]
+    editeur = f'<a href="{esc(L["editeur_url"])}" rel="noopener" target="_blank">{esc(L["editeur"])}</a>'
+    mail = f'<a href="mailto:{esc(L["contact"])}">{esc(L["contact"])}</a>'
     corps = f"""
 <h1>Mentions légales</h1>
-<p>Éditeur du site : {esc(legal['editeur'])}<br>Adresse : {esc(legal['adresse'])}<br>Contact : {esc(legal['contact'])}</p>
-<p>Hébergement : GitHub Pages (GitHub, Inc.).</p>
+<h2>1. Éditeur du site</h2>
+<p>Le site {esc(SITE_NAME)} est édité par {editeur}, depuis le {esc(L['lieu'])}. Pour toute question, écrivez à {mail}.</p>
+<h2>2. Hébergement</h2>
+<p>Le site est hébergé par GitHub Pages (GitHub, Inc., San Francisco, États-Unis).</p>
+<h2>3. Objet du site</h2>
+<p>{esc(SITE_NAME)} est un annuaire gratuit d'entreprises et de professionnels installés au Luxembourg. Il permet de les trouver par catégorie ou par commune et d'accéder à leurs coordonnées professionnelles.</p>
+<p>L'inscription d'une entreprise est gratuite. Des options payantes (fiche Premium, article sponsorisé) existent : les liens correspondants portent l'attribut <code>rel="sponsored"</code> et la fiche ou l'article est signalé comme tel. Un contenu sponsorisé n'est pas une recommandation de l'éditeur.</p>
+<h2>4. Exactitude des informations</h2>
+<p>Les fiches reprennent des informations professionnelles publiques (nom, adresse, téléphone, e-mail, site web) fournies par les entreprises ou collectées dans des sources publiques. L'éditeur s'efforce de les tenir à jour mais ne garantit ni leur exactitude ni leur exhaustivité. Une information erronée peut être corrigée ou supprimée sur simple demande à {mail}.</p>
+<h2>5. Propriété intellectuelle</h2>
+<p>La structure du site, ses textes et ses éléments graphiques appartiennent à l'éditeur, sauf mention contraire. Les noms, marques et coordonnées des entreprises référencées restent la propriété de leurs titulaires. Toute reproduction non autorisée est interdite ; une courte citation accompagnée d'un lien vers la page d'origine est tolérée.</p>
+<h2>6. Données personnelles et cookies</h2>
+<p>Le site n'utilise ni outil d'analyse d'audience, ni cookie publicitaire, ni cookie de suivi. Les détails figurent dans la <a href="{url('/confidentialite/')}">politique de confidentialité</a>.</p>
+<h2>7. Responsabilité</h2>
+<p>L'éditeur ne peut être tenu responsable des décisions prises à partir des informations de l'annuaire, ni du contenu des sites externes vers lesquels les fiches renvoient. Ces liens sont fournis à titre indicatif, sans contrôle de l'éditeur sur leur contenu.</p>
+<h2>8. Contact</h2>
+<p>{mail}</p>
+<p class="small">Dernière mise à jour : {esc(L['maj'])}.</p>
 """
-    ecrire("/mentions-legales/", page(f"Mentions légales – {SITE_NAME}", "Mentions légales.", "/mentions-legales/", corps, noindex=True))
+    ecrire("/mentions-legales/", page(f"Mentions légales – {SITE_NAME}", "Mentions légales de l'annuaire.", "/mentions-legales/", corps, noindex=True))
     corps = f"""
 <h1>Politique de confidentialité</h1>
-<p>Ce site publie des informations professionnelles (nom, adresse, téléphone, e-mail, site web) à des fins d'annuaire.</p>
-<p>Pour demander la correction ou la suppression d'une fiche, écrivez à {esc(legal['contact'])}. La demande est traitée sous quelques jours.</p>
-<p>Le site n'utilise pas de cookies de suivi.</p>
+<h2>Données publiées dans l'annuaire</h2>
+<p>Les fiches contiennent des informations professionnelles : nom de l'entreprise, adresse, téléphone, e-mail, site web et description. Elles sont publiées à des fins d'annuaire, à partir d'informations fournies par les entreprises ou issues de sources publiques.</p>
+<h2>Vos droits</h2>
+<p>Vous pouvez demander l'accès, la rectification ou la suppression d'une fiche, ou vous opposer à sa publication, à tout moment : écrivez à {mail}. La demande est traitée dans les meilleurs délais. Vous pouvez aussi saisir l'autorité de contrôle luxembourgeoise, la CNPD (Commission nationale pour la protection des données).</p>
+<h2>Formulaire d'inscription</h2>
+<p>Les informations saisies dans le formulaire « Ajouter votre entreprise » sont transmises par un service tiers de formulaires (Formspree) à l'éditeur. Elles servent uniquement à créer, modifier ou supprimer la fiche concernée et à répondre à votre demande.</p>
+<h2>Cookies et mesure d'audience</h2>
+<p>Le site n'utilise pas de cookies de suivi ni d'outil de mesure d'audience. Comme tout site web, il est hébergé par GitHub Pages, dont les serveurs peuvent enregistrer techniquement l'adresse IP des visiteurs.</p>
+<p class="small">Dernière mise à jour : {esc(L['maj'])}. Éditeur : {editeur}.</p>
 """
-    ecrire("/confidentialite/", page(f"Confidentialité – {SITE_NAME}", "Politique de confidentialité.", "/confidentialite/", corps, noindex=True))
+    ecrire("/confidentialite/", page(f"Confidentialité – {SITE_NAME}", "Politique de confidentialité de l'annuaire.", "/confidentialite/", corps, noindex=True))
 
     # sitemap + robots
     today = date.today().isoformat()
