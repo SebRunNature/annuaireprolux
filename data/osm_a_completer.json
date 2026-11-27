@@ -24588,5 +24588,1905 @@
     "metier": "hotel",
     "source": "OpenStreetMap",
     "osm": "relation/2339438"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+35240157250",
+    "site": "https://www.spuerkeess.lu/fr/particuliers/outils/notre-reseau-dagence/",
+    "horaires": "Lun-Ven 09:00-13:00",
+    "source": "OpenStreetMap",
+    "osm": "node/280667424"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 4242 2000",
+    "site": "https://www.bgl.lu/",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-16:30 sur rdv uniquement - nur ach Absprache ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/301505475"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/305758470"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/320931073"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/327394411"
+  },
+  {
+    "nom": "Banque Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/330462686"
+  },
+  {
+    "nom": "Caisse Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/359078814"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/391968266"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 07:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/462687624"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/571734142"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/717403939"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/892728445"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "nach Vereinbarung",
+    "source": "OpenStreetMap",
+    "osm": "node/1012470022"
+  },
+  {
+    "nom": "Raiffeisen Wasserbillig",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 2450 3850",
+    "email": "wasserbillig@raiffeisen.lu",
+    "site": "https://raiffeisen.lu/",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-16:30 ; jours fériés closed",
+    "source": "OpenStreetMap",
+    "osm": "node/1290081913"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1343321519"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1431860169"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1442394847"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1487684933"
+  },
+  {
+    "nom": "Caisse Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1495309845"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1495311572"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/1495316673"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 08:45-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/1622620713"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1662672882"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1662739062"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1699702299"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1727795127"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 10:00-20:00 ; Sam 09:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/1760783202"
+  },
+  {
+    "nom": "Fortrust",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/1824761101"
+  },
+  {
+    "nom": "Alternative Leaders",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1832458393"
+  },
+  {
+    "nom": "ICBC",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1832458408"
+  },
+  {
+    "nom": "Fuchs & Associés",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1832590902"
+  },
+  {
+    "nom": "Caixa Geral de Depositos",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329731"
+  },
+  {
+    "nom": "Cornèr Banque",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329733"
+  },
+  {
+    "nom": "Faltz & Felgen",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329743"
+  },
+  {
+    "nom": "Fidulux",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329744"
+  },
+  {
+    "nom": "Paris-Orléans",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329761"
+  },
+  {
+    "nom": "midas",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329771"
+  },
+  {
+    "nom": "Vpbank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329773"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2022240642"
+  },
+  {
+    "nom": "Bonn Steichen & Partners",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "site": "https://www.bsp.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2045158717"
+  },
+  {
+    "nom": "ABN AMRO Bank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848234"
+  },
+  {
+    "nom": "BGP Investment",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848238"
+  },
+  {
+    "nom": "Banque Havilland",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848247"
+  },
+  {
+    "nom": "Linklaters",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848264"
+  },
+  {
+    "nom": "RBS",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848273"
+  },
+  {
+    "nom": "Stibbe",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848279"
+  },
+  {
+    "nom": "TD Direct Investing",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2049848282"
+  },
+  {
+    "nom": "Foyer Lopes",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803064"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856614"
+  },
+  {
+    "nom": "Lalux Da Silva & Tavares",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856641"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2060843214"
+  },
+  {
+    "nom": "ERI",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2060843231"
+  },
+  {
+    "nom": "S-Bank",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2068366326"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940869"
+  },
+  {
+    "nom": "Banque Delen",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940870"
+  },
+  {
+    "nom": "Dierickx Leys Luxembourg",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940892"
+  },
+  {
+    "nom": "Interpolis",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940910"
+  },
+  {
+    "nom": "Proprietary Financial Models",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940937"
+  },
+  {
+    "nom": "UBP",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940956"
+  },
+  {
+    "nom": "Assurances Consulting",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359616"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359630"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359655"
+  },
+  {
+    "nom": "Prevalux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359723"
+  },
+  {
+    "nom": "étude avocats James Junker",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2128284168"
+  },
+  {
+    "nom": "BPI",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2138273371"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2140152393"
+  },
+  {
+    "nom": "Vivium",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2149813075"
+  },
+  {
+    "nom": "Ficel Group",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846698"
+  },
+  {
+    "nom": "Fiduciaires de l'Est",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846699"
+  },
+  {
+    "nom": "Foyer Haagen & Krée",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846703"
+  },
+  {
+    "nom": "Mangrove",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846731"
+  },
+  {
+    "nom": "Threadneedle",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846749"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351466"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-16:00",
+    "source": "OpenStreetMap",
+    "osm": "node/2195137816"
+  },
+  {
+    "nom": "Barclays",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2196231583"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2196231602"
+  },
+  {
+    "nom": "Fast Synergy",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2205034973"
+  },
+  {
+    "nom": "L'Ex N'Co",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2205034996"
+  },
+  {
+    "nom": "Maison de la Microfinance",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2205954285"
+  },
+  {
+    "nom": "Wildgen",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2205954315"
+  },
+  {
+    "nom": "AAA Consulting",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2206013151"
+  },
+  {
+    "nom": "Lalux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2218581186"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2231663833"
+  },
+  {
+    "nom": "Foyer Allner",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2272066735"
+  },
+  {
+    "nom": "d.law",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "site": "https://www.dlaw.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2272066749"
+  },
+  {
+    "nom": "Scripnitschenko",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2273120068"
+  },
+  {
+    "nom": "BCP",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2285239015"
+  },
+  {
+    "nom": "Foyer Carlo Jung",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2285589533"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2288153323"
+  },
+  {
+    "nom": "Kinetic Partners",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2288153329"
+  },
+  {
+    "nom": "Zharol",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2288153340"
+  },
+  {
+    "nom": "Raifeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2301075321"
+  },
+  {
+    "nom": "Baker & McKenzie",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2305504271"
+  },
+  {
+    "nom": "J. Chahine Capital",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2305504277"
+  },
+  {
+    "nom": "Sarasin",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2305504294"
+  },
+  {
+    "nom": "AFC Benelux",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019614"
+  },
+  {
+    "nom": "Carmignac",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019620"
+  },
+  {
+    "nom": "Finsev",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019626"
+  },
+  {
+    "nom": "Intertrust",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019635"
+  },
+  {
+    "nom": "NautaDutilh",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019642"
+  },
+  {
+    "nom": "Pierre Thielen Avocats",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019643"
+  },
+  {
+    "nom": "Stonehage",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019647"
+  },
+  {
+    "nom": "Swedbank'",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019648"
+  },
+  {
+    "nom": "United Trust",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019651"
+  },
+  {
+    "nom": "Caisse Médico-Chirurgicale Mutualiste",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+3524994451",
+    "site": "https://www.cmcm.lu/",
+    "horaires": "Lun-Ven 08:45-11:45, 13:00-17:00 ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026090"
+  },
+  {
+    "nom": "Credit Service",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026099"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026113"
+  },
+  {
+    "nom": "Vivium",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026155"
+  },
+  {
+    "nom": "Bureau Schneider",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2406454993"
+  },
+  {
+    "nom": "Ecovis",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/2406454998"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+3525027501",
+    "site": "https://www.foyer.lu/",
+    "horaires": "Lun-Ven 08:30-12:00, 13:00-17:00 ; Sam,Dim,jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/2406455001"
+  },
+  {
+    "nom": "Jawer",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2406455005"
+  },
+  {
+    "nom": "M Partners",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2406455007"
+  },
+  {
+    "nom": "Maitland",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2406455008"
+  },
+  {
+    "nom": "Atos",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327584"
+  },
+  {
+    "nom": "Caixa Geral de Depósitos",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327597"
+  },
+  {
+    "nom": "Createrra",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327605"
+  },
+  {
+    "nom": "FS Fiduciaire",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327609"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327611"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327612"
+  },
+  {
+    "nom": "Gestador",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327615"
+  },
+  {
+    "nom": "Augemus",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/2417887711"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/2873001079"
+  },
+  {
+    "nom": "Gesondheetskees",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+352 58 80 04",
+    "email": "cns@secu.lu",
+    "site": "http://www.cns.lu/",
+    "horaires": "Lun-Ven 08:30-11:30, 13:00-16:00",
+    "source": "OpenStreetMap",
+    "osm": "node/3020376620"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 4242 2000",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-16:30 sur rdv - nach Absprache ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/3050649446"
+  },
+  {
+    "nom": "Rechtsanwalt Thewes & Reuter",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "telephone": "+352 226622-1",
+    "site": "http://www.thewes-reuter.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/3188530707"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "site": "https://www.raiffeisen.lu/",
+    "horaires": "on appointment",
+    "source": "OpenStreetMap",
+    "osm": "node/3642132008"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 08:45-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/3701575583"
+  },
+  {
+    "nom": "ING",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/3901051072"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/3901068065"
+  },
+  {
+    "nom": "LaLux Assurances Jacoby et Wampach",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "site": "http://www.versecherung.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/4287118836"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/4623397590"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 08:00-19:00",
+    "source": "OpenStreetMap",
+    "osm": "node/4630389315"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/4705184090"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-16:30",
+    "source": "OpenStreetMap",
+    "osm": "node/4892325155"
+  },
+  {
+    "nom": "Assurances Goedert et Ginepri",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+352 78 03 33",
+    "horaires": "Lun-Ven 08:00-12:00, 13:00-17:00 ; Sam 08:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/4982231662"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "email": "braquet@agencefoyer.lu",
+    "site": "https://www.foyer.lu/en/insurance-agents/esch-sur-alzette/belvaux/braquet-claude",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/4998572513"
+  },
+  {
+    "nom": "Lalux Agence générale Gabriel Weber",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "horaires": "Lun-Sam 07:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5237633021"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/5245758585"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 24 59 67 01",
+    "email": "contact@bil.com",
+    "site": "https://www.bil.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/5299503285"
+  },
+  {
+    "nom": "One Life",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/5972915095"
+  },
+  {
+    "nom": "Catella Bank S.A.",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/5972915096"
+  },
+  {
+    "nom": "Fiscogest S.à r.l.",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "telephone": "+352 26 65 761",
+    "site": "http://www.fiscogest.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/6048604240"
+  },
+  {
+    "nom": "B&B",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/6182409753"
+  },
+  {
+    "nom": "Finpart",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/6189833685"
+  },
+  {
+    "nom": "FIACCOM",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "site": "https://www.fiaccom.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6189833686"
+  },
+  {
+    "nom": "Assag",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "site": "https://www.asaag.eu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6189871486"
+  },
+  {
+    "nom": "Etude Edith Reiff",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/6813333180"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/7233766705"
+  },
+  {
+    "nom": "Lalux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "horaires": "Lun-Ven 09:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/7358498995"
+  },
+  {
+    "nom": "Neofisc",
+    "groupe": "droit-finance",
+    "metier": "fiduciaire",
+    "source": "OpenStreetMap",
+    "osm": "node/7801055186"
+  },
+  {
+    "nom": "Agence Générale Lalux Stelmes & Fils",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "site": "https://assurances-stelmes.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/7847554296"
+  },
+  {
+    "nom": "LaLux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/7892503897"
+  },
+  {
+    "nom": "Quintet Private Bank",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8075171280"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "4015-9200",
+    "horaires": "Lun-Ven 09:00-13:00",
+    "source": "OpenStreetMap",
+    "osm": "node/8078313789"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 40 15 91 90",
+    "site": "https://www.spuerkeess.lu/en/private-customers/tools/our-branch-network/",
+    "horaires": "Lun-Ven 09:00-13:00",
+    "source": "OpenStreetMap",
+    "osm": "node/8083757186"
+  },
+  {
+    "nom": "Foyer Pettinger & Savic",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/8167273843"
+  },
+  {
+    "nom": "Agence Foyer - Oberweis & Stojadinovic",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/8329024119"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8544118689"
+  },
+  {
+    "nom": "Banques Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8569464576"
+  },
+  {
+    "nom": "Fiduciaire Romain Zimmer",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "node/8593047438"
+  },
+  {
+    "nom": "Crédito Agricola",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8593269992"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8594842445"
+  },
+  {
+    "nom": "GSLP",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/8599715275"
+  },
+  {
+    "nom": "CNS",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+352 27 57 1",
+    "source": "OpenStreetMap",
+    "osm": "node/8614421421"
+  },
+  {
+    "nom": "Banque Popularie",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/8618244325"
+  },
+  {
+    "nom": "Mangrove",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/8618816226"
+  },
+  {
+    "nom": "Reim; Orange Field Group; Saltgate; Thomson Reuters; NBIM; LLoyds TSB; Clerical Medical; AKD Luxembourg",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/8618816278"
+  },
+  {
+    "nom": "Kaufhold Ossola & Associés",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/8633086985"
+  },
+  {
+    "nom": "Mediobanca",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/8633089820"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/8638462445"
+  },
+  {
+    "nom": "Lecuit Marc",
+    "groupe": "droit-finance",
+    "metier": "notaire",
+    "adresse": "Rue Wenzel",
+    "telephone": "+352 32020201",
+    "email": "lecuitm@pt.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/8950895288"
+  },
+  {
+    "nom": "Mirielle Hames",
+    "groupe": "droit-finance",
+    "metier": "notaire",
+    "telephone": "+352 329817-1",
+    "email": "contact@notairehames.lu",
+    "site": "https://notairehames.lu/",
+    "horaires": "Lun-Ven 08:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/8950895289"
+  },
+  {
+    "nom": "Banque Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-16:30",
+    "source": "OpenStreetMap",
+    "osm": "node/8980139519"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-12:00, Lun-Ven 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/8980139551"
+  },
+  {
+    "nom": "Reviva Capital",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "site": "https://www.revivacapital.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/9091753280"
+  },
+  {
+    "nom": "Nordea",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/9091753281"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "horaires": "Lun-Ven 09:00-12:00, 14:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/9106100263"
+  },
+  {
+    "nom": "Brasseur & Kasel",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/9259048925"
+  },
+  {
+    "nom": "Lalux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/9259048928"
+  },
+  {
+    "nom": "BCP",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 40 21 21 4200",
+    "email": "agence.ettelbruck@banquebcp.lu",
+    "horaires": "Mar-Ven 08:45-11:45, 13:30-17:30 ; Sam 08:45-11:45, 13:30-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/9491023959"
+  },
+  {
+    "nom": "Agence Lacentra",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/9631023423"
+  },
+  {
+    "nom": "Société Générale Bank & Trust",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/9709045413"
+  },
+  {
+    "nom": "Alves Jean",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "site": "https://alves-jean.foyer.lu/de",
+    "source": "OpenStreetMap",
+    "osm": "node/9809769791"
+  },
+  {
+    "nom": "Henri Braun",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "site": "https://3255.foyer.lu",
+    "horaires": "Lun-Ven 09:00-12:00, 14:00-18:00 ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/10292030535"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/10746597801"
+  },
+  {
+    "nom": "Engel Guy",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "telephone": "+352 44 93 28",
+    "site": "https://huissier.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/10873099680"
+  },
+  {
+    "nom": "Allen & Overy",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "source": "OpenStreetMap",
+    "osm": "node/11109119428"
+  },
+  {
+    "nom": "Foyer Hellers Antoinette",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "site": "https://hellers-antoinette.foyer.lu",
+    "horaires": "Lun-Ven 08:30-17:30",
+    "source": "OpenStreetMap",
+    "osm": "node/11177273437"
+  },
+  {
+    "nom": "SG Group",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/11302748666"
+  },
+  {
+    "nom": "Cardoso Salgado",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/11352161434"
+  },
+  {
+    "nom": "Crédit Agricole Vie",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/11519842645"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "horaires": "Lun-Ven 08:30-12:00, 13:30-17:30",
+    "source": "OpenStreetMap",
+    "osm": "node/12047967397"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/12092205996"
+  },
+  {
+    "nom": "Foyer Equidem",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/12111605810"
+  },
+  {
+    "nom": "Edmond de Rothschild Europe",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/12169369301"
+  },
+  {
+    "nom": "BOC",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/12248355645"
+  },
+  {
+    "nom": "L.M.I. Reconstruction Luxembourg Sàrl Sàrl",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "telephone": "+352 26 48 24 62",
+    "source": "OpenStreetMap",
+    "osm": "node/12336732262"
+  },
+  {
+    "nom": "Avencor",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "adresse": "Boulevard Grande-Duchesse Charlotte",
+    "source": "OpenStreetMap",
+    "osm": "node/12394119384"
+  },
+  {
+    "nom": "Foyer",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/12616603048"
+  },
+  {
+    "nom": "lalux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/12735262055"
+  },
+  {
+    "nom": "In Extenso Belux S.A.",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "telephone": "+352 23 65 18 88",
+    "site": "https://www.inextenso-belux.com/",
+    "horaires": "Lun-Ven 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/12833702901"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/12985194189"
+  },
+  {
+    "nom": "Agence eSanté",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "telephone": "+352 2712501833",
+    "site": "https://www.esante.lu/portal/",
+    "source": "OpenStreetMap",
+    "osm": "node/13266883462"
+  },
+  {
+    "nom": "Ewers",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/13531975327"
+  },
+  {
+    "nom": "HB Fiduciaire",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "telephone": "(+352) 26 97 68 07",
+    "email": "hello@hbgf.lu",
+    "site": "https://www.hbgf.lu/",
+    "horaires": "Lun-Ven 08:30-12:00, 13:00-16:30",
+    "source": "OpenStreetMap",
+    "osm": "node/13898202066"
+  },
+  {
+    "nom": "Baloise - Assur Omnium SA",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "horaires": "Lun-Ven 09:00-12:00, 14:00-17:30",
+    "source": "OpenStreetMap",
+    "osm": "node/13905437030"
+  },
+  {
+    "nom": "Gefco",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "telephone": "(+352) 36 00 41",
+    "site": "https://www.fiduciaire.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13912932136"
+  },
+  {
+    "nom": "Wüstenrot Bausparkasse SA",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/13917514895"
+  },
+  {
+    "nom": "Artemon Services",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "node/13917622705"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "node/13985494444"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/14078520388"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 09:00-12:00, 13:30-16:30",
+    "source": "OpenStreetMap",
+    "osm": "node/14078587724"
+  },
+  {
+    "nom": "Axa Kayl",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/14308635977"
+  },
+  {
+    "nom": "Ferreira",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/14400073456"
+  },
+  {
+    "nom": "Varandas",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "node/14400073459"
+  },
+  {
+    "nom": "Deutsche Bank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/48964157"
+  },
+  {
+    "nom": "HSH Nordbank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/48992139"
+  },
+  {
+    "nom": "Lycée technique pour professions de soin",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/52347149"
+  },
+  {
+    "nom": "Arendt",
+    "groupe": "droit-finance",
+    "metier": "avocat",
+    "telephone": "+352 40 78 78 1",
+    "email": "info@arendt.com",
+    "site": "https://arendt.com",
+    "source": "OpenStreetMap",
+    "osm": "way/57823107"
+  },
+  {
+    "nom": "Banque de Luxembourg",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/94661933"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 40 15 91 20",
+    "email": "age.mbl@spuerkeess.lu",
+    "horaires": "Lun-Ven 09:00-17:00 ; Sam-Dim fermé",
+    "source": "OpenStreetMap",
+    "osm": "way/95511908"
+  },
+  {
+    "nom": "Quilvest Banque Privée",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "horaires": "Lun-Ven 08:30-16:30",
+    "source": "OpenStreetMap",
+    "osm": "way/97672784"
+  },
+  {
+    "nom": "Argentabank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/157773918"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/157773919"
+  },
+  {
+    "nom": "Banque Invik",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/157773921"
+  },
+  {
+    "nom": "ICBC",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/157773976"
+  },
+  {
+    "nom": "Bank of China",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/157773997"
+  },
+  {
+    "nom": "Raiffeisen",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/158428151"
+  },
+  {
+    "nom": "Inter Invest, Bernard & Associés, BA Tax Accountants",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/159598092"
+  },
+  {
+    "nom": "Vitislife; Puilaetco Dewaay",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/161482993"
+  },
+  {
+    "nom": "Even Management",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/161685711"
+  },
+  {
+    "nom": "Fiducial",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/161818008"
+  },
+  {
+    "nom": "Avega",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/161912540"
+  },
+  {
+    "nom": "Shaftesbury",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/163755731"
+  },
+  {
+    "nom": "EFR",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/164194808"
+  },
+  {
+    "nom": "Mutualité des PME, Fiduciaire des PME, Auxiliaire des PME",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "way/164701294"
+  },
+  {
+    "nom": "YourTACS",
+    "groupe": "droit-finance",
+    "metier": "comptable",
+    "source": "OpenStreetMap",
+    "osm": "way/168213324"
+  },
+  {
+    "nom": "Banque de Luxembourg",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 08:30-17:00",
+    "source": "OpenStreetMap",
+    "osm": "way/169622599"
+  },
+  {
+    "nom": "Centuria SA",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/171465237"
+  },
+  {
+    "nom": "Creutz & Partners",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/171829859"
+  },
+  {
+    "nom": "Banque de Luxembourg Investments",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/172333025"
+  },
+  {
+    "nom": "CVC",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/172348292"
+  },
+  {
+    "nom": "Intesa Sanpaolo / Société Européenne de Banque",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/172348293"
+  },
+  {
+    "nom": "BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/173161174"
+  },
+  {
+    "nom": "BIL",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "horaires": "Lun-Ven 08:30-17:30",
+    "source": "OpenStreetMap",
+    "osm": "way/174008807"
+  },
+  {
+    "nom": "Danske Bank",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/195664909"
+  },
+  {
+    "nom": "Credem",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "way/211819116"
+  },
+  {
+    "nom": "LaLux",
+    "groupe": "droit-finance",
+    "metier": "assurance",
+    "source": "OpenStreetMap",
+    "osm": "way/220297203"
+  },
+  {
+    "nom": "Société Générale",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/229706520"
+  },
+  {
+    "nom": "Banque BCEE",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/257523373"
+  },
+  {
+    "nom": "BGL BNP Paribas",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "source": "OpenStreetMap",
+    "osm": "way/1221034473"
+  },
+  {
+    "nom": "EFG Bank (Luxembourg) S.A",
+    "groupe": "droit-finance",
+    "metier": "banque",
+    "telephone": "+352 26 454 1",
+    "source": "OpenStreetMap",
+    "osm": "way/1286773294"
+  },
+  {
+    "nom": "Banque de Luxembourg",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "relation/1950940"
+  },
+  {
+    "nom": "Clearstream",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "relation/2632395"
+  },
+  {
+    "nom": "Clearstream",
+    "groupe": "droit-finance",
+    "metier": "conseil-financier",
+    "source": "OpenStreetMap",
+    "osm": "relation/2632396"
   }
 ]

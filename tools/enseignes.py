@@ -9,6 +9,7 @@ dans les données. Aucune adresse ni aucun horaire de succursale n'est conservé
 Usage direct (applique la règle à data/entreprises.json) : python3 -I tools/enseignes.py
 Utilisé aussi par tools/import_osm.py, pour qu'un nouvel import ne ramène pas les succursales.
 """
+import collections
 import json
 import os
 import re
@@ -45,6 +46,15 @@ ENSEIGNES = [
     ("Devred 1902", [r"devred 1902"], ["devred.com"]),
     ("Kinepolis", [r"kinepolis.*", r"kinepolis kirchberg"], ["kinepolis.lu"]),
     ("Basic-Fit", [r"basic fit"], []),
+    ("BCEE", [r"bcee.*", r"spuerkeess.*", r"banque et caisse d epargne de l etat.*"], ["spuerkeess.lu", "spuerkeess.lu"]),
+    ("BGL BNP Paribas", [r"bgl.*", r"bnp paribas.*", r"bnp"], ["bgl.lu"]),
+    ("BIL", [r"bil", r"banque internationale a luxembourg"], ["bil.lu"]),
+    ("ING", [r"ing", r"ing luxembourg"], ["ing.lu"]),
+    ("Raiffeisen", [r"raiffeiss?en.*", r"banque raiffeiss?en.*"], ["raiffeisen.lu"]),
+    ("BCP", [r"bcp", r"banque bcp", r"banque commerciale du marche commun"], ["banquebcp.lu"]),
+    ("Dexia", [r"dexia", r"banque dexia"], []),
+    ("Lalux", [r"lalux.*"], ["lalux.lu"]),
+    ("Foyer", [r"foyer", r"foyer assurances"], ["foyer.lu"]),
     ("Ketterthill", [r"ketterthill"], ["ketterthill.lu"]),
     ("BioneXt", [r"bionext"], ["bionext.lu"]),
     ("Laboratoires Réunis", [r"laboratoires reunis"], ["labo.lu"]),
@@ -101,7 +111,7 @@ def regrouper(fiches, afficher=print):
     par_dom = {}
     for f in eligibles:
         d = domaine(f.get("site"))
-        if d and d not in PORTAILS and not (f.get("enseigne") or cle_explicite(f)):
+        if d and d not in PORTAILS and f["groupe"] in ("commerces", "restauration") and not (f.get("enseigne") or cle_explicite(f)):
             par_dom.setdefault(d, []).append(f)
     for d, l in par_dom.items():
         if "d:" + d in groupes:
@@ -115,6 +125,8 @@ def regrouper(fiches, afficher=print):
             continue
         membres.sort(key=lambda m: (m["ville"] != "Luxembourg", -len(m)))
         base = dict(membres[0])
+        # métier du réseau = le plus fréquent parmi ses fiches (évite qu'une succursale mal classée donne son métier)
+        (base["groupe"], base["metier"]), _ = collections.Counter((m["groupe"], m["metier"]) for m in membres).most_common(1)[0]
         # contact général uniquement : un e-mail ou un téléphone présent dans au moins 2 succursales ;
         # sinon on n'affiche rien (le numéro d'une succursale n'est pas le contact de l'enseigne)
         for k in ("telephone", "email"):
