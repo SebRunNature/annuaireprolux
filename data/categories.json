@@ -91,7 +91,12 @@
       "garage": "Garages",
       "taxi": "Taxis",
       "demenagement": "Déménagement",
-      "location-vehicules": "Location de véhicules"
+      "location-vehicules": "Location de véhicules",
+      "concessionnaire": "Concessionnaires et vente de véhicules",
+      "pieces-auto": "Pièces et accessoires auto",
+      "auto-ecole": "Auto-écoles",
+      "lavage-auto": "Lavage auto",
+      "controle-technique": "Contrôle technique"
     }
   },
   "services-entreprises": {

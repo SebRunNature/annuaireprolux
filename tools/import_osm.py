@@ -55,6 +55,9 @@ SINGULIER = {
     "agence-immobiliere": "Agence immobilière", "syndic": "Syndic de copropriété", "promoteur": "Promoteur immobilier",
     "services-informatiques": "Entreprise de services informatiques", "telecom": "Télécoms et réseaux",
     "depannage-informatique": "Dépannage informatique", "agence-web": "Agence web", "marketing": "Agence de marketing et communication",
+    "garage": "Garage", "concessionnaire": "Concessionnaire", "pieces-auto": "Magasin de pièces auto", "auto-ecole": "Auto-école",
+    "lavage-auto": "Station de lavage auto", "controle-technique": "Centre de contrôle technique", "taxi": "Taxi",
+    "demenagement": "Entreprise de déménagement", "location-vehicules": "Location de véhicules",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
 SHOP = {
@@ -111,6 +114,25 @@ def classer(t):
     if hc in ("midwife", "podiatrist", "medical_imaging", "audiologist", "speech_therapist",
               "occupational_therapist", "nutrition_counselling", "osteopath", "chiropractor"):
         return ("sante", "autre-sante")
+    off_ = t.get("office", "")
+    if shop in ("car_repair", "tyres") or t.get("craft") == "car_repair" or am == "car_repair":
+        return ("auto-transport", "garage")
+    if shop in ("car", "motorcycle", "caravan", "truck", "van"):
+        return ("auto-transport", "concessionnaire")
+    if shop in ("car_parts", "motorcycle_parts"):
+        return ("auto-transport", "pieces-auto")
+    if am == "driving_school":
+        return ("auto-transport", "auto-ecole")
+    if am == "car_wash":
+        return ("auto-transport", "lavage-auto")
+    if am == "vehicle_inspection":
+        return ("auto-transport", "controle-technique")
+    if am == "car_rental" or off_ == "car_rental":
+        return ("auto-transport", "location-vehicules")
+    if am == "taxi" or off_ == "taxi":
+        return ("auto-transport", "taxi")
+    if off_ == "moving_company" or shop == "moving_company":
+        return ("auto-transport", "demenagement")
     if shop in SHOP_INV:
         return ("commerces", SHOP_INV[shop])
     tour, leis = t.get("tourism", ""), t.get("leisure", "")

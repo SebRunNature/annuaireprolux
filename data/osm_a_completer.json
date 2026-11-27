@@ -27531,5 +27531,1272 @@
     "horaires": "Lun-Ven 09:00-18:00, Sam Sur Rendez-Vous ; jours fériés fermé",
     "source": "OpenStreetMap",
     "osm": "way/1286685556"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "Lun-Dim 06:00-22:00",
+    "source": "OpenStreetMap",
+    "osm": "node/323235149"
+  },
+  {
+    "nom": "Esso",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/328848859"
+  },
+  {
+    "nom": "Goedert",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/678937606"
+  },
+  {
+    "nom": "S-Car",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/759567848"
+  },
+  {
+    "nom": "Centre de Formation pour Conducteurs",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "site": "http://www.cfc.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/944647005"
+  },
+  {
+    "nom": "Car Wash - Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/1400931593"
+  },
+  {
+    "nom": "Car Wash - Q8",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/1400931690"
+  },
+  {
+    "nom": "Best Wash Dudelange",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/1478022261"
+  },
+  {
+    "nom": "Bestwash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/1511406066"
+  },
+  {
+    "nom": "Rennel",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "telephone": "+352 23 69 88 11",
+    "source": "OpenStreetMap",
+    "osm": "node/1662133458"
+  },
+  {
+    "nom": "Merbag (Mercedes)",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/1678061600"
+  },
+  {
+    "nom": "R.C. Pneus",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/1709278729"
+  },
+  {
+    "nom": "Toyota CAR Avenue Foetz",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/1752338602"
+  },
+  {
+    "nom": "Auto École Bertrand",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "node/1845423504"
+  },
+  {
+    "nom": "Autotax Exclusive Automobiles",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/1939705665"
+  },
+  {
+    "nom": "Pneus Center",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "telephone": "+352 26 67 21 02",
+    "email": "info@pneucenter.lu",
+    "site": "https://www.pneus-center.lu/",
+    "horaires": "Lun-Ven 08:00-18:00 ; Sam 08:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/1960336948"
+  },
+  {
+    "nom": "Schroeder Garage",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803065"
+  },
+  {
+    "nom": "Mathieu Drive & Fun",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803074"
+  },
+  {
+    "nom": "Toni",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803100"
+  },
+  {
+    "nom": "Auto École Weis",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "telephone": "49 22 20 / 691 147 521",
+    "site": "https://www.autoecole-weis.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856612"
+  },
+  {
+    "nom": "ADA",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940865"
+  },
+  {
+    "nom": "Zenner",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "telephone": "+352 596 596",
+    "site": "http://www.meng-fahrschoul.net/",
+    "horaires": "Lun-Mer 18:30-20:30",
+    "source": "OpenStreetMap",
+    "osm": "node/2132810818"
+  },
+  {
+    "nom": "Koken Europe",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368054"
+  },
+  {
+    "nom": "Pneu Center Roude Leiw",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368057"
+  },
+  {
+    "nom": "APL Autoparts",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351450"
+  },
+  {
+    "nom": "Autofecc",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351456"
+  },
+  {
+    "nom": "Auto-École Toni",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "horaires": "Mar,Mer,Ven 18:00-21:00",
+    "source": "OpenStreetMap",
+    "osm": "node/2285239010"
+  },
+  {
+    "nom": "Rodighiero Pneus",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026143"
+  },
+  {
+    "nom": "Moto Land",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026145"
+  },
+  {
+    "nom": "Carshine",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327599"
+  },
+  {
+    "nom": "ACP Garage",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2452641860"
+  },
+  {
+    "nom": "Garage Réiserbann",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2459019555"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "Lun-Ven 06:00-22:00 ; Sam,Dim 07:00-22:00",
+    "source": "OpenStreetMap",
+    "osm": "node/2840281001"
+  },
+  {
+    "nom": "Fiat Professional",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2859624336"
+  },
+  {
+    "nom": "Francorchamps Motors",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/2940444990"
+  },
+  {
+    "nom": "Garage-Carrosserie Grondhaff",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/2984341878"
+  },
+  {
+    "nom": "Garage Repacom",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/3050499932"
+  },
+  {
+    "nom": "Goedert car wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/3051937296"
+  },
+  {
+    "nom": "Honda",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/3082453835"
+  },
+  {
+    "nom": "Concret Cars",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/3240707132"
+  },
+  {
+    "nom": "Autocenter Goedert",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/3803152070"
+  },
+  {
+    "nom": "EP Vehicles",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/4639381555"
+  },
+  {
+    "nom": "Jaguar and Landrover",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/4715205428"
+  },
+  {
+    "nom": "Gulf Truck Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/5003346630"
+  },
+  {
+    "nom": "CARWASH",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "Lun,Mar 09:00-18:00 ; Mer-Sam 09:00-19:00 ; Dim 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5003377531"
+  },
+  {
+    "nom": "New Autobox",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "site": "https://garageboewer.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/5003377723"
+  },
+  {
+    "nom": "Carrosserie NCM Sàrl",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/5037812524"
+  },
+  {
+    "nom": "Theves Sàrl",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/5149269826"
+  },
+  {
+    "nom": "José Alves",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/5167125221"
+  },
+  {
+    "nom": "Pneu Gloden",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "telephone": "+35223664395",
+    "site": "https://www.gloden.lu/",
+    "horaires": "Lun-Ven 08:00-12:00, 13:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5222887116"
+  },
+  {
+    "nom": "SIXT",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "telephone": "+352 24647033",
+    "site": "https://www.sixt.com/",
+    "horaires": "Lun-Ven 08:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5394477860"
+  },
+  {
+    "nom": "SIXT",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/5399428023"
+  },
+  {
+    "nom": "Garage Simon",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/5773201957"
+  },
+  {
+    "nom": "Carland",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "horaires": "Mar-Ven 09:00-12:00, 14:00-17:00 ; Sam-Lun fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/5773238253"
+  },
+  {
+    "nom": "Luxi's Waschsalon",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/5776782453"
+  },
+  {
+    "nom": "Kollektors S.A.",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "site": "https://kollektors.eu",
+    "source": "OpenStreetMap",
+    "osm": "node/5861166959"
+  },
+  {
+    "nom": "Autopolis Pit Stop",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/6477401925"
+  },
+  {
+    "nom": "CarReprise",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/6647109436"
+  },
+  {
+    "nom": "Auto Moto École",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "telephone": "+352 621 522 914",
+    "email": "info@autoecoleclochedor.lu",
+    "site": "https://www.autoecoleclochedor.lu",
+    "horaires": "Lun 17:00-18:30 ; Mar 14:00-18:30 ; Mer 08:00-12:00 ; Jeu 13:00-16:30 ; Ven 12:00-14:30 ; Sam-Dim fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/7017187329"
+  },
+  {
+    "nom": "Avis",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/7144877510"
+  },
+  {
+    "nom": "Rotyre",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/7145790644"
+  },
+  {
+    "nom": "Rodighiero Pneus s.à.r.l.",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/7812819047"
+  },
+  {
+    "nom": "Autodis",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/7908206270"
+  },
+  {
+    "nom": "Pneus Goedert",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "horaires": "Jan-Dec: Lun-Ven 08:00-12:00, 13:00-17:00 ; Jan-Dec: Sam 08:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/7982641703"
+  },
+  {
+    "nom": "Garage Auto-Tec sàrl",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/7992464791"
+  },
+  {
+    "nom": "Friden",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "node/8593047428"
+  },
+  {
+    "nom": "CB Events Racing",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8640103403"
+  },
+  {
+    "nom": "Norbert Simon",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8742551517"
+  },
+  {
+    "nom": "Renault Trucks",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8744857458"
+  },
+  {
+    "nom": "Stoll Trucks Renting",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8744857459"
+  },
+  {
+    "nom": "Pneus Graas",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "site": "https://graas.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8744857809"
+  },
+  {
+    "nom": "Pneus Mreches",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8745246071"
+  },
+  {
+    "nom": "Déménagements Nadin",
+    "groupe": "auto-transport",
+    "metier": "demenagement",
+    "telephone": "+352 39 80 48",
+    "site": "https://www.nadin.eu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8748529074"
+  },
+  {
+    "nom": "Garage Mecanlux",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8757573752"
+  },
+  {
+    "nom": "Auto Discount Sport",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8771214861"
+  },
+  {
+    "nom": "Autofactoria",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8771215148"
+  },
+  {
+    "nom": "Auto Prestige",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8771215192"
+  },
+  {
+    "nom": "Rodighiero Pneus",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8771215216"
+  },
+  {
+    "nom": "Belux Automobiles",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8771215217"
+  },
+  {
+    "nom": "Auto Moto Foetz",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/8771215218"
+  },
+  {
+    "nom": "A.M. Pneus-Discount",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8771576413"
+  },
+  {
+    "nom": "Casa Mobile",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734345"
+  },
+  {
+    "nom": "Luxautos",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "site": "https://www.luxauto.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8775734353"
+  },
+  {
+    "nom": "Volvo",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/8995600795"
+  },
+  {
+    "nom": "Leka Pneus",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "telephone": "+352 26785820",
+    "site": "http://www.leka-pneus.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/9689146471"
+  },
+  {
+    "nom": "Shell",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/9951446790"
+  },
+  {
+    "nom": "Auto-Moto Bormann",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "site": "http://bormann.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/11023194526"
+  },
+  {
+    "nom": "Shell",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "Lun-Ven 06:00-21:00 ; Sam 07:00-21:00 ; Dim 08:00-20:00",
+    "source": "OpenStreetMap",
+    "osm": "node/11507033344"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/11507033346"
+  },
+  {
+    "nom": "budget",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/11518538280"
+  },
+  {
+    "nom": "enterprise",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/11518538281"
+  },
+  {
+    "nom": "Thrifty",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/11518538283"
+  },
+  {
+    "nom": "Hertz",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "node/11518538284"
+  },
+  {
+    "nom": "FF Auto",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/11819727060"
+  },
+  {
+    "nom": "Zimmer Motor Solutions",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/11819727062"
+  },
+  {
+    "nom": "DM's Garage Autowerkstatt",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/11835702540"
+  },
+  {
+    "nom": "Luximmatriculation",
+    "groupe": "auto-transport",
+    "metier": "pieces-auto",
+    "site": "https://luxsignalisation.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/11921679900"
+  },
+  {
+    "nom": "Blom",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/12163277916"
+  },
+  {
+    "nom": "Dacia",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/12241969388"
+  },
+  {
+    "nom": "LuxMotor",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/12819096344"
+  },
+  {
+    "nom": "Best Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/12895293803"
+  },
+  {
+    "nom": "Depalux - Dépannage & Remorquage",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "node/13037935950"
+  },
+  {
+    "nom": "Nordpneus",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "site": "https://www.nordpneus.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/13311287889"
+  },
+  {
+    "nom": "Auto-École Bertrand",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "node/13539289765"
+  },
+  {
+    "nom": "MirKaafenAerenAuto",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "node/13785289395"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "node/14397029969"
+  },
+  {
+    "nom": "Station de contrôle Esch-sur-Alzette",
+    "groupe": "auto-transport",
+    "metier": "controle-technique",
+    "site": "https://www.snct.lu/",
+    "horaires": "Lun-Ven 07:00-19:00 ; Sam 07:00-13:00",
+    "source": "OpenStreetMap",
+    "osm": "way/25646928"
+  },
+  {
+    "nom": "Lentz",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/29381087"
+  },
+  {
+    "nom": "Goedert",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/36489478"
+  },
+  {
+    "nom": "Garage de l'Est",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/37662911"
+  },
+  {
+    "nom": "Luxair Ground Equipment Shop",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/41953774"
+  },
+  {
+    "nom": "Garage A. Pauly-Losch",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "site": "https://garage-pauly.lu",
+    "source": "OpenStreetMap",
+    "osm": "way/52347132"
+  },
+  {
+    "nom": "Carosserie Mühlen et Fils",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/79257908"
+  },
+  {
+    "nom": "Pneus Delta",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/80334394"
+  },
+  {
+    "nom": "Porsche Center",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/93923340"
+  },
+  {
+    "nom": "Porsche Center",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/93923348"
+  },
+  {
+    "nom": "Aston Martin",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/95937591"
+  },
+  {
+    "nom": "Mecanauto",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/96537673"
+  },
+  {
+    "nom": "Autocenter Goedert",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "horaires": "Lun-Ven 07:30-18:30 ; Sam 09:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "way/111706047"
+  },
+  {
+    "nom": "Škoda",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/120512644"
+  },
+  {
+    "nom": "Seat",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/120512664"
+  },
+  {
+    "nom": "Garage Strotz",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/129252429"
+  },
+  {
+    "nom": "Garage J. Hermes",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/137714859"
+  },
+  {
+    "nom": "FM Auto",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/150145088"
+  },
+  {
+    "nom": "IMO Car Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/164331957"
+  },
+  {
+    "nom": "Garage Marchione",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/164340678"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "Lun-Dim 07:00-22:00",
+    "source": "OpenStreetMap",
+    "osm": "way/172855765"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/175224043"
+  },
+  {
+    "nom": "Harley-Davidson",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/194000902"
+  },
+  {
+    "nom": "Volvo",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/195207738"
+  },
+  {
+    "nom": "Land Rover",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/195207745"
+  },
+  {
+    "nom": "Volvo",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/195207747"
+  },
+  {
+    "nom": "Car-center",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/196797947"
+  },
+  {
+    "nom": "Athlon",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "way/227441595"
+  },
+  {
+    "nom": "Intralux",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "source": "OpenStreetMap",
+    "osm": "way/227441600"
+  },
+  {
+    "nom": "Autocenter Goedert",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/227441670"
+  },
+  {
+    "nom": "Proxy Market car wash Best Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/228337252"
+  },
+  {
+    "nom": "Luxair Ground Equipment Shop (Nordgarage)",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/246762724"
+  },
+  {
+    "nom": "Scania",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/253206808"
+  },
+  {
+    "nom": "Young drivers training center",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "way/258517019"
+  },
+  {
+    "nom": "Garage Rech",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/262236769"
+  },
+  {
+    "nom": "Pepin",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/266531698"
+  },
+  {
+    "nom": "Car Wash Esso",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/280420437"
+  },
+  {
+    "nom": "Fraiklin",
+    "groupe": "auto-transport",
+    "metier": "location-vehicules",
+    "email": "u554@fraikin.lu",
+    "site": "https://www.fraikin.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/281296418"
+  },
+  {
+    "nom": "Volvo",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/290214081"
+  },
+  {
+    "nom": "Merbag (Mercedes)",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "way/298791771"
+  },
+  {
+    "nom": "BMW Carlo Schmitz",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/314985409"
+  },
+  {
+    "nom": "Fordstore Paul Wengler",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "site": "https://www.fordwengler.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/398938100"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/486349937"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/545734611"
+  },
+  {
+    "nom": "Meng Garage",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/545734618"
+  },
+  {
+    "nom": "Petry",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/545734619"
+  },
+  {
+    "nom": "XTR Automobile",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/613956041"
+  },
+  {
+    "nom": "Bergerat Monnoyeur",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "site": "https://www.bm-cat.com",
+    "source": "OpenStreetMap",
+    "osm": "way/613956047"
+  },
+  {
+    "nom": "Auto Ecole Wallheimer",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "way/626159430"
+  },
+  {
+    "nom": "Centre de formation des conducteurs SA",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "way/643340295"
+  },
+  {
+    "nom": "Centre de Formation pour Conducteurs SA",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "way/643340298"
+  },
+  {
+    "nom": "Centre de Formation pour Conducteurs SA",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "way/643340300"
+  },
+  {
+    "nom": "Autodis",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/654824053"
+  },
+  {
+    "nom": "BestWash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/696238279"
+  },
+  {
+    "nom": "Gulf car wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/718497118"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/757691613"
+  },
+  {
+    "nom": "Used Cars by Losch",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/762641961"
+  },
+  {
+    "nom": "M Losch",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/823824588"
+  },
+  {
+    "nom": "A.M.S.",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/837246138"
+  },
+  {
+    "nom": "Premio Pneus Goedert Self-Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "horaires": "24h/24, 7j/7",
+    "source": "OpenStreetMap",
+    "osm": "way/856105934"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/895340117"
+  },
+  {
+    "nom": "Autodis",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "way/947629565"
+  },
+  {
+    "nom": "Aral",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/1015440759"
+  },
+  {
+    "nom": "Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/1310493585"
+  },
+  {
+    "nom": "Goedert Car Wash",
+    "groupe": "auto-transport",
+    "metier": "lavage-auto",
+    "source": "OpenStreetMap",
+    "osm": "way/1417221660"
+  },
+  {
+    "nom": "Tesla Motors",
+    "groupe": "auto-transport",
+    "metier": "concessionnaire",
+    "source": "OpenStreetMap",
+    "osm": "relation/8861109"
+  },
+  {
+    "nom": "Piste d'éducation à la circulation routière.",
+    "groupe": "auto-transport",
+    "metier": "auto-ecole",
+    "source": "OpenStreetMap",
+    "osm": "relation/9196007"
+  },
+  {
+    "nom": "Autocenter Goedert",
+    "groupe": "auto-transport",
+    "metier": "garage",
+    "source": "OpenStreetMap",
+    "osm": "relation/14472485"
   }
 ]
