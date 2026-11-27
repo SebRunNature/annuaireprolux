@@ -239,6 +239,123 @@ def carte(e):
     return '<li class="card">' + "".join(lignes) + "</li>"
 
 
+# ---------------------------------------------------------------- textes d'introduction (métiers et communes)
+def _pl(n, un, plus):
+    return f"{n} {un if n < 2 else plus}"
+
+
+def _contacts(liste_e):
+    """Compte réel des coordonnées disponibles dans une liste de fiches."""
+    return (sum(1 for e in liste_e if e.get("site")),
+            sum(1 for e in liste_e if e.get("telephone")),
+            sum(1 for e in liste_e if e.get("email")))
+
+
+def _phrase_contacts(liste_e):
+    n = len(liste_e)
+    s, t, m = _contacts(liste_e)
+    parts = []
+    if s: parts.append(f"{s} ont un site web")
+    if t: parts.append(f"{t} un numéro de téléphone")
+    if m: parts.append(f"{m} une adresse e-mail")
+    if not parts:
+        return "Aucune de ces fiches n'affiche encore de coordonnées : si vous connaissez l'entreprise, vous pouvez nous les transmettre."
+    return f"Côté coordonnées, sur {n} fiches : " + _liste_fr(parts) + "."
+
+
+def _phrase_ordre(liste_e):
+    if any(e.get("premium") for e in liste_e):
+        return "Les fiches Premium, signalées comme telles, passent en premier ; les autres suivent par ordre alphabétique."
+    return "Les fiches sont classées par ordre alphabétique."
+
+
+def _liste_fr(items):
+    if len(items) <= 1:
+        return "".join(items)
+    return ", ".join(items[:-1]) + " et " + items[-1]
+
+
+def _part_osm(liste_e):
+    n = sum(1 for e in liste_e if e.get("source") == "OpenStreetMap")
+    return n
+
+
+def intro_metier(g, m):
+    fiches = PAR_METIER[(g, m)]
+    lib = GROUPES[g]["metiers"][m].lower()
+    n = len(fiches)
+    villes = defaultdict(int)
+    for e in fiches:
+        villes[e["ville_slug"]] += 1
+    top = sorted(villes, key=lambda v: (-villes[v], VILLES[v]))[:3]
+    top_txt = _liste_fr([
+        (f'<a href="{url("/ville/" + v + "/")}">{esc(VILLES[v])}</a>' if v in PAGES_VILLE else esc(VILLES[v])) + f" ({villes[v]})"
+        for v in top])
+    nv = len(villes)
+    osm = _part_osm(fiches)
+    groupe = f'<a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"].lower())}</a>'
+    ajout = f'<a href="{url("/ajouter/")}">ajoutez votre entreprise gratuitement</a>'
+    v = sum(ord(c) for c in f"{g}/{m}") % 3
+    if v == 0:
+        t1 = f"Cette page réunit {_pl(n, 'fiche', 'fiches')} classées parmi les {lib}, réparties dans {_pl(nv, 'commune', 'communes')}."
+        t2 = f"Les communes les plus représentées sont {top_txt}." if nv > 1 else f"Toutes sont situées à {esc(VILLES[top[0]])}."
+    elif v == 1:
+        t1 = f"Vous cherchez parmi les {lib} au Luxembourg ? L'annuaire en compte {n} pour le moment, dans {_pl(nv, 'commune', 'communes')}."
+        t2 = f"Les plus nombreux se trouvent à {top_txt}." if nv > 1 else f"Ils sont tous à {esc(VILLES[top[0]])}."
+    else:
+        t1 = f"{n} {lib} sont référencés ici, dans {_pl(nv, 'commune', 'communes')}."
+        t2 = f"Par nombre de fiches : {top_txt}." if nv > 1 else f"Commune concernée : {esc(VILLES[top[0]])}."
+    t3 = _phrase_contacts(fiches) + " " + _phrase_ordre(fiches) + " Chaque fiche ouvre une page détaillée, avec l'adresse, l'itinéraire et les horaires quand ils sont connus."
+    if osm == n:
+        t4 = "Les informations viennent d'OpenStreetMap et peuvent être incomplètes ou dépassées."
+    elif osm == 0:
+        t4 = "Ces fiches viennent d'inscriptions faites sur le site."
+    else:
+        t4 = f"{osm} de ces fiches viennent d'OpenStreetMap, les autres d'inscriptions faites sur le site."
+    autres = [mm for mm in GROUPES[g]["metiers"] if mm != m and (g, mm) in PAGES_METIER][:3]
+    voisins = _liste_fr([f'<a href="{url("/categorie/" + g + "/" + mm + "/")}">{esc(GROUPES[g]["metiers"][mm].lower())}</a>' for mm in autres])
+    t5 = (f"Une information est fausse ou manquante ? Signalez-la à l'éditeur, ou {ajout} si vous exercez ce métier. "
+          f"Dans la même catégorie ({groupe}) : {voisins}." if voisins else
+          f"Une information est fausse ou manquante ? Signalez-la à l'éditeur, ou {ajout}. Retrouvez aussi la catégorie {groupe}.")
+    return f'<p class="intro">{t1} {t2} {t3} {t4}</p><p class="intro">{t5}</p>'
+
+
+def intro_ville(vs):
+    fiches = PAR_VILLE[vs]
+    nom = esc(VILLES[vs])
+    n = len(fiches)
+    mets = defaultdict(int)
+    for e in fiches:
+        mets[(e["groupe"], e["metier"])] += 1
+    top = sorted(mets, key=lambda k: (-mets[k], GROUPES[k[0]]["metiers"][k[1]]))[:3]
+    top_txt = _liste_fr([
+        (f'<a href="{url("/categorie/" + g + "/" + m + "/")}">{esc(GROUPES[g]["metiers"][m].lower())}</a>' if (g, m) in PAGES_METIER
+         else esc(GROUPES[g]["metiers"][m].lower())) + f" ({mets[(g, m)]})"
+        for g, m in top])
+    nm = len(mets)
+    osm = _part_osm(fiches)
+    v = sum(ord(c) for c in vs) % 3
+    if v == 0:
+        t1 = f"{_pl(n, 'entreprise est référencée', 'entreprises sont référencées')} à {nom}, dans {_pl(nm, 'métier', 'métiers')} différents." if nm > 1 else f"{_pl(n, 'entreprise est référencée', 'entreprises sont référencées')} à {nom}."
+        t2 = f"Les plus représentés : {top_txt}." if nm > 1 else ""
+    elif v == 1:
+        t1 = f"Cette page présente les entreprises et professionnels installés à {nom} : {_pl(n, 'fiche', 'fiches')} pour le moment."
+        t2 = f"On y trouve surtout {top_txt}." if nm > 1 else ""
+    else:
+        t1 = f"À {nom}, l'annuaire compte {_pl(n, 'fiche', 'fiches')}, réparties dans {_pl(nm, 'métier', 'métiers')}."
+        t2 = f"Par nombre de fiches : {top_txt}." if nm > 1 else ""
+    t3 = _phrase_contacts(fiches) + " " + _phrase_ordre(fiches) + " Chaque fiche ouvre une page détaillée, avec l'adresse, l'itinéraire et les horaires quand ils sont connus."
+    if osm == n:
+        t4 = "Les informations viennent d'OpenStreetMap et peuvent être incomplètes ou dépassées."
+    elif osm == 0:
+        t4 = "Ces fiches viennent d'inscriptions faites sur le site."
+    else:
+        t4 = f"{osm} de ces fiches viennent d'OpenStreetMap, les autres d'inscriptions faites sur le site."
+    t5 = (f'Vous exercez à {nom} et votre entreprise manque ? <a href="{url("/ajouter/")}">Ajoutez-la gratuitement</a>. '
+          f'Pour comparer avec d\'autres communes, consultez la <a href="{url("/communes/")}">liste des communes</a>.')
+    return f'<p class="intro">{t1} {t2} {t3} {t4}</p><p class="intro">{t5}</p>'
+
+
 def liste(entreprises):
     if not entreprises:
         return "<p>Aucune entreprise pour le moment.</p>"
@@ -361,7 +478,7 @@ def build():
         urls.append(ch)
         lib = GROUPES[g]["metiers"][m]
         corps = (f'<p class="crumbs"><a href="{url("/")}">Accueil</a> › <a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a></p>'
-                 f"<h1>{esc(lib)} au Luxembourg</h1>{liste(PAR_METIER[(g, m)])}")
+                 f"<h1>{esc(lib)} au Luxembourg</h1>{intro_metier(g, m)}{liste(PAR_METIER[(g, m)])}")
         ecrire(ch, page(f"{lib} au Luxembourg – {SITE_NAME}",
                         f"Annuaire : {lib.lower()} au Luxembourg. Coordonnées, téléphone et site web.",
                         ch, corps))
@@ -370,7 +487,7 @@ def build():
     for v in PAGES_VILLE:
         ch = f"/ville/{v}/"
         urls.append(ch)
-        corps = f"<h1>Entreprises à {esc(VILLES[v])}</h1>{liste(PAR_VILLE[v])}"
+        corps = f"<h1>Entreprises à {esc(VILLES[v])}</h1>{intro_ville(v)}{liste(PAR_VILLE[v])}"
         ecrire(ch, page(f"Entreprises à {VILLES[v]} – {SITE_NAME}",
                         f"Annuaire des entreprises et professionnels à {VILLES[v]} (Luxembourg).",
                         ch, corps))
