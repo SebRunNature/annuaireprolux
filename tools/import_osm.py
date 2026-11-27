@@ -47,6 +47,9 @@ SINGULIER = {
     "restaurant": "Restaurant", "cafe": "Café ou bar", "hotel": "Hôtel ou hébergement",
     "coiffeur": "Salon de coiffure", "institut-beaute": "Institut de beauté et bien-être",
     "salle-sport": "Salle de sport ou piscine", "loisirs": "Lieu de loisirs",
+    "avocat": "Avocat", "notaire": "Notaire", "huissier": "Huissier de justice", "comptable": "Comptable",
+    "fiduciaire": "Fiduciaire ou conseil fiscal", "assurance": "Assurance", "banque": "Banque",
+    "conseil-financier": "Conseil financier",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
 SHOP = {
@@ -112,6 +115,23 @@ def classer(t):
         return ("restauration", "cafe")
     if tour in ("hotel", "guest_house", "hostel", "motel", "apartment", "chalet"):
         return ("restauration", "hotel")
+    off = t.get("office", "")
+    if off == "lawyer":
+        return ("droit-finance", "avocat")
+    if off == "notary":
+        return ("droit-finance", "notaire")
+    if off == "bailiff":
+        return ("droit-finance", "huissier")
+    if off == "accountant":
+        return ("droit-finance", "comptable")
+    if off == "tax_advisor":
+        return ("droit-finance", "fiduciaire")
+    if off == "insurance":
+        return ("droit-finance", "assurance")
+    if am == "bank" or off == "bank":
+        return ("droit-finance", "banque")
+    if off in ("financial", "financial_advisor", "mortgage_broker"):
+        return ("droit-finance", "conseil-financier")
     if shop == "hairdresser":
         return ("beaute-loisirs", "coiffeur")
     if shop in ("beauty", "nails", "massage", "tattoo", "cosmetics") or am == "spa" or leis == "sauna":

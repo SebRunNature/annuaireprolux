@@ -60,7 +60,11 @@
       "avocat": "Avocats",
       "comptable": "Comptables",
       "fiduciaire": "Fiduciaires",
-      "assurance": "Assurances"
+      "assurance": "Assurances",
+      "notaire": "Notaires",
+      "huissier": "Huissiers de justice",
+      "banque": "Banques",
+      "conseil-financier": "Conseil financier et courtage"
     }
   },
   "immobilier": {
