@@ -57,6 +57,10 @@ ENSEIGNES = [
     ("Foyer", [r"foyer", r"foyer assurances"], ["foyer.lu"]),
     ("Ketterthill", [r"ketterthill"], ["ketterthill.lu"]),
     ("BioneXt", [r"bionext"], ["bionext.lu"]),
+    ("RE/MAX", [r"re ?/? ?max.*", r"remax.*"], ["remax.lu"]),
+    ("Laforêt", [r"laforet.*"], ["laforet.com", "laforet.lu"]),
+    ("Engel & Völkers", [r"engel (&|et|and)? ?volkers.*"], ["engelvoelkers.com"]),
+    ("B Immobilier", [r"b immobilier"], ["b-immobilier.lu"]),
     ("Laboratoires Réunis", [r"laboratoires reunis"], ["labo.lu"]),
 ]
 # Métiers où chaque enseigne (même nom) n'a qu'une fiche
@@ -69,7 +73,7 @@ LIBELLES = {
     "pharmacie": "Pharmacie", "opticien": "Opticien", "loisirs": "Cinéma ou lieu de loisirs",
     "salle-sport": "Salle de sport", "sport-loisirs": "Magasin de sport et loisirs",
     "electronique": "Magasin d'électronique et informatique", "librairie-cadeaux": "Librairie, papeterie ou cadeaux",
-    "fleuriste": "Fleuriste", "animaux": "Animalerie", "clinique": "Clinique ou centre médical",
+    "agence-immobiliere": "Agence immobilière", "fleuriste": "Fleuriste", "animaux": "Animalerie", "clinique": "Clinique ou centre médical",
 }
 PORTAILS = {"pharmacie.lu", "editus.lu", "doctena.lu", "facebook.com", "salonkee.lu", "simpleviu.com",
             "differdange.lu", "minettpark.lu", "ligue-hmc.lu", "espaces-saveurs.lu", "cnds.lu",

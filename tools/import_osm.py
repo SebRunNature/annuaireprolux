@@ -52,6 +52,7 @@ SINGULIER = {
     "avocat": "Avocat", "notaire": "Notaire", "huissier": "Huissier de justice", "comptable": "Comptable",
     "fiduciaire": "Fiduciaire ou conseil fiscal", "assurance": "Assurance", "banque": "Banque",
     "conseil-financier": "Conseil financier",
+    "agence-immobiliere": "Agence immobilière", "syndic": "Syndic de copropriété", "promoteur": "Promoteur immobilier",
     "services-informatiques": "Entreprise de services informatiques", "telecom": "Télécoms et réseaux",
     "depannage-informatique": "Dépannage informatique", "agence-web": "Agence web", "marketing": "Agence de marketing et communication",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
@@ -144,6 +145,12 @@ def classer(t):
         return ("informatique-web", "depannage-informatique")
     if off in ("advertising_agency", "marketing", "graphic_design"):
         return ("services-entreprises", "marketing")
+    if off == "estate_agent" or shop == "estate_agent":
+        return ("immobilier", "agence-immobiliere")
+    if off in ("property_management", "syndic"):
+        return ("immobilier", "syndic")
+    if off in ("developer", "real_estate_developer") or t.get("craft") == "real_estate_developer":
+        return ("immobilier", "promoteur")
     if shop == "hairdresser":
         return ("beaute-loisirs", "coiffeur")
     if shop in ("beauty", "nails", "massage", "tattoo", "cosmetics") or am == "spa" or leis == "sauna":

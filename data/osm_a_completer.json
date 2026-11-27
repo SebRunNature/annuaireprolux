@@ -26806,5 +26806,730 @@
     "metier": "depannage-informatique",
     "source": "OpenStreetMap",
     "osm": "way/1286913173"
+  },
+  {
+    "nom": "Immopromot",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1762538744"
+  },
+  {
+    "nom": "House Brokers",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 27991212",
+    "source": "OpenStreetMap",
+    "osm": "node/1805574513"
+  },
+  {
+    "nom": "Immo Neuf",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1824761103"
+  },
+  {
+    "nom": "Immobelle",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1824761104"
+  },
+  {
+    "nom": "Unicorn",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1829544785"
+  },
+  {
+    "nom": "Maïté Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1832458436"
+  },
+  {
+    "nom": "Rockenbrod",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1832458448"
+  },
+  {
+    "nom": "Maïté Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1832590903"
+  },
+  {
+    "nom": "Ada Pro",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1839890801"
+  },
+  {
+    "nom": "Weckbecker",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1874627610"
+  },
+  {
+    "nom": "Urban livin'",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 275 61 86",
+    "site": "https://urbanlivin.lu/en/",
+    "horaires": "Lun-Ven 9:00-18:00, Sam sur rendez-vous ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329727"
+  },
+  {
+    "nom": "Immobilier ILR",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329750"
+  },
+  {
+    "nom": "Maisons Tradilux",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329756"
+  },
+  {
+    "nom": "New Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329760"
+  },
+  {
+    "nom": "Immo Power",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2045158774"
+  },
+  {
+    "nom": "B&Z Promotions",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803047"
+  },
+  {
+    "nom": "Infralux",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803068"
+  },
+  {
+    "nom": "Luxbauhaus",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803077"
+  },
+  {
+    "nom": "Pierri",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2056803082"
+  },
+  {
+    "nom": "Mon Agent",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856647"
+  },
+  {
+    "nom": "Remax",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940938"
+  },
+  {
+    "nom": "Espace Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359651"
+  },
+  {
+    "nom": "Immo Domus",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "site": "http://www.immo-domus.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359674"
+  },
+  {
+    "nom": "Eliteimmo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2082101831"
+  },
+  {
+    "nom": "Thomas & Piron",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2082101837"
+  },
+  {
+    "nom": "Immo Steil",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2128284132"
+  },
+  {
+    "nom": "Aal Avenue",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2138273348"
+  },
+  {
+    "nom": "Immobilière Lamparski",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2138273431"
+  },
+  {
+    "nom": "Kubik Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2149813044"
+  },
+  {
+    "nom": "Claude Rizzon",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846686"
+  },
+  {
+    "nom": "H. Gruber",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846707"
+  },
+  {
+    "nom": "Immo Solutions",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846716"
+  },
+  {
+    "nom": "Immofec",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351467"
+  },
+  {
+    "nom": "RIE",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351481"
+  },
+  {
+    "nom": "New Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "horaires": "Lun-Ven 09:00-12:30, 13:30-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/2205034999"
+  },
+  {
+    "nom": "Immo Centre",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2217683176"
+  },
+  {
+    "nom": "Agence Immobilière du Luxembourg",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2218581170"
+  },
+  {
+    "nom": "Ab Lux",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2239535857"
+  },
+  {
+    "nom": "Abri&Co",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2267954606"
+  },
+  {
+    "nom": "Immo Consult",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2302715440"
+  },
+  {
+    "nom": "Parfindus",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2305504287"
+  },
+  {
+    "nom": "Vie Privée Immobilière",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019652"
+  },
+  {
+    "nom": "Euro Batitech",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026108"
+  },
+  {
+    "nom": "Gigante Immobilière",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026117"
+  },
+  {
+    "nom": "Belair Immo Concept",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2405636277"
+  },
+  {
+    "nom": "Athome group",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327583"
+  },
+  {
+    "nom": "Bricks",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327595"
+  },
+  {
+    "nom": "Immotop.lu",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327619"
+  },
+  {
+    "nom": "Rentme",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327643"
+  },
+  {
+    "nom": "Rooftop",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327646"
+  },
+  {
+    "nom": "Trans Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327653"
+  },
+  {
+    "nom": "2MF",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327682"
+  },
+  {
+    "nom": "Jetset Travel",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2417887716"
+  },
+  {
+    "nom": "Prestige Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2417887721"
+  },
+  {
+    "nom": "Weckbecker City",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/2472267887"
+  },
+  {
+    "nom": "Carré",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/3900440165"
+  },
+  {
+    "nom": "Immofocus",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 26 20 00 98",
+    "site": "https://immofocus.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/4389712589"
+  },
+  {
+    "nom": "laforêt city",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/4715193941"
+  },
+  {
+    "nom": "Remax",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/5011237947"
+  },
+  {
+    "nom": "Mobilux",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/5011238239"
+  },
+  {
+    "nom": "Strike Real Estate",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/5991731256"
+  },
+  {
+    "nom": "Immo Weiss",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/6080205010"
+  },
+  {
+    "nom": "L'Agence",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "site": "https://www.are.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6436748637"
+  },
+  {
+    "nom": "Reuter",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/6532835550"
+  },
+  {
+    "nom": "Agence immobilière RBI",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/6801703827"
+  },
+  {
+    "nom": "Immo Prestige",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "site": "https://www.immoprestige.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/7272224034"
+  },
+  {
+    "nom": "Homesell",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/7817873083"
+  },
+  {
+    "nom": "Top-Invest",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "site": "https://www.top-invest.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8614614992"
+  },
+  {
+    "nom": "Adéquat Immobilier",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/8617012085"
+  },
+  {
+    "nom": "Impakt",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/8617333948"
+  },
+  {
+    "nom": "Immo Luxembourg",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/8630103115"
+  },
+  {
+    "nom": "Soludasa SA",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/8640107851"
+  },
+  {
+    "nom": "Immo Nord",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/8773042602"
+  },
+  {
+    "nom": "ImmoExcellence",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/9016735509"
+  },
+  {
+    "nom": "Immo Partner",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/9955600820"
+  },
+  {
+    "nom": "CTN Immobilier",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 621192484",
+    "email": "contact@ctnimmo.com",
+    "site": "https://www.ctnimmo.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/10287781780"
+  },
+  {
+    "nom": "iKSL Immobilière Carlo Kauffmann",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 367550",
+    "site": "https://iksl.lu",
+    "horaires": "Lun-Ven 09:00-18:00 ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "node/10292030536"
+  },
+  {
+    "nom": "Wagner",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/11042306725"
+  },
+  {
+    "nom": "Immobilière Biewer & Spautz",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 26 78 04 54",
+    "site": "https://www.immo-biewer.lu/de/",
+    "source": "OpenStreetMap",
+    "osm": "node/11327787791"
+  },
+  {
+    "nom": "Von Poll Real Estate",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 26 47 98",
+    "site": "https://www.von-poll.com/fr/luxembourg",
+    "source": "OpenStreetMap",
+    "osm": "node/11519842642"
+  },
+  {
+    "nom": "Inowai",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/12047967404"
+  },
+  {
+    "nom": "Paul Reinig",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13184697306"
+  },
+  {
+    "nom": "Ansay",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13184697307"
+  },
+  {
+    "nom": "Immo Weiss",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13531975326"
+  },
+  {
+    "nom": "Paul Reinig",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "horaires": "Lun-Ven 09:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/13871464466"
+  },
+  {
+    "nom": "Bureau Immobilier Stoffel",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "horaires": "Lun-Ven 10:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/13917518476"
+  },
+  {
+    "nom": "Immo-Future",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13917588475"
+  },
+  {
+    "nom": "Thor Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13917631701"
+  },
+  {
+    "nom": "Rad-Haus",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/13917631768"
+  },
+  {
+    "nom": "Simply",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "node/14287522068"
+  },
+  {
+    "nom": "Pierre & Nature",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "site": "https://www.piernat.com/fr",
+    "source": "OpenStreetMap",
+    "osm": "node/14340223530"
+  },
+  {
+    "nom": "Foncière",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/156949008"
+  },
+  {
+    "nom": "Abri & Co",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/169042239"
+  },
+  {
+    "nom": "Inowai",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/171452485"
+  },
+  {
+    "nom": "Kreutz Fabrice Immo",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/172275081"
+  },
+  {
+    "nom": "Realcorp",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/172348294"
+  },
+  {
+    "nom": "NL Group",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "source": "OpenStreetMap",
+    "osm": "way/203080273"
+  },
+  {
+    "nom": "Calteux",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 26 29 68 08",
+    "email": "info@calteux.lu",
+    "site": "https://calteux.lu/",
+    "horaires": "Lun-Dim Sur rendez-vous ; 8:30-12:00, 13:30-18:00 ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "way/1286565461"
+  },
+  {
+    "nom": "Barnes",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere",
+    "telephone": "+352 28 99 24 94",
+    "email": "luxembourg@barnes-international.com",
+    "site": "https://www.barnes-luxembourg.com/",
+    "horaires": "Lun-Ven 09:00-18:00, Sam Sur Rendez-Vous ; jours fériés fermé",
+    "source": "OpenStreetMap",
+    "osm": "way/1286685556"
   }
 ]
