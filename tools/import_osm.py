@@ -40,8 +40,30 @@ SINGULIER = {
     "medecin": "Médecin", "ophtalmologue": "Ophtalmologue", "dentiste": "Dentiste",
     "kinesitherapeute": "Kinésithérapeute", "pharmacie": "Pharmacie", "opticien": "Opticien",
     "laboratoire": "Laboratoire d'analyses", "clinique": "Clinique ou centre médical",
+    "alimentation": "Commerce d'alimentation", "mode": "Magasin de mode", "maison": "Magasin maison et décoration",
+    "fleuriste": "Fleuriste", "electronique": "Magasin d'électronique et informatique",
+    "sport-loisirs": "Magasin de sport et loisirs", "librairie-cadeaux": "Librairie, papeterie ou cadeaux",
+    "animaux": "Animalerie",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
+SHOP = {
+    "alimentation": {"supermarket", "convenience", "butcher", "bakery", "greengrocer", "deli", "cheese",
+                     "chocolate", "confectionery", "wine", "alcohol", "beverages", "seafood", "pastry",
+                     "farm", "health_food", "coffee", "tea", "general"},
+    "mode": {"clothes", "shoes", "boutique", "jewelry", "bag", "fashion_accessories", "watches", "fabric",
+             "tailor", "leather"},
+    "maison": {"furniture", "doityourself", "hardware", "interior_decoration", "kitchen", "bed", "carpet",
+               "lighting", "garden_centre", "houseware", "curtain", "bathroom_furnishing", "tiles",
+               "paint", "flooring", "antiques"},
+    "fleuriste": {"florist"},
+    "electronique": {"electronics", "computer", "mobile_phone", "hifi", "appliance", "telecommunication"},
+    "sport-loisirs": {"sports", "bicycle", "outdoor", "toys", "games", "musical_instrument", "art", "hobby",
+                      "fishing", "video_games"},
+    "librairie-cadeaux": {"books", "stationery", "gift", "newsagent", "variety_store", "second_hand",
+                          "copyshop", "photo"},
+    "animaux": {"pet", "pet_grooming"},
+}
+SHOP_INV = {v: k for k, vs in SHOP.items() for v in vs}
 # Fournisseurs d'énergie, grossistes, fabricants : ce ne sont pas des artisans
 EXCLUS = {"enovos", "metro", "van marcke", "viessmann", "societe electrique de l our"}
 
@@ -78,6 +100,8 @@ def classer(t):
     if hc in ("midwife", "podiatrist", "medical_imaging", "audiologist", "speech_therapist",
               "occupational_therapist", "nutrition_counselling", "osteopath", "chiropractor"):
         return ("sante", "autre-sante")
+    if shop in SHOP_INV:
+        return ("commerces", SHOP_INV[shop])
     return None
 
 

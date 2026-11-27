@@ -46,7 +46,11 @@
       "alimentation": "Alimentation",
       "mode": "Vêtements et mode",
       "maison": "Maison et décoration",
-      "fleuriste": "Fleuristes"
+      "fleuriste": "Fleuristes",
+      "electronique": "Électronique et informatique",
+      "sport-loisirs": "Sport et loisirs",
+      "librairie-cadeaux": "Librairie, papeterie et cadeaux",
+      "animaux": "Animaleries"
     }
   },
   "droit-finance": {
