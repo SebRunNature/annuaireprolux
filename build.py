@@ -197,7 +197,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
     <a href="{url('/blog/')}">Blog</a> ·
     <a href="{url('/mentions-legales/')}">Mentions légales</a> ·
     <a href="{url('/confidentialite/')}">Confidentialité</a>
-    <p>© {date.today().year} {esc(SITE_NAME)} · Certaines données : © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">contributeurs OpenStreetMap</a></p>
+    <p>© {date.today().year} {esc(SITE_NAME)} · Édité par {esc(CFG["legal"]["editeur"])}</p>
   </div>
 </footer>
 </body>
@@ -524,7 +524,7 @@ def build():
 <p>L'inscription d'une entreprise est gratuite. Des options payantes (fiche Premium, article sponsorisé) existent : les liens correspondants portent l'attribut <code>rel="sponsored"</code> et la fiche ou l'article est signalé comme tel. Un contenu sponsorisé n'est pas une recommandation de l'éditeur.</p>
 <h2>4. Exactitude des informations</h2>
 <p>Les fiches reprennent des informations professionnelles publiques (nom, adresse, téléphone, e-mail, site web) fournies par les entreprises ou collectées dans des sources publiques. L'éditeur s'efforce de les tenir à jour mais ne garantit ni leur exactitude ni leur exhaustivité. Une information erronée peut être corrigée ou supprimée sur simple demande à {mail}.</p>
-<p>Certaines données proviennent d'OpenStreetMap (© contributeurs OpenStreetMap, licence ODbL).</p>
+<p>Certaines données des fiches proviennent d'OpenStreetMap : © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">contributeurs OpenStreetMap</a>, publiées sous licence ODbL.</p>
 <h2>5. Propriété intellectuelle</h2>
 <p>La structure du site, ses textes et ses éléments graphiques appartiennent à l'éditeur, sauf mention contraire. Les noms, marques et coordonnées des entreprises référencées restent la propriété de leurs titulaires. Toute reproduction non autorisée est interdite ; une courte citation accompagnée d'un lien vers la page d'origine est tolérée.</p>
 <h2>6. Données personnelles et cookies</h2>

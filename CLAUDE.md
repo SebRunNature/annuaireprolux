@@ -15,7 +15,7 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 
 ## Données
 - Import OSM : l'utilisateur exporte un JSON depuis overpass-turbo.eu (overpass-api.de est bloqué), puis `python3 -I tools/import_osm.py <export.json>`. Montrer le lot à l'utilisateur avant publication.
-- Fiches sans commune : data/osm_a_completer.json. Attribution OpenStreetMap (ODbL) à conserver dans le pied de page et les mentions légales.
+- Fiches sans commune : data/osm_a_completer.json. Attribution OpenStreetMap (ODbL) à conserver dans les mentions légales (lien vers openstreetmap.org/copyright), accessibles depuis le pied de page de toutes les pages. Le pied de page affiche « Édité par Agence R-P Visibility » sans lien.
 - Bannières premium : assets/bannieres/, 1200×400 px, <200 Ko ; le build échoue si le fichier est absent.
 
 ## Git
