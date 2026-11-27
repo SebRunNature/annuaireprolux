@@ -510,7 +510,8 @@ def build():
 
     # Pages légales
     L = CFG["legal"]
-    editeur = f'<a href="{esc(L["editeur_url"])}" rel="noopener" target="_blank">{esc(L["editeur"])}</a>'
+    editeur = (f'<a href="{esc(L["editeur_url"])}" rel="noopener" target="_blank">{esc(L["editeur"])}</a>'
+               if L.get("editeur_url") else esc(L["editeur"]))
     mail = f'<a href="mailto:{esc(L["contact"])}">{esc(L["contact"])}</a>'
     corps = f"""
 <h1>Mentions légales</h1>
