@@ -172,6 +172,7 @@ def build():
     corps = f"""
 <section class="hero">
   <h1>L'annuaire des professionnels au Luxembourg</h1>
+  <p class="band"><span><strong>100 % gratuit</strong> pour inscrire votre entreprise</span><span>Audience : <strong>Luxembourg · France · Belgique</strong></span></p>
   <input id="q" type="search" placeholder="Rechercher une entreprise, un métier, une ville…" autocomplete="off">
   <div class="filters">
     <label><input id="f-web" type="checkbox"> Avec site web</label>
@@ -181,7 +182,7 @@ def build():
   <ul id="results" class="list"></ul>
 </section>
 <section class="cols">
-  <div><h2>Parcourir par catégorie</h2><ul class="plain">{par_cat}</ul></div>
+  <div><h2>Parcourir par catégorie</h2><ul class="tiles">{par_cat}</ul></div>
   <div><h2>Parcourir par ville</h2><ul class="plain">{par_ville}</ul></div>
 </section>
 <script>window.SITE_SEARCH = "{url('/search.json')}";</script>
