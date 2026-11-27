@@ -17,6 +17,8 @@ import unicodedata
 from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from enseignes import regrouper  # noqa: E402  (une seule fiche par enseigne à succursales)
 SRC = sys.argv[1]
 
 CRAFT = {
@@ -276,21 +278,6 @@ for membres in groupes.values():
     fiche = {k: v for k, v in fiche.items() if v != ""}
     (fiches if base["ville"] else a_completer).append(fiche)
 
-# Réseaux de succursales : une seule fiche par enseigne (la maison mère), pas une par commune.
-# La maison mère est repérée à Luxembourg-Ville, sinon à la fiche la plus complète.
-SIEGE_UNIQUE = {"banque"}
-par_enseigne = {}
-for f_ in fiches:
-    if f_["metier"] in SIEGE_UNIQUE:
-        par_enseigne.setdefault((f_["metier"], norm(f_["nom"])), []).append(f_)
-retirees = []
-for cle, liste_ in par_enseigne.items():
-    if len(liste_) > 1:
-        liste_.sort(key=lambda x: (x["ville"] != "Luxembourg", -len(x)))
-        retirees += [id(x) for x in liste_[1:]]
-        print(f"enseigne regroupée : {liste_[0]['nom']} ({len(liste_)} -> 1, gardée : {liste_[0]['ville']})")
-fiches = [f_ for f_ in fiches if id(f_) not in set(retirees)]
-
 chemin = os.path.join(ROOT, "data", "entreprises.json")
 with open(chemin, encoding="utf-8") as f:
     existantes = json.load(f)
@@ -310,8 +297,11 @@ ac_exist = json.load(open(chemin_ac, encoding="utf-8")) if os.path.exists(chemin
 osm_deja = {x.get("osm") for x in ac_exist}
 ac_exist += [x for x in a_completer if x.get("osm") not in osm_deja]
 
+avant_regroupement = len(existantes) + len(nouvelles)
+toutes = regrouper(existantes + nouvelles)
 with open(chemin, "w", encoding="utf-8") as f:
-    json.dump(existantes + nouvelles, f, ensure_ascii=False, indent=2)
+    json.dump(toutes, f, ensure_ascii=False, indent=2)
+nouvelles = nouvelles[: max(0, len(nouvelles) - (avant_regroupement - len(toutes)))]
 with open(chemin_ac, "w", encoding="utf-8") as f:
     json.dump(ac_exist, f, ensure_ascii=False, indent=2)
 

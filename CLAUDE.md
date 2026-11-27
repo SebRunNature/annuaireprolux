@@ -35,5 +35,7 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 - Champs : `premium: true`, `logo` (fichier dans assets/logos/, préparé avec `tools/logo.py`), `ancre` (texte du lien), `banniere` optionnelle.
 - Description Premium : **100 à 115 mots**, uniquement des faits fournis. `ancre` = phrase présente dans la description, rendue en lien rel="sponsored" vers le site ; l'URL complète reste affichée dans « Site web ». Ancre courte, descriptive, jamais composée uniquement de mots-clés.
 
-## Réseaux de succursales
-- Banques : une seule fiche par enseigne (la maison mère, repérée à Luxembourg-Ville, sinon la fiche la plus complète), via `SIEGE_UNIQUE` dans `tools/import_osm.py`. Ne pas lister chaque agence par commune.
+## Réseaux de succursales (une seule fiche par enseigne)
+- Les grandes enseignes (Cactus, Lidl, Delhaize, banques, assurances, laboratoires en réseau…) n'ont qu'UNE fiche, rattachée à « Luxembourg », avec uniquement le contact général (e-mail ou téléphone présent dans au moins 2 succursales) et la page d'accueil du site. Pas d'adresse ni d'horaires de succursale. L'annuaire sert d'abord les petites entreprises locales.
+- Règle codée dans `tools/enseignes.py` (liste `ENSEIGNES`, `SIEGE_UNIQUE` = banques et assurances, `PORTAILS` = domaines à ignorer), appliquée à chaque import par `tools/import_osm.py`. Pour regrouper une nouvelle enseigne : l'ajouter à `ENSEIGNES`, puis `python3 -I tools/enseignes.py`.
+- Ne touche jamais aux fiches Premium ni aux fiches saisies à la main (source autre qu'OpenStreetMap).
