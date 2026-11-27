@@ -205,8 +205,18 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
 """
 
 
+def logo_html(e, classe):
+    """Logo d'une fiche Premium : fichier dans assets/logos/, affiché dans une boîte fixe (toute taille acceptée)."""
+    if not (e["premium"] and e.get("logo")):
+        return ""
+    if not os.path.isfile(os.path.join(ROOT, "assets", "logos", e["logo"])):
+        raise SystemExit(f"Logo introuvable : assets/logos/{e['logo']} ({e['nom']})")
+    return (f'<span class="{classe}"><img src="{url("/logos/" + e["logo"])}" '
+            f'alt="Logo de {esc(e["nom"])}" loading="lazy"></span>')
+
+
 def carte(e):
-    lignes = [f'<h3><a href="{url("/entreprise/" + e["slug"] + "/")}">{esc(e["nom"])}</a>'
+    lignes = [f'<h3>{logo_html(e, "logo-mini")}<a href="{url("/entreprise/" + e["slug"] + "/")}">{esc(e["nom"])}</a>'
               + (' <span class="badge">Premium</span>' if e["premium"] else "") + "</h3>"]
     lignes.append(f'<p class="meta">{esc(e["groupe_nom"])} · {esc(e["metier_nom"])} · {esc(e["ville"])}</p>')
     if e.get("description"):
@@ -237,6 +247,9 @@ def build():
     # CSS + recherche
     shutil.copy(os.path.join(ROOT, "assets", "style.css"), os.path.join(OUT, "style.css"))
     shutil.copy(os.path.join(ROOT, "assets", "search.js"), os.path.join(OUT, "search.js"))
+    logo_src = os.path.join(ROOT, "assets", "logos")
+    if os.path.isdir(logo_src):
+        shutil.copytree(logo_src, os.path.join(OUT, "logos"))
     bann_src = os.path.join(ROOT, "assets", "bannieres")
     if os.path.isdir(bann_src):
         shutil.copytree(bann_src, os.path.join(OUT, "bannieres"))
@@ -374,7 +387,7 @@ def build():
         if e.get("email"):
             lignes.append(f'<dt>E-mail</dt><dd><a href="mailto:{esc(e["email"])}">{esc(e["email"])}</a></dd>')
         if e.get("site"):
-            lignes.append(f'<dt>Site web</dt><dd><a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc(e["site"])}</a></dd>')
+            lignes.append(f'<dt>Site web</dt><dd><a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc((e.get("ancre") if e["premium"] else "") or e["site"])}</a></dd>')
         ld = {
             "@context": "https://schema.org", "@type": "LocalBusiness", "name": e["nom"],
             "address": {"@type": "PostalAddress", "streetAddress": e.get("adresse", ""),
@@ -396,8 +409,10 @@ def build():
             banniere = f'<img class="banniere" src="{url("/bannieres/" + e["banniere"])}" alt="{esc(alt)}" width="1200" height="400">'
         corps = f"""
 <p class="crumbs"><a href="{url('/')}">Accueil</a> › <a href="{url('/categorie/' + e['groupe'] + '/')}">{esc(e['groupe_nom'])}</a> › {ville_crumb}</p>
+<div class="entete">{logo_html(e, "logo-box")}<div>
 <h1>{esc(e['nom'])}{' <span class="badge">Premium</span>' if e['premium'] else ''}</h1>
 <p class="meta">{esc(e['metier_nom'])} · {esc(e['ville'])}</p>
+</div></div>
 <p>{esc(e.get('description', ''))}</p>
 {banniere}
 <dl class="infos">{''.join(lignes)}</dl>
@@ -459,7 +474,8 @@ def build():
   <li><strong>De la visibilité locale :</strong> votre entreprise apparaît en tête de sa catégorie et de sa commune.</li>
   <li><strong>Des visiteurs qualifiés :</strong> des internautes qui cherchent justement votre métier et peuvent cliquer vers votre site.</li>
   <li><strong>Une citation d'entreprise :</strong> vos coordonnées (nom, adresse, téléphone) publiées de façon cohérente sur un annuaire luxembourgeois.</li>
-  <li><strong>Une image de votre entreprise :</strong> avec la fiche Premium, une bannière (logo, façade, équipe, réalisation) s'affiche en haut de votre fiche.</li>
+  <li><strong>Votre logo :</strong> avec la fiche Premium, votre logo s'affiche en tête de votre fiche et dans les listes, quelle que soit sa taille ou sa forme.</li>
+  <li><strong>Un lien avec le texte de votre choix :</strong> le lien vers votre site utilise l'intitulé que vous choisissez (par exemple le nom de votre activité), balisé <code>rel="sponsored"</code>.</li>
   <li><strong>Une mention de marque :</strong> votre nom associé à un site spécialisé sur les professionnels du Luxembourg.</li>
 </ul>
 
@@ -481,7 +497,8 @@ def build():
 <details><summary>Cela améliore-t-il mon classement sur Google ?</summary><p>Nous ne promettons aucun classement. Une fiche ou un article sponsorisé apporte de la visibilité, des visiteurs et une citation locale, qui complètent un travail de référencement.</p></details>
 <details><summary>Quelles entreprises acceptez-vous ?</summary><p>Des entreprises et des professionnels réels, avec un contenu légal et pertinent pour l'annuaire. Nous refusons les contenus trompeurs, illégaux ou sans rapport avec l'activité de l'entreprise.</p></details>
 <details><summary>Je suis une agence ou un indépendant, puis-je commander pour mes clients ?</summary><p>Oui, le pack agences et indépendants est prévu pour cela. Écrivez-nous avec le nombre de clients ou de projets concernés.</p></details>
-<details><summary>Puis-je ajouter une image de mon entreprise ?</summary><p>Oui, avec la fiche Premium. Vous nous envoyez une image (logo, façade, équipe ou réalisation, idéalement au format 1200 × 400 px) et nous l'affichons en bannière en haut de votre fiche.</p></details>
+<details><summary>Quel logo dois-je envoyer ?</summary><p>Le logo que vous avez, en PNG, SVG, WebP ou JPG, de préférence avec un fond transparent et d'au moins 300 pixels de large. Nous l'adaptons à la fiche, quelles que soient ses proportions. Il est affiché sans déformation.</p></details>
+<details><summary>Puis-je choisir le texte du lien vers mon site ?</summary><p>Oui, avec la fiche Premium. Choisissez un intitulé court et descriptif (le nom de votre activité, par exemple). Nous pouvons refuser un intitulé trompeur ou composé uniquement de mots-clés.</p></details>
 <details><summary>Quels sont les tarifs ?</summary><p>Les tarifs dépendent de l'offre et du volume. Demandez un devis par e-mail : <a href="mailto:{esc(contact)}">{esc(contact)}</a>.</p></details>
 
 <p style="margin-top:28px">{cta("Fiche Premium ou article sponsorisé")}</p>

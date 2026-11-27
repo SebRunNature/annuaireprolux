@@ -63,3 +63,9 @@ main .band, main .band span, main .chips, main .meta, main .crumbs, main .small,
 main .plain li, main .tiles li, main .card h3 { text-align: left; hyphens: none; }
 .banniere { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; border-radius: 10px; margin: 16px 0; border: 1px solid var(--bord); }
 .top { position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 6px rgba(15, 23, 42, .06); }
+
+.entete { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin: 6px 0 4px; }
+.entete h1 { margin-bottom: 2px; }
+.logo-box { display: flex; align-items: center; justify-content: center; width: 200px; height: 110px; padding: 10px; background: #fff; border: 1px solid var(--bord); border-radius: 10px; flex: none; }
+.logo-box img, .logo-mini img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.logo-mini { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 36px; margin-right: 10px; vertical-align: middle; background: #fff; border: 1px solid var(--bord); border-radius: 6px; padding: 3px; }

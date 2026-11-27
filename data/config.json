@@ -12,9 +12,9 @@
       "detail": "Votre fiche en tête de sa catégorie et de sa commune.",
       "inclus": [
         "Placement prioritaire et badge Premium",
-        "Bannière image de votre entreprise en haut de la fiche",
+        "Logo de votre entreprise en tête de fiche et dans les listes",
         "Description étendue",
-        "Lien vers votre site balisé rel=\"sponsored\"",
+        "Lien vers votre site avec le texte de votre choix, balisé rel=\"sponsored\"",
         "Mise à jour de la fiche sur demande"
       ]
     },

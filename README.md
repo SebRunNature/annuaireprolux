@@ -22,10 +22,14 @@ Annuaire professionnel statique pour le Luxembourg, hébergé sur GitHub Pages.
 - Les fiches Premium et articles sponsorisés utilisent `rel="sponsored"`, les fiches gratuites `rel="nofollow"`.
 - Les fiches du fichier de données sont des **exemples fictifs** à remplacer.
 
-## Bannière des fiches Premium
+## Logo et lien des fiches Premium
 
-Pour une fiche Premium, ajouter dans `data/entreprises.json` : `"premium": true`, `"banniere": "nom-du-fichier.jpg"` et, si possible, `"banniere_alt": "description de l'image"`.
-L'image se place dans `assets/bannieres/` (format conseillé : 1200 × 400 px, JPG ou WebP, moins de 200 Ko). Elle s'affiche au-dessus du bloc d'informations de la fiche.
+Pour une fiche Premium, ajouter dans `data/entreprises.json` : `"premium": true`, `"logo": "nom.webp"` et `"ancre": "texte du lien vers le site"`.
+Le logo s'affiche dans une boîte fixe (200 × 110 px sur la fiche, petite vignette dans les listes) avec `object-fit: contain` : toute taille ou proportion convient, sans déformation.
+Pour préparer un logo (rognage des marges, réduction à 600 × 300 px max, WebP, transparence conservée) :
+`python3 -I tools/logo.py <image> <nom>` puis renseigner `"logo": "<nom>.webp"`. Un SVG se copie tel quel dans `assets/logos/`.
+L'ancre est le texte du lien vers le site (rel="sponsored") : court, descriptif, sans bourrage de mots-clés. Sans ancre, l'URL est affichée.
+Une bannière 1200 × 400 px reste possible en option (`"banniere"` dans `assets/bannieres/`).
 
 ## Données OpenStreetMap
 

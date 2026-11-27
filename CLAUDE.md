@@ -30,3 +30,7 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 
 ## Rédaction (voix de Sébastien)
 - Avant d'écrire tout texte (descriptions de fiches, intros de pages, blog, X, e-mails), lire `REDACTION.md` et l'appliquer. Aucune donnée, statistique, avis ou opinion inventés ; hashtags : 4 minimum sur X ; vouvoiement sur le site.
+
+## Fiches Premium (logo et ancre)
+- Champs : `premium: true`, `logo` (fichier dans assets/logos/, préparé avec `tools/logo.py`), `ancre` (texte du lien), `banniere` optionnelle.
+- Ancre : courte, descriptive (nom de l'activité), jamais composée uniquement de mots-clés ; lien toujours en rel="sponsored". Description Premium : 100 à 150 mots, uniquement des faits fournis.
