@@ -48,5 +48,6 @@
     "contact": "rpvisibility@proton.me",
     "maj": "novembre 2026"
   },
-  "seuil_pages": 3
+  "seuil_pages": 3,
+  "seuil_index": 3
 }

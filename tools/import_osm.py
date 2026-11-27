@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Importe un export Overpass (JSON) dans data/entreprises.json.
 
-Usage : python3 -I tools/import_osm.py export.json [groupe]
-- fusionne les doublons (même nom, même site web ou même ref:caclr)
-- ne garde que les fiches avec une commune (addr:city) ; les autres vont dans
-  data/osm_a_completer.json pour être complétées plus tard
-- range chaque fiche dans un groupe / métier du site
-Les fiches existantes (hors exemples fictifs) sont conservées.
+Usage : python3 -I tools/import_osm.py export.json
+- classe chaque élément dans un groupe / métier du site (artisans du bâtiment, santé)
+- fusionne les doublons d'une même commune (même nom, même site web ou même ref:caclr)
+  sans fusionner des succursales de communes différentes
+- ne garde dans le site que les fiches avec une commune (addr:city) ; les autres vont
+  dans data/osm_a_completer.json pour être complétées plus tard
+- conserve les fiches déjà présentes (hors exemples fictifs)
 """
 import json
 import os
@@ -18,7 +19,6 @@ from urllib.parse import urlparse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = sys.argv[1]
 
-# artisanat OSM -> (groupe, métier du site)
 CRAFT = {
     "plumber": ("batiment", "plombier"),
     "electrician": ("batiment", "electricien"),
@@ -36,15 +36,55 @@ SINGULIER = {
     "peintre": "Peintre", "menuisier": "Menuisier", "couvreur": "Couvreur",
     "carreleur": "Carreleur", "vitrier": "Vitrier", "platrier": "Plâtrier",
     "construction": "Entreprise de construction",
+    "medecin-generaliste": "Médecin généraliste", "medecin-specialiste": "Médecin spécialiste",
+    "medecin": "Médecin", "ophtalmologue": "Ophtalmologue", "dentiste": "Dentiste",
+    "kinesitherapeute": "Kinésithérapeute", "pharmacie": "Pharmacie", "opticien": "Opticien",
+    "laboratoire": "Laboratoire d'analyses", "clinique": "Clinique ou centre médical",
+    "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
 # Fournisseurs d'énergie, grossistes, fabricants : ce ne sont pas des artisans
 EXCLUS = {"enovos", "metro", "van marcke", "viessmann", "societe electrique de l our"}
 
 
+def classer(t):
+    """Retourne (groupe, métier) ou None."""
+    if t.get("craft") in CRAFT:
+        return CRAFT[t["craft"]]
+    hc, am, shop = t.get("healthcare", ""), t.get("amenity", ""), t.get("shop", "")
+    spec = t.get("healthcare:speciality", "")
+    specs = {s.strip() for s in spec.split(";") if s.strip()}
+    if am == "pharmacy" or hc == "pharmacy":
+        return ("sante", "pharmacie")
+    if shop == "optician" or hc == "optometrist":
+        return ("sante", "opticien")
+    if am == "dentist" or hc == "dentist" or any(k in spec for k in ("dentist", "dental", "orthodont")):
+        return ("sante", "dentiste")
+    if hc == "physiotherapist":
+        return ("sante", "kinesitherapeute")
+    if hc == "laboratory" or am == "laboratory":
+        return ("sante", "laboratoire")
+    if hc == "psychotherapist":
+        return ("sante", "psychotherapeute")
+    if am == "clinic" or hc in ("clinic", "centre"):
+        return ("sante", "clinique")
+    if am == "doctors" or hc == "doctor":
+        if "general" in specs:
+            return ("sante", "medecin-generaliste")
+        if "ophthalmology" in specs:
+            return ("sante", "ophtalmologue")
+        if specs:
+            return ("sante", "medecin-specialiste")
+        return ("sante", "medecin")
+    if hc in ("midwife", "podiatrist", "medical_imaging", "audiologist", "speech_therapist",
+              "occupational_therapist", "nutrition_counselling", "osteopath", "chiropractor"):
+        return ("sante", "autre-sante")
+    return None
+
+
 def norm(s):
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
     s = re.sub(r"[^a-z0-9 ]+", " ", s)
-    s = re.sub(r"\b(sarl|sarls|sa|s a|s a r l|sàrl|cie|et|and)\b", " ", s)
+    s = re.sub(r"\b(sarl|sarls|sa|s a|s a r l|cie|et|and)\b", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -57,39 +97,45 @@ def domaine(url):
     return h[4:] if h.startswith("www.") else h
 
 
-def propre_tel(t):
-    if not t:
+JOURS = {"Mo": "Lun", "Tu": "Mar", "We": "Mer", "Th": "Jeu", "Fr": "Ven", "Sa": "Sam", "Su": "Dim", "PH": "jours fériés"}
+
+
+def horaires_fr(h):
+    h = (h or "").strip().replace('"', "")
+    if not h or len(h) > 160:
         return ""
-    t = t.strip()
-    t = re.sub(r"^00\s*352", "+352", t)
-    return t
+    if h == "24/7":
+        return "24h/24, 7j/7"
+    h = re.sub(r"\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b", lambda m: JOURS[m.group(1)], h)
+    h = re.sub(r"\boff\b", "fermé", h)
+    h = re.sub(r",(?=\d)", ", ", h)
+    return re.sub(r"\s*;\s*", " ; ", h)
+
+
+def propre_tel(t):
+    return re.sub(r"^00\s*352", "+352", (t or "").strip())
 
 
 def lire(el):
     t = el.get("tags", {})
-    craft = t.get("craft", "")
-    if craft not in CRAFT:
-        return None
+    cl = classer(t)
     nom = (t.get("name") or "").strip()
-    if not nom or norm(nom) in EXCLUS:
+    if not cl or not nom or norm(nom) in EXCLUS:
         return None
-    rue = t.get("addr:street", "")
-    num = t.get("addr:housenumber", "")
-    site = t.get("website") or t.get("contact:website") or ""
+    rue, num = t.get("addr:street", ""), t.get("addr:housenumber", "")
+    site = (t.get("website") or t.get("contact:website") or "").strip()
     if site and "://" not in site:
         site = "https://" + site
     return {
-        "nom": nom,
-        "craft": craft,
+        "nom": nom, "classe": cl,
         "ville": (t.get("addr:city") or "").strip(),
         "adresse": f"{num} {rue}".strip() if rue else "",
         "code_postal": ("L-" + t["addr:postcode"]) if t.get("addr:postcode") else "",
         "telephone": propre_tel(t.get("phone") or t.get("contact:phone") or t.get("mobile") or ""),
         "email": (t.get("email") or t.get("contact:email") or "").strip(),
-        "site": site.strip(),
-        "caclr": t.get("ref:caclr", ""),
-        "osm": f"{el['type']}/{el['id']}",
-        "poids": len(t),
+        "site": site, "caclr": t.get("ref:caclr", ""),
+        "horaires": horaires_fr(t.get("opening_hours", "")),
+        "osm": f"{el['type']}/{el['id']}", "poids": len(t),
     }
 
 
@@ -97,7 +143,7 @@ with open(SRC, encoding="utf-8") as f:
     brut = json.load(f)
 items = [x for x in (lire(e) for e in brut["elements"]) if x]
 
-# --- fusion des doublons (union-find sur nom normalisé, domaine web, ref:caclr)
+# --- fusion : d'abord les éléments avec commune (clés limitées à la commune)
 parent = list(range(len(items)))
 
 
@@ -110,16 +156,34 @@ def find(i):
 
 vus = {}
 for i, it in enumerate(items):
-    cles = [("n", norm(it["nom"]))]
+    if not it["ville"]:
+        continue
+    cles = [("n", norm(it["nom"]), it["classe"][0], it["ville"])]
     if it["site"]:
-        cles.append(("d", domaine(it["site"])))
+        cles.append(("d", domaine(it["site"]), it["ville"]))
     if it["caclr"]:
-        cles.append(("c", it["caclr"]))
+        cles.append(("c", it["caclr"], it["ville"]))
     for c in cles:
         if c in vus:
             parent[find(i)] = find(vus[c])
         else:
             vus[c] = i
+
+# --- puis ceux sans commune : fusionnés seulement si une seule fiche correspond (même nom ou même site)
+par_nom, par_dom = {}, {}
+for i, it in enumerate(items):
+    if it["ville"]:
+        par_nom.setdefault(norm(it["nom"]), set()).add(find(i))
+        if it["site"]:
+            par_dom.setdefault(domaine(it["site"]), set()).add(find(i))
+for i, it in enumerate(items):
+    if it["ville"]:
+        continue
+    cands = set(par_nom.get(norm(it["nom"]), set()))
+    if it["site"]:
+        cands |= par_dom.get(domaine(it["site"]), set())
+    if len(cands) == 1:
+        parent[i] = next(iter(cands))
 
 groupes = {}
 for i, it in enumerate(items):
@@ -127,37 +191,47 @@ for i, it in enumerate(items):
 
 fiches, a_completer = [], []
 for membres in groupes.values():
-    membres.sort(key=lambda m: -m["poids"])
+    membres.sort(key=lambda m: (not m["ville"], -m["poids"]))
     base = dict(membres[0])
     for m in membres[1:]:
-        for k in ("ville", "adresse", "code_postal", "telephone", "email", "site"):
+        for k in ("ville", "adresse", "code_postal", "telephone", "email", "site", "horaires"):
             if not base[k] and m[k]:
                 base[k] = m[k]
-    g, metier = CRAFT[base["craft"]]
+    g, metier = base["classe"]
     fiche = {
         "nom": base["nom"], "groupe": g, "metier": metier, "ville": base["ville"],
         "adresse": base["adresse"], "code_postal": base["code_postal"],
         "telephone": base["telephone"], "email": base["email"], "site": base["site"],
+        "horaires": base["horaires"],
         "description": f"{SINGULIER[metier]} à {base['ville']}." if base["ville"] else "",
         "source": "OpenStreetMap", "osm": base["osm"],
     }
     fiche = {k: v for k, v in fiche.items() if v != ""}
     (fiches if base["ville"] else a_completer).append(fiche)
 
-fiches.sort(key=lambda f: f["nom"].lower())
-a_completer.sort(key=lambda f: f["nom"].lower())
-
 chemin = os.path.join(ROOT, "data", "entreprises.json")
 with open(chemin, encoding="utf-8") as f:
     existantes = json.load(f)
 existantes = [e for e in existantes if "EXEMPLE" not in e.get("description", "").upper()]
-noms = {norm(e["nom"]) + "|" + norm(e["ville"]) for e in existantes}
-nouvelles = [f for f in fiches if norm(f["nom"]) + "|" + norm(f["ville"]) not in noms]
+deja = {(norm(e["nom"]), norm(e["ville"])): e for e in existantes}
+for f_ in fiches:
+    e_ = deja.get((norm(f_["nom"]), norm(f_["ville"])))
+    if e_ and e_.get("source") == "OpenStreetMap":
+        for k_, v_ in f_.items():
+            if k_ not in e_ and k_ != "description":
+                e_[k_] = v_
+nouvelles = [f for f in fiches if (norm(f["nom"]), norm(f["ville"])) not in deja]
+nouvelles.sort(key=lambda f: f["nom"].lower())
+
+chemin_ac = os.path.join(ROOT, "data", "osm_a_completer.json")
+ac_exist = json.load(open(chemin_ac, encoding="utf-8")) if os.path.exists(chemin_ac) else []
+osm_deja = {x.get("osm") for x in ac_exist}
+ac_exist += [x for x in a_completer if x.get("osm") not in osm_deja]
 
 with open(chemin, "w", encoding="utf-8") as f:
     json.dump(existantes + nouvelles, f, ensure_ascii=False, indent=2)
-with open(os.path.join(ROOT, "data", "osm_a_completer.json"), "w", encoding="utf-8") as f:
-    json.dump(a_completer, f, ensure_ascii=False, indent=2)
+with open(chemin_ac, "w", encoding="utf-8") as f:
+    json.dump(ac_exist, f, ensure_ascii=False, indent=2)
 
 print(f"éléments lus : {len(brut['elements'])}, retenus : {len(items)}, après fusion : {len(fiches) + len(a_completer)}")
 print(f"ajoutées au site : {len(nouvelles)} ; sans commune (à compléter) : {len(a_completer)}")

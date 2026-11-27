@@ -7,7 +7,14 @@
       "dentiste": "Dentistes",
       "kinesitherapeute": "Kinésithérapeutes",
       "pharmacie": "Pharmacies",
-      "association-sante": "Associations de santé"
+      "association-sante": "Associations de santé",
+      "medecin": "Médecins",
+      "medecin-specialiste": "Médecins spécialistes",
+      "opticien": "Opticiens",
+      "laboratoire": "Laboratoires d'analyses",
+      "clinique": "Cliniques et centres médicaux",
+      "psychotherapeute": "Psychothérapeutes",
+      "autre-sante": "Autres professionnels de santé"
     }
   },
   "batiment": {

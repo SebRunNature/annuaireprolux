@@ -456,5 +456,1665 @@
     "metier": "electricien",
     "source": "OpenStreetMap",
     "osm": "node/290095623"
+  },
+  {
+    "nom": "Pharmacie Schon",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 52 10 10",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-schon/",
+    "source": "OpenStreetMap",
+    "osm": "node/269976044"
+  },
+  {
+    "nom": "Pharmacie Schmitz",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-martens/",
+    "source": "OpenStreetMap",
+    "osm": "node/276497238"
+  },
+  {
+    "nom": "Pharmacie de Soleuvre",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 58 11 - 58",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-soleuvre/",
+    "source": "OpenStreetMap",
+    "osm": "node/280448063"
+  },
+  {
+    "nom": "Pharmacie um Bechel",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 52 62 57",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-um-bechel/",
+    "source": "OpenStreetMap",
+    "osm": "node/293581652"
+  },
+  {
+    "nom": "Pharmacie du Trèfle",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 51 13 05",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-trefle/",
+    "source": "OpenStreetMap",
+    "osm": "node/293582308"
+  },
+  {
+    "nom": "Pharmacie du Bridel",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 33 93 73",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-bridel/",
+    "source": "OpenStreetMap",
+    "osm": "node/319945363"
+  },
+  {
+    "nom": "Pharmacie du Cerf",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 32 00 07",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-cerf/",
+    "source": "OpenStreetMap",
+    "osm": "node/391966723"
+  },
+  {
+    "nom": "Optique Nothum",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 26 50 22 81",
+    "email": "onb.optnot@vo.lu",
+    "site": "http://www.optique-nothum.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/410710355"
+  },
+  {
+    "nom": "Pharmacie de Bertrange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 31 64 46",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-bertrange/",
+    "source": "OpenStreetMap",
+    "osm": "node/441315347"
+  },
+  {
+    "nom": "Pharmacie Petry",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 81 21 48 -1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-petry/",
+    "source": "OpenStreetMap",
+    "osm": "node/442612592"
+  },
+  {
+    "nom": "Gangler Jean-Paul",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/482833027"
+  },
+  {
+    "nom": "Pharmacie de Lallange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 55 24 42",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-lallange/",
+    "source": "OpenStreetMap",
+    "osm": "node/491616655"
+  },
+  {
+    "nom": "Dr Marc Hamen médecine générale",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/540212533"
+  },
+  {
+    "nom": "Pharmacie du Centre",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 17 71 - 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-centre/",
+    "source": "OpenStreetMap",
+    "osm": "node/540392206"
+  },
+  {
+    "nom": "GrandOptical",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/636031340"
+  },
+  {
+    "nom": "GrandOptical",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/678937747"
+  },
+  {
+    "nom": "Pharmacie de Clervaux",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 921015",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-clervaux/",
+    "source": "OpenStreetMap",
+    "osm": "node/727709015"
+  },
+  {
+    "nom": "Optique Quaring",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/894517216"
+  },
+  {
+    "nom": "Pharmacie de l'Éléphant",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 29 75 95",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-lelephant/",
+    "source": "OpenStreetMap",
+    "osm": "node/924203956"
+  },
+  {
+    "nom": "Institut National de Chirurgie Cardiaque et de Cardiologie Interventionelle",
+    "groupe": "sante",
+    "metier": "clinique",
+    "source": "OpenStreetMap",
+    "osm": "node/924207773"
+  },
+  {
+    "nom": "Pharmacie du Réiserbann",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 36 51 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-reiserbann/",
+    "source": "OpenStreetMap",
+    "osm": "node/959787734"
+  },
+  {
+    "nom": "GrandOptical",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/977798874"
+  },
+  {
+    "nom": "Pharmacie du Benelux",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 55 28 16",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-benelux/",
+    "source": "OpenStreetMap",
+    "osm": "node/1012470020"
+  },
+  {
+    "nom": "Pharmacie de Mondercange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 57 37 76",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-mondercange/",
+    "source": "OpenStreetMap",
+    "osm": "node/1014464803"
+  },
+  {
+    "nom": "Pharmacie du Parc",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 58 80 80 - 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-parc/",
+    "source": "OpenStreetMap",
+    "osm": "node/1311532968"
+  },
+  {
+    "nom": "Pharmacie de Larochette",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 83 70 18",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-larochette/",
+    "source": "OpenStreetMap",
+    "osm": "node/1356509772"
+  },
+  {
+    "nom": "Pharmacie des Thermes",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 23 66 88 38",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-des-thermes/",
+    "source": "OpenStreetMap",
+    "osm": "node/1415856178"
+  },
+  {
+    "nom": "Pharmacie de Wasserbillig",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 74 03 10 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-wasserbillig/",
+    "source": "OpenStreetMap",
+    "osm": "node/1468533468"
+  },
+  {
+    "nom": "Pharmacie de Mondorf",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 67 60-1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-mondorf/",
+    "source": "OpenStreetMap",
+    "osm": "node/1495318328"
+  },
+  {
+    "nom": "Pharmacie de Sandweiler",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 35 61 11",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-sandweiler/",
+    "source": "OpenStreetMap",
+    "osm": "node/1629382158"
+  },
+  {
+    "nom": "Pharmacie Syrdall",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 67 94 -1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-syrdall/",
+    "source": "OpenStreetMap",
+    "osm": "node/1629382162"
+  },
+  {
+    "nom": "Pharmacie de l'Aigle",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 95 80 20",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-laigle/",
+    "source": "OpenStreetMap",
+    "osm": "node/1662754439"
+  },
+  {
+    "nom": "Pharmacie Grotenrath",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 95 70 76",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-grotenrath/",
+    "source": "OpenStreetMap",
+    "osm": "node/1662759611"
+  },
+  {
+    "nom": "Pharmacie de Colmar-Berg",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 88 51 76",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-colmar-berg/",
+    "source": "OpenStreetMap",
+    "osm": "node/1691095087"
+  },
+  {
+    "nom": "Ralph Weis Optique",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/1811903810"
+  },
+  {
+    "nom": "Pharmacie Maitry",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 54 20 78",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-maitry/",
+    "source": "OpenStreetMap",
+    "osm": "node/1910666191"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/1939636187"
+  },
+  {
+    "nom": "Laboratoire analyse medical",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/1968380185"
+  },
+  {
+    "nom": "Acuitis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329718"
+  },
+  {
+    "nom": "Optic 2000",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329757"
+  },
+  {
+    "nom": "Optique Moltzheim",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2022240673"
+  },
+  {
+    "nom": "Cabinet de Kinésitherapie et de Thérapie Manuelle",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "adresse": "36 Rue Auguste Charles",
+    "code_postal": "L-1326",
+    "telephone": "+352298365",
+    "site": "https://www.therapiemanuelle.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856623"
+  },
+  {
+    "nom": "Denta.lu",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856633"
+  },
+  {
+    "nom": "Meyer Wagner",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856640"
+  },
+  {
+    "nom": "Meyer Wagner",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2056856646"
+  },
+  {
+    "nom": "Acuitis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2060843209"
+  },
+  {
+    "nom": "Meyer & Wagner",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940926"
+  },
+  {
+    "nom": "Optical Center",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359715"
+  },
+  {
+    "nom": "GesondheetsZentrum",
+    "groupe": "sante",
+    "metier": "clinique",
+    "site": "https://www.gesondheetszentrum.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2128284139"
+  },
+  {
+    "nom": "Kinésithérapie Yan Goergen & Chiara Arneodo",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "email": "kinegoergen@gmail.com",
+    "site": "http://kinegoergen.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/2128284233"
+  },
+  {
+    "nom": "Manfred Mares",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "source": "OpenStreetMap",
+    "osm": "node/2186351478"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/2217683201"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 27 321",
+    "email": "info@bionext.lu",
+    "site": "https://www.bionext.lu/en/laboratoire-clausen",
+    "source": "OpenStreetMap",
+    "osm": "node/2260738687"
+  },
+  {
+    "nom": "Luxchiro",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/2285239046"
+  },
+  {
+    "nom": "Acuitis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/2318974309"
+  },
+  {
+    "nom": "Cabinet Médical Esthétique",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327618"
+  },
+  {
+    "nom": "Centre Médical de Walferdange",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/3025032267"
+  },
+  {
+    "nom": "Top-Optic",
+    "groupe": "sante",
+    "metier": "opticien",
+    "adresse": "1 Avenue de la Liberté",
+    "telephone": "+352 58 29 38",
+    "email": "topoptic@pt.lu",
+    "site": "https://www.topoptic.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/3030151437"
+  },
+  {
+    "nom": "Clinique de jour Irmine",
+    "groupe": "sante",
+    "metier": "clinique",
+    "source": "OpenStreetMap",
+    "osm": "node/3475466190"
+  },
+  {
+    "nom": "Dr Warken",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/3483656935"
+  },
+  {
+    "nom": "Cabinet Dr Van Damme, Louge-Desgrousilliers Anne , Thoma Fernand",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/3642132012"
+  },
+  {
+    "nom": "Dr. Maitry-Schiltz Sylvie",
+    "groupe": "sante",
+    "metier": "medecin",
+    "telephone": "+352522402",
+    "source": "OpenStreetMap",
+    "osm": "node/3711005098"
+  },
+  {
+    "nom": "Bereloptik",
+    "groupe": "sante",
+    "metier": "opticien",
+    "site": "https://www.bereloptik.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/3843484449"
+  },
+  {
+    "nom": "CME Kinésithérapie",
+    "groupe": "sante",
+    "metier": "medecin",
+    "telephone": "+352263339080",
+    "email": "info@kinecme.lu",
+    "site": "https://thestudio.lu/cme/",
+    "source": "OpenStreetMap",
+    "osm": "node/4356510883"
+  },
+  {
+    "nom": "Centre médical Kirchberg",
+    "groupe": "sante",
+    "metier": "medecin",
+    "telephone": "+352261066",
+    "email": "info@cmk.lu",
+    "site": "https://www.cmk.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/4356514414"
+  },
+  {
+    "nom": "Centre médical dentaire",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "telephone": "+352 28 89 28 28",
+    "source": "OpenStreetMap",
+    "osm": "node/4366066490"
+  },
+  {
+    "nom": "A.F.P. Service Asbl",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/4376081194"
+  },
+  {
+    "nom": "Pédicure",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/4382041600"
+  },
+  {
+    "nom": "Pharmacie Goedert",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 22 23 99 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-goedert/",
+    "source": "OpenStreetMap",
+    "osm": "node/4500198793"
+  },
+  {
+    "nom": "Dr. Bernd Dirksmöller",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352 26 58 37 71",
+    "source": "OpenStreetMap",
+    "osm": "node/4532439062"
+  },
+  {
+    "nom": "Cabinet de Kinésithérapie Herman-Istat-Piron-Brunet",
+    "groupe": "sante",
+    "metier": "medecin",
+    "telephone": "+352 26 62 16 22",
+    "site": "https://www.editus.mobi/fr/cabinet-de-kinesitherapie-herman-istat-piron-brunet-redange-sur-attert-392444",
+    "source": "OpenStreetMap",
+    "osm": "node/4552869991"
+  },
+  {
+    "nom": "Laboratoires d'analyses médicales - Ketterthill",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352 48 82 88 1",
+    "site": "https://www.ketterthill.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/4552935889"
+  },
+  {
+    "nom": "Pharmacie de Frisange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 23 66 21 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-frisange/",
+    "source": "OpenStreetMap",
+    "osm": "node/4563313895"
+  },
+  {
+    "nom": "Pharmacie Trierweiler",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 54 08 03",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-trierweiler/",
+    "source": "OpenStreetMap",
+    "osm": "node/4605862690"
+  },
+  {
+    "nom": "Pharmacie de Grosbous",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 88 06 41",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-grosbous/",
+    "source": "OpenStreetMap",
+    "osm": "node/4620310689"
+  },
+  {
+    "nom": "Cabinet Médical",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/4660478505"
+  },
+  {
+    "nom": "Pharmacie de Belvaux",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26 59 13 54",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-belvaux/",
+    "source": "OpenStreetMap",
+    "osm": "node/4685951987"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "site": "https://www.ketterthill.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/4998421933"
+  },
+  {
+    "nom": "Ketterhill",
+    "groupe": "sante",
+    "metier": "clinique",
+    "telephone": "+3524882881",
+    "site": "https://www.ketterthill.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/5001871150"
+  },
+  {
+    "nom": "Cravatte Elisabeth",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "site": "https://cabinetdentairebridel.lu/unser-team/",
+    "source": "OpenStreetMap",
+    "osm": "node/5326327954"
+  },
+  {
+    "nom": "Centre Medical Heger",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "telephone": "+352 33 14 83",
+    "email": "info@heger.lu",
+    "site": "https://www.heger.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/5326351382"
+  },
+  {
+    "nom": "Acuitis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 28 83 25-1",
+    "source": "OpenStreetMap",
+    "osm": "node/5329788406"
+  },
+  {
+    "nom": "Dr. Gérard Schreiner",
+    "groupe": "sante",
+    "metier": "medecin",
+    "email": "schreiner.gerard@cegecom.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/5425571235"
+  },
+  {
+    "nom": "Parapharmacie",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "source": "OpenStreetMap",
+    "osm": "node/5493585695"
+  },
+  {
+    "nom": "Acuitis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/5771877144"
+  },
+  {
+    "nom": "Kinésithérapie Effect Robin Schuhmann",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "source": "OpenStreetMap",
+    "osm": "node/5776843837"
+  },
+  {
+    "nom": "Optique Milbert",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/5801268664"
+  },
+  {
+    "nom": "Dental Art",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "telephone": "+352 26 33 20 20",
+    "email": "contact@dentalart.lu",
+    "site": "https://www.dentalart.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/5892562397"
+  },
+  {
+    "nom": "Ahaouari Assiya",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/5893609045"
+  },
+  {
+    "nom": "Pharmacie Hübscher",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 431609",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-deich/",
+    "source": "OpenStreetMap",
+    "osm": "node/5939721100"
+  },
+  {
+    "nom": "Cabinet Pédiatrique Dr Karin Michalski, Dr Thomas Siebler",
+    "groupe": "sante",
+    "metier": "clinique",
+    "telephone": "+352 26 68 71 74",
+    "source": "OpenStreetMap",
+    "osm": "node/5991730964"
+  },
+  {
+    "nom": "Kiné - merl",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "telephone": "+352 26 38 98 87",
+    "source": "OpenStreetMap",
+    "osm": "node/6010949359"
+  },
+  {
+    "nom": "Centre de Psychologie Rollingergrund",
+    "groupe": "sante",
+    "metier": "clinique",
+    "source": "OpenStreetMap",
+    "osm": "node/6032890210"
+  },
+  {
+    "nom": "Laboratoires Réunis",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/6032890211"
+  },
+  {
+    "nom": "Centre Médical Rollingergrund",
+    "groupe": "sante",
+    "metier": "clinique",
+    "site": "http://www.centre-medical-rollingergrund.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6032890212"
+  },
+  {
+    "nom": "Centre médical",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/6162361493"
+  },
+  {
+    "nom": "Cardiologie Angiologie Docteur Assadian",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352 28771541",
+    "source": "OpenStreetMap",
+    "osm": "node/6168222182"
+  },
+  {
+    "nom": "Cabinet d'Orthodontie Docteur Schay Portal",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/6168222183"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "site": "https://www.bionext.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6168222184"
+  },
+  {
+    "nom": "Dr. Sandrine Cornet",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "site": "https://dr-sandrine-cornet.business.site/",
+    "source": "OpenStreetMap",
+    "osm": "node/6314348237"
+  },
+  {
+    "nom": "Pharmacie de la Liberté",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 48 84 08 1",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-la-liberte/",
+    "source": "OpenStreetMap",
+    "osm": "node/6604147075"
+  },
+  {
+    "nom": "Marthe Diederich",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/6740072326"
+  },
+  {
+    "nom": "Pharmacie des Vignerons",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 23 66 90 31",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-des-vignerons/",
+    "source": "OpenStreetMap",
+    "osm": "node/7174985103"
+  },
+  {
+    "nom": "Pharmacie de Rambrouch",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 23 64 01 55",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-rambrouch/",
+    "source": "OpenStreetMap",
+    "osm": "node/7193600177"
+  },
+  {
+    "nom": "Centre de santé féminine Bloomme",
+    "groupe": "sante",
+    "metier": "clinique",
+    "adresse": "30;32 Rue de Clausen",
+    "code_postal": "L-1342",
+    "telephone": "+352 24 61 00 02",
+    "email": "info@bloomme.lu",
+    "site": "https://www.bloomme.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/7231625785"
+  },
+  {
+    "nom": "Pharmacie de Wincrange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 26914085",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-wincrange/",
+    "source": "OpenStreetMap",
+    "osm": "node/7343749082"
+  },
+  {
+    "nom": "Pharmacie de Wormeldange",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 76 00 20",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-wormeldange/",
+    "source": "OpenStreetMap",
+    "osm": "node/7343760495"
+  },
+  {
+    "nom": "Pharmacie des Terres Rouges",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 56 51 15",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-bouchard-guy/",
+    "source": "OpenStreetMap",
+    "osm": "node/7363066607"
+  },
+  {
+    "nom": "Pharmacie de Belval",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 24 55 99 48",
+    "site": "https://pharmaciedebelval.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/7363144755"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 4882881",
+    "source": "OpenStreetMap",
+    "osm": "node/7704512262"
+  },
+  {
+    "nom": "Aline Gress",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "source": "OpenStreetMap",
+    "osm": "node/7877958776"
+  },
+  {
+    "nom": "Anthogyr Zahntechnik",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/7908206269"
+  },
+  {
+    "nom": "Pharmacie Lafayette",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "source": "OpenStreetMap",
+    "osm": "node/8078313791"
+  },
+  {
+    "nom": "A Vue d'Oeil",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8078313800"
+  },
+  {
+    "nom": "Georges Faber",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8083757169"
+  },
+  {
+    "nom": "Centre Médical Echternach",
+    "groupe": "sante",
+    "metier": "clinique",
+    "telephone": "+352 288 433 1",
+    "email": "contact@cm-echternach.lu",
+    "site": "https://www.cm-echternach.lu/fr/",
+    "source": "OpenStreetMap",
+    "osm": "node/8254260455"
+  },
+  {
+    "nom": "Gesond.lu",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/8273689542"
+  },
+  {
+    "nom": "Optical Center",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8310885337"
+  },
+  {
+    "nom": "Optique Tom Peeters",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8355254688"
+  },
+  {
+    "nom": "Ωapusneanu Maria",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "telephone": "+352 26 33 25 40",
+    "email": "info@cmbofferdange.lu",
+    "site": "https://www.cmbofferdange.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8362687024"
+  },
+  {
+    "nom": "Dr. Annick PLEIN, Dr. Klaus DINTER",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8400770775"
+  },
+  {
+    "nom": "Centre de gynécologie et obstétrique",
+    "groupe": "sante",
+    "metier": "clinique",
+    "source": "OpenStreetMap",
+    "osm": "node/8400770995"
+  },
+  {
+    "nom": "Dr. A. Rozow",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8400770996"
+  },
+  {
+    "nom": "Cabinet médical",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "source": "OpenStreetMap",
+    "osm": "node/8401593888"
+  },
+  {
+    "nom": "Dr. Marc JOST, Dr. Christian JÄGER, Dr. Corinne SCOZZAI",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8401594152"
+  },
+  {
+    "nom": "Dr. Hussain Awad",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8401594153"
+  },
+  {
+    "nom": "Adam Eric",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "source": "OpenStreetMap",
+    "osm": "node/8526604383"
+  },
+  {
+    "nom": "Alain Affelou",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8593047476"
+  },
+  {
+    "nom": "Pharmacie Lugen",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 48 83 671",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-lugen/",
+    "source": "OpenStreetMap",
+    "osm": "node/8593269984"
+  },
+  {
+    "nom": "Optique Quaring",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/8593270008"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/8617333945"
+  },
+  {
+    "nom": "Centre Ophtalmologique Monterey",
+    "groupe": "sante",
+    "metier": "clinique",
+    "site": "https://www.centremonterey.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8633089853"
+  },
+  {
+    "nom": "Groupe Cardiologique Ettelbruck",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8635645089"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "site": "https://www.ketterthill.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8682308033"
+  },
+  {
+    "nom": "Centre dentaire du Nord",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8718521819"
+  },
+  {
+    "nom": "Nilles Albert",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/8806675126"
+  },
+  {
+    "nom": "Schoos Jean-Michel",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "site": "https://zahnspange.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/8959909620"
+  },
+  {
+    "nom": "Ritz Elisabeth",
+    "groupe": "sante",
+    "metier": "ophtalmologue",
+    "telephone": "+352 72 63 44",
+    "source": "OpenStreetMap",
+    "osm": "node/8959909625"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 488 288 1",
+    "site": "https://www.ketterthill.lu/fr/nos-centres/ou-nous-trouver/ettelbruck.html",
+    "source": "OpenStreetMap",
+    "osm": "node/8975178854"
+  },
+  {
+    "nom": "J Medical",
+    "groupe": "sante",
+    "metier": "medecin",
+    "adresse": "272 Rue de Neudorf",
+    "code_postal": "L-2222",
+    "telephone": "+352 621 360 242",
+    "source": "OpenStreetMap",
+    "osm": "node/9259048926"
+  },
+  {
+    "nom": "Ottika Enza",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/9370471510"
+  },
+  {
+    "nom": "Diederich Joe",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/9516628593"
+  },
+  {
+    "nom": "Gianni Paoloni",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/9519528241"
+  },
+  {
+    "nom": "Jang Dahm",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "telephone": "+352 24514811",
+    "email": "mail@praxis-dahm.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/9560830628"
+  },
+  {
+    "nom": "Leweck Mareike",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "telephone": "+352 621827123",
+    "email": "mareikeleweck@gmail.com",
+    "site": "https://www.sporthotel.lu/de/relax/osteopathie/41-0.html",
+    "source": "OpenStreetMap",
+    "osm": "node/9669634650"
+  },
+  {
+    "nom": "Cabinet d'Imagerie médicale Potaschbierg",
+    "groupe": "sante",
+    "metier": "medecin",
+    "telephone": "+352 4411 4720",
+    "source": "OpenStreetMap",
+    "osm": "node/9681052667"
+  },
+  {
+    "nom": "Optique Schaefers",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 329863",
+    "email": "info@optique-schaefers.lu",
+    "site": "https://optique-schaefers.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/9709889674"
+  },
+  {
+    "nom": "Opticien Esch-sur-Alzette - Optical Center",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+35226552916",
+    "site": "https://opticien.optical-center.fr/251575-optical-center-esch-sur-alzette",
+    "source": "OpenStreetMap",
+    "osm": "node/10029073703"
+  },
+  {
+    "nom": "Laboratoires Réunis",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "site": "https://www.labo.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/10284841204"
+  },
+  {
+    "nom": "Dr Schroeder Pixie",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 26320263",
+    "site": "https://www.dr-schroeder-ophtalmologie.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/10292030534"
+  },
+  {
+    "nom": "Pharmacie Neiens",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 50 73 80",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-neiens/",
+    "source": "OpenStreetMap",
+    "osm": "node/10751242200"
+  },
+  {
+    "nom": "Marc Peters",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "site": "https://kinepeters.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/10908798062"
+  },
+  {
+    "nom": "Optique Hoss",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/11244192293"
+  },
+  {
+    "nom": "Putinica Cristian",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352 26 72 12 30",
+    "source": "OpenStreetMap",
+    "osm": "node/11244489004"
+  },
+  {
+    "nom": "Dr Klos",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/11302748484"
+  },
+  {
+    "nom": "Cabinet de Kinesitherapie Maria Angeles Lopez",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "telephone": "+352 27 04 86 37",
+    "site": "https://www.doctena.lu/en/doctor/Ms_Lopez_Maria_Angeles-797524",
+    "source": "OpenStreetMap",
+    "osm": "node/11302748692"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 27 321",
+    "site": "https://www.bionext.lu/laboratoire-junglinster",
+    "source": "OpenStreetMap",
+    "osm": "node/11327812010"
+  },
+  {
+    "nom": "Flamion Serge",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "source": "OpenStreetMap",
+    "osm": "node/11381003073"
+  },
+  {
+    "nom": "Felten Paul",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/11519765323"
+  },
+  {
+    "nom": "Optical Center",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/11550489655"
+  },
+  {
+    "nom": "Dr. Dirk Hanfland",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/11757635487"
+  },
+  {
+    "nom": "Dr. Lepot",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/11879204833"
+  },
+  {
+    "nom": "Dr Frédéric LEBRUN",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "source": "OpenStreetMap",
+    "osm": "node/11909277614"
+  },
+  {
+    "nom": "Optique Chrystelle Pernot",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/12092730649"
+  },
+  {
+    "nom": "Ketterthill",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 488 288-1",
+    "site": "https://www.ketterthill.lu/laboratoire/bereldange/",
+    "source": "OpenStreetMap",
+    "osm": "node/12117192299"
+  },
+  {
+    "nom": "David Laborne",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "site": "https://www.kineboevange.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12154661681"
+  },
+  {
+    "nom": "Docteur Fiona Monacelli",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "source": "OpenStreetMap",
+    "osm": "node/12222491901"
+  },
+  {
+    "nom": "Hoss",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "node/12450064923"
+  },
+  {
+    "nom": "Centre Médical Fouhren",
+    "groupe": "sante",
+    "metier": "medecin",
+    "site": "https://www.cmfouhren.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12647239438"
+  },
+  {
+    "nom": "Groupe Médical Pasteur",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "site": "https://www.groupe-medical-pasteur.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12731744682"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+35227321",
+    "site": "https://www.bionext.lu/en/laboratoire-livange",
+    "source": "OpenStreetMap",
+    "osm": "node/12778197386"
+  },
+  {
+    "nom": "optie-vue",
+    "groupe": "sante",
+    "metier": "opticien",
+    "site": "https://www.opti-vue.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/12837361452"
+  },
+  {
+    "nom": "Morais Cabinet Dentaire",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/12909224313"
+  },
+  {
+    "nom": "Stauséiapdikt",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 27 62 311",
+    "site": "https://www.stauseiapdikt.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13308729036"
+  },
+  {
+    "nom": "Orthopädie Felten",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "adresse": "45 Avenue Frantz Clément",
+    "code_postal": "L-5612",
+    "telephone": "+3524949273",
+    "site": "https://otfelten.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13388919601"
+  },
+  {
+    "nom": "Bionext Munsbach",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/13539289755"
+  },
+  {
+    "nom": "Dr. Cezar Buzea",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352661743615",
+    "site": "https://en.cezarbuzea.eu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13898191751"
+  },
+  {
+    "nom": "YOU & EYE",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 26 38 90 37",
+    "email": "borreman@youandeye.lu",
+    "site": "https://www.youandeye.lu/en",
+    "source": "OpenStreetMap",
+    "osm": "node/13898195745"
+  },
+  {
+    "nom": "SKINPERIUM",
+    "groupe": "sante",
+    "metier": "medecin-specialiste",
+    "telephone": "+352 2740 6396",
+    "email": "info@skinperium.com",
+    "site": "https://www.drdierickx.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13898201692"
+  },
+  {
+    "nom": "Hubert Vision",
+    "groupe": "sante",
+    "metier": "ophtalmologue",
+    "telephone": "+352 28 669 668",
+    "site": "https://hubertvision.mikrono.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/13898202136"
+  },
+  {
+    "nom": "LuxDentalKids",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/13905245403"
+  },
+  {
+    "nom": "Luxe Dental",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "source": "OpenStreetMap",
+    "osm": "node/13905271318"
+  },
+  {
+    "nom": "Synovia Kinésithérapie & Paramédical",
+    "groupe": "sante",
+    "metier": "kinesitherapeute",
+    "source": "OpenStreetMap",
+    "osm": "node/13905388695"
+  },
+  {
+    "nom": "Centre Médical Merl",
+    "groupe": "sante",
+    "metier": "medecin-generaliste",
+    "source": "OpenStreetMap",
+    "osm": "node/13917591439"
+  },
+  {
+    "nom": "M E D I + K A Y L",
+    "groupe": "sante",
+    "metier": "medecin",
+    "adresse": "31 Rue Neuve",
+    "code_postal": "L-3781",
+    "telephone": "+352 26 56 06 80",
+    "site": "http://medikayl.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/14138093201"
+  },
+  {
+    "nom": "VisionLux",
+    "groupe": "sante",
+    "metier": "opticien",
+    "adresse": "31 Rue Neuve",
+    "code_postal": "L-3781",
+    "telephone": "+352 26 56 17 63",
+    "site": "http://visionlux.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/14138099001"
+  },
+  {
+    "nom": "Pharmacie du Centre",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 2617711",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-du-centre",
+    "source": "OpenStreetMap",
+    "osm": "node/14182195636"
+  },
+  {
+    "nom": "BioneXt",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "source": "OpenStreetMap",
+    "osm": "node/14272746972"
+  },
+  {
+    "nom": "Centre Médical",
+    "groupe": "sante",
+    "metier": "medecin",
+    "source": "OpenStreetMap",
+    "osm": "node/14335473681"
+  },
+  {
+    "nom": "Pharmacie de Remerschen",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "adresse": "32A Wäistrooss",
+    "code_postal": "L-5440",
+    "telephone": "+352281078",
+    "site": "https://remerschen.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/14356418402"
+  },
+  {
+    "nom": "Maison Médicale du Nord",
+    "groupe": "sante",
+    "metier": "clinique",
+    "source": "OpenStreetMap",
+    "osm": "node/14358293148"
+  },
+  {
+    "nom": "Laia Guinovart",
+    "groupe": "sante",
+    "metier": "psychotherapeute",
+    "adresse": "30 Rue de Clausen",
+    "code_postal": "L-1342",
+    "telephone": "+352 691 227 493",
+    "email": "bonjour@laia-psy.lu",
+    "site": "https://www.laia-psy.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/14365478557"
+  },
+  {
+    "nom": "Bionext",
+    "groupe": "sante",
+    "metier": "laboratoire",
+    "telephone": "+352 27 321",
+    "email": "info@bionext.lu",
+    "site": "https://www.bionext.lu/en/laboratoire-bridel",
+    "source": "OpenStreetMap",
+    "osm": "node/14406068844"
+  },
+  {
+    "nom": "Ralph Weis",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "way/169236872"
+  },
+  {
+    "nom": "Welter",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "way/170976895"
+  },
+  {
+    "nom": "Optique Thill",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "way/171452480"
+  },
+  {
+    "nom": "GrandOptical",
+    "groupe": "sante",
+    "metier": "opticien",
+    "source": "OpenStreetMap",
+    "osm": "way/173151098"
+  },
+  {
+    "nom": "Pharmacie Gillain",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 51 15 40",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-gillain/",
+    "source": "OpenStreetMap",
+    "osm": "way/173161178"
+  },
+  {
+    "nom": "Pharmacie de Hosingen",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 92 03 80",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-de-hosingen/",
+    "source": "OpenStreetMap",
+    "osm": "way/220940249"
+  },
+  {
+    "nom": "Pharmacie Fousbann",
+    "groupe": "sante",
+    "metier": "pharmacie",
+    "telephone": "+352 58 82 28",
+    "site": "https://www.pharmacie.lu/pharmacie/pharmacie-fousbann/",
+    "source": "OpenStreetMap",
+    "osm": "way/504437870"
+  },
+  {
+    "nom": "Optikstudio",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 661 199 270",
+    "email": "maxime.d@optikstudio.lu",
+    "site": "https://www.optikstudio.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1286133729"
+  },
+  {
+    "nom": "CMD Bains",
+    "groupe": "sante",
+    "metier": "dentiste",
+    "site": "https://cmdbains.lu/",
+    "source": "OpenStreetMap",
+    "osm": "way/1286565470"
+  },
+  {
+    "nom": "GrandOptical",
+    "groupe": "sante",
+    "metier": "opticien",
+    "telephone": "+352 26 26 68 68",
+    "site": "https://www.grandoptical.com/opticien/luxembourg/302",
+    "source": "OpenStreetMap",
+    "osm": "way/1293030348"
+  },
+  {
+    "nom": "Charpente & Toiture Garry Therres",
+    "groupe": "batiment",
+    "metier": "couvreur",
+    "site": "https://www.charpente.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13878615238"
   }
 ]

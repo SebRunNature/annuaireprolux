@@ -11,6 +11,7 @@ import os
 import re
 import shutil
 import unicodedata
+from urllib.parse import quote as urlquote
 from collections import defaultdict
 from datetime import date
 
@@ -57,6 +58,23 @@ for e in ENTREPRISES:
     e["slug"] = slugify(f"{e['nom']}-{e['ville']}")
     e["ville_slug"] = slugify(e["ville"])
     e["premium"] = bool(e.get("premium"))
+
+SEUIL_INDEX = int(CFG.get("seuil_index", 3))  # nb d'informations pour qu'une fiche soit indexée par Google
+
+
+def est_indexable(e):
+    """Une fiche gratuite n'est indexée que si elle est assez complète (anti-contenu pauvre)."""
+    if e.get("index") is not None:  # forçage manuel dans les données
+        return bool(e["index"])
+    if e["premium"]:
+        return True
+    score = sum(1 for k in ("telephone", "email", "site", "horaires") if e.get(k))
+    score += 1 if len(e.get("description", "")) > 60 else 0
+    return score >= SEUIL_INDEX
+
+
+for e in ENTREPRISES:
+    e["indexable"] = est_indexable(e)
 
 # Premium d'abord, puis ordre alphabétique
 ENTREPRISES.sort(key=lambda e: (not e["premium"], e["nom"].lower()))
@@ -270,11 +288,18 @@ def build():
     # Fiches
     for e in ENTREPRISES:
         ch = f"/entreprise/{e['slug']}/"
-        urls.append(ch)
+        if e["indexable"]:
+            urls.append(ch)
         rel = "sponsored noopener" if e["premium"] else "nofollow noopener"
         lignes = []
         adr = ", ".join(x for x in [e.get("adresse"), f"{e.get('code_postal', '')} {e['ville']}".strip()] if x)
-        lignes.append(f"<dt>Adresse</dt><dd>{esc(adr)}</dd>")
+        itin = ""
+        if e.get("adresse"):
+            q = urlquote(f"{adr}, Luxembourg")
+            itin = f' · <a href="https://www.google.com/maps/search/?api=1&query={q}" rel="nofollow noopener" target="_blank">Itinéraire</a>'
+        lignes.append(f"<dt>Adresse</dt><dd>{esc(adr)}{itin}</dd>")
+        if e.get("horaires"):
+            lignes.append(f"<dt>Horaires</dt><dd>{esc(e['horaires'])}</dd>")
         if e.get("telephone"):
             lignes.append(f'<dt>Téléphone</dt><dd><a href="tel:{esc(re.sub(r"[^+0-9]", "", e["telephone"]))}">{esc(e["telephone"])}</a></dd>')
         if e.get("email"):
@@ -311,7 +336,7 @@ def build():
 """
         ecrire(ch, page(f"{e['nom']} – {e['metier_nom']} à {e['ville']}",
                         f"{e['nom']} : {e['metier_nom'].lower()} à {e['ville']}. Adresse, téléphone et site web.",
-                        ch, corps, extra_head=extra))
+                        ch, corps, extra_head=extra, noindex=not e["indexable"]))
 
     # Ajouter
     options_cat = '<option value="">Choisissez une catégorie…</option>' + "".join(
@@ -450,7 +475,7 @@ def build():
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
 
-    print(f"OK : {len(ENTREPRISES)} fiches, {len(GROUPES)} groupes, {len(PAGES_METIER)} pages métier, {len(PAGES_VILLE)} pages commune, {len(urls)} URLs.")
+    print(f"OK : {len(ENTREPRISES)} fiches, {len(GROUPES)} groupes, {len(PAGES_METIER)} pages métier, {len(PAGES_VILLE)} pages commune, {len(urls)} URLs dans le sitemap, {sum(1 for e in ENTREPRISES if e['indexable'])} fiches indexables sur {len(ENTREPRISES)}.")
 
 
 if __name__ == "__main__":
