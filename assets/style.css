@@ -48,3 +48,5 @@ button, .btn { background: var(--accent); color: #fff; border: 0; padding: 10px 
 .filters { margin: 44px 0 26px; color: var(--gris); font-size: .95rem; }
 .filters label { margin: 0 12px; }
 .chips { margin: 22px 0; }
+.about { max-width: 780px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--bord); color: #334155; font-size: .97rem; }
+.about h2 { font-size: 1.2rem; color: #0f172a; margin-top: 0; }

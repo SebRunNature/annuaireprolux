@@ -204,6 +204,12 @@ def build():
   <div><h2>Parcourir par commune</h2><ul class="plain">{par_ville}</ul>
   <p><a href="{url('/communes/')}">Toutes les communes →</a></p></div>
 </section>
+<section class="about">
+  <h2>L'annuaire des entreprises et des professionnels au Luxembourg</h2>
+  <p>{esc(SITE_NAME)} est un annuaire gratuit qui permet de trouver rapidement une entreprise, un artisan ou un prestataire de services au Luxembourg. Chaque fiche rassemble les informations utiles : adresse, numéro de téléphone, adresse e-mail et site web.</p>
+  <p>Utilisez la barre de recherche ou parcourez les catégories : <a href="{url('/categorie/sante/')}">santé et bien-être</a>, <a href="{url('/categorie/batiment/')}">bâtiment et artisans</a> (plombiers, électriciens, chauffagistes), <a href="{url('/categorie/restauration/')}">restauration et hôtellerie</a>, <a href="{url('/categorie/droit-finance/')}">droit, comptabilité et finance</a> (avocats, comptables, fiduciaires), <a href="{url('/categorie/immobilier/')}">immobilier</a>, <a href="{url('/categorie/informatique-web/')}">informatique et web</a>, <a href="{url('/categorie/auto-transport/')}">auto et transport</a> et bien d'autres. Vous pouvez aussi filtrer par commune, ou ne garder que les entreprises qui ont un site web, un e-mail ou un téléphone.</p>
+  <p>Vous dirigez une entreprise au Luxembourg ? <a href="{url('/ajouter/')}">L'inscription est 100 % gratuite</a>. Pour gagner en visibilité auprès des clients du Luxembourg, de la France et de la Belgique, découvrez la <a href="{url('/visibilite/')}">fiche Premium et les articles sponsorisés</a>.</p>
+</section>
 <script>window.SITE_SEARCH = "{url('/search.json')}";</script>
 <script src="{url('/search.js')}" defer></script>
 """
