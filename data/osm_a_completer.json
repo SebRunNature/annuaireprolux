@@ -26488,5 +26488,323 @@
     "metier": "conseil-financier",
     "source": "OpenStreetMap",
     "osm": "relation/2632396"
+  },
+  {
+    "nom": "Oracle Luxembourg",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/1870285688"
+  },
+  {
+    "nom": "RCarré",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/1870285689"
+  },
+  {
+    "nom": "System Solutions",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/1870285692"
+  },
+  {
+    "nom": "Systemat",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/1870285693"
+  },
+  {
+    "nom": "Misys",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940928"
+  },
+  {
+    "nom": "Hermes",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2072359669"
+  },
+  {
+    "nom": "Luxconsult",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2138273455"
+  },
+  {
+    "nom": "M-plify",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2138273457"
+  },
+  {
+    "nom": "E-care",
+    "groupe": "informatique-web",
+    "metier": "depannage-informatique",
+    "source": "OpenStreetMap",
+    "osm": "node/2156368041"
+  },
+  {
+    "nom": "Datacenter",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846688"
+  },
+  {
+    "nom": "HP",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846708"
+  },
+  {
+    "nom": "Secure It",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846747"
+  },
+  {
+    "nom": "Artemis",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2272066726"
+  },
+  {
+    "nom": "CRI",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2302715426"
+  },
+  {
+    "nom": "Citadel Services PSF",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019622"
+  },
+  {
+    "nom": "E-connect",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026105"
+  },
+  {
+    "nom": "Quilium",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2361026141"
+  },
+  {
+    "nom": "ARHS",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327581"
+  },
+  {
+    "nom": "Intrasoft",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327621"
+  },
+  {
+    "nom": "IWI",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327629"
+  },
+  {
+    "nom": "Abil'I.T. s.à r.l.",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "telephone": "+352 20 333 222",
+    "site": "http://AbilIT.eu",
+    "source": "OpenStreetMap",
+    "osm": "node/2518191655"
+  },
+  {
+    "nom": "NGPartners",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/3851417637"
+  },
+  {
+    "nom": "CTG Luxembourg",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "horaires": "Lun-Ven 08:30-12:00, 13:00-17:30",
+    "source": "OpenStreetMap",
+    "osm": "node/4775017411"
+  },
+  {
+    "nom": "European Business Reliance Centre (EBRC)",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "site": "https://www.ebrc.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/5866595614"
+  },
+  {
+    "nom": "Brillant Agency",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "site": "https://brillant.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/5985479381"
+  },
+  {
+    "nom": "Agence 6Kom",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "site": "http://www.6kom.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540985"
+  },
+  {
+    "nom": "Ramirez Data",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "site": "https://www.ramirez.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193540995"
+  },
+  {
+    "nom": "LIMITED EDITION S.à r. l.",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "site": "https://www.limited-edition.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6193541014"
+  },
+  {
+    "nom": "Cegecom S.A.",
+    "groupe": "informatique-web",
+    "metier": "telecom",
+    "telephone": "+352 26 499 1",
+    "email": "info@cegecom.net",
+    "source": "OpenStreetMap",
+    "osm": "node/6806358807"
+  },
+  {
+    "nom": "Cdds",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "site": "http://www.cdds.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/6918758145"
+  },
+  {
+    "nom": "ATA Vision",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "telephone": "+352 28 79 92 57",
+    "site": "https://ata-vision.lu/",
+    "horaires": "Lun-Ven 08:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/7746375282"
+  },
+  {
+    "nom": "DKS",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/8568818967"
+  },
+  {
+    "nom": "lola Communication SA",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "telephone": "+352 26 48 59 – 10",
+    "site": "https://www.lola.lu",
+    "source": "OpenStreetMap",
+    "osm": "node/8744857808"
+  },
+  {
+    "nom": "MEFA S.A.",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "telephone": "+3522672861",
+    "email": "info@mefa-agentur.com",
+    "site": "https://mefa-agentur.com/",
+    "source": "OpenStreetMap",
+    "osm": "node/9931716331"
+  },
+  {
+    "nom": "ITworks!",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "telephone": "+352 267 100-27",
+    "email": "info@itworks.info",
+    "site": "https://www.itworks.info/",
+    "source": "OpenStreetMap",
+    "osm": "node/10277823048"
+  },
+  {
+    "nom": "Tango",
+    "groupe": "informatique-web",
+    "metier": "telecom",
+    "site": "https://www.tango.lu/fr",
+    "source": "OpenStreetMap",
+    "osm": "node/12985234654"
+  },
+  {
+    "nom": "Keep Contact",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "source": "OpenStreetMap",
+    "osm": "node/13152231033"
+  },
+  {
+    "nom": "rms.lu",
+    "groupe": "informatique-web",
+    "metier": "telecom",
+    "site": "https://www.rms.lu/",
+    "source": "OpenStreetMap",
+    "osm": "node/13871464467"
+  },
+  {
+    "nom": "Doctena",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "node/13905425452"
+  },
+  {
+    "nom": "CTTL",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "way/95631706"
+  },
+  {
+    "nom": "REAL Solutions",
+    "groupe": "informatique-web",
+    "metier": "services-informatiques",
+    "source": "OpenStreetMap",
+    "osm": "way/219674672"
+  },
+  {
+    "nom": "Smartfix",
+    "groupe": "informatique-web",
+    "metier": "depannage-informatique",
+    "source": "OpenStreetMap",
+    "osm": "way/1286913173"
   }
 ]
