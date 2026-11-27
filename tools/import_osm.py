@@ -55,6 +55,8 @@ SINGULIER = {
     "agence-immobiliere": "Agence immobilière", "syndic": "Syndic de copropriété", "promoteur": "Promoteur immobilier",
     "services-informatiques": "Entreprise de services informatiques", "telecom": "Télécoms et réseaux",
     "depannage-informatique": "Dépannage informatique", "agence-web": "Agence web", "marketing": "Agence de marketing et communication",
+    "conseil": "Cabinet de conseil", "ressources-humaines": "Agence de recrutement et d'intérim", "nettoyage": "Entreprise de nettoyage",
+    "traduction": "Service de traduction", "coworking": "Espace de coworking",
     "garage": "Garage", "concessionnaire": "Concessionnaire", "pieces-auto": "Magasin de pièces auto", "auto-ecole": "Auto-école",
     "lavage-auto": "Station de lavage auto", "controle-technique": "Centre de contrôle technique", "taxi": "Taxi",
     "demenagement": "Entreprise de déménagement", "location-vehicules": "Location de véhicules",
@@ -165,6 +167,16 @@ def classer(t):
         return ("informatique-web", "telecom")
     if t.get("craft") == "electronics_repair":
         return ("informatique-web", "depannage-informatique")
+    if off == "consulting":
+        return ("services-entreprises", "conseil")
+    if off in ("employment_agency", "recruitment", "human_resources"):
+        return ("services-entreprises", "ressources-humaines")
+    if off in ("cleaning", "cleaning_service") or t.get("craft") == "cleaning":
+        return ("services-entreprises", "nettoyage")
+    if off == "translator":
+        return ("services-entreprises", "traduction")
+    if off == "coworking":
+        return ("services-entreprises", "coworking")
     if off in ("advertising_agency", "marketing", "graphic_design"):
         return ("services-entreprises", "marketing")
     if off == "estate_agent" or shop == "estate_agent":

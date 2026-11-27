@@ -28798,5 +28798,176 @@
     "metier": "garage",
     "source": "OpenStreetMap",
     "osm": "relation/14472485"
+  },
+  {
+    "nom": "Alternative Travail Temporaire SARL",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "source": "OpenStreetMap",
+    "osm": "node/1453920656"
+  },
+  {
+    "nom": "The Avenue",
+    "groupe": "services-entreprises",
+    "metier": "coworking",
+    "adresse": "13-15 Avenue de la Liberté",
+    "telephone": "+352 28 488 1",
+    "site": "https://www.ginkgo-solutions.lu/fr/workspaces/coworking",
+    "source": "OpenStreetMap",
+    "osm": "node/1984329717"
+  },
+  {
+    "nom": "Foxroad",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/2070940899"
+  },
+  {
+    "nom": "Fisconsult",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/2140152392"
+  },
+  {
+    "nom": "Start People",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "source": "OpenStreetMap",
+    "osm": "node/2140152416"
+  },
+  {
+    "nom": "Nettoyage Jules Becher & Charles Esser",
+    "groupe": "services-entreprises",
+    "metier": "nettoyage",
+    "source": "OpenStreetMap",
+    "osm": "node/2184846738"
+  },
+  {
+    "nom": "KPMG",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/2196231597"
+  },
+  {
+    "nom": "Greenfield",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "source": "OpenStreetMap",
+    "osm": "node/2350019628"
+  },
+  {
+    "nom": "Kelly Services",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "source": "OpenStreetMap",
+    "osm": "node/2408327625"
+  },
+  {
+    "nom": "ADEM",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "horaires": "Lun-Ven 08:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/3007697633"
+  },
+  {
+    "nom": "Morgan",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "horaires": "Lun-Ven 08:30-12:30, 13:30-17:30",
+    "source": "OpenStreetMap",
+    "osm": "node/4998572512"
+  },
+  {
+    "nom": "Wishbox",
+    "groupe": "services-entreprises",
+    "metier": "coworking",
+    "site": "http://www.wishbox.lu/",
+    "horaires": "Lun-Ven 09:00-18:00",
+    "source": "OpenStreetMap",
+    "osm": "node/5589884239"
+  },
+  {
+    "nom": "M Management Consulting",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/6189832383"
+  },
+  {
+    "nom": "Balou International Consulting Sàrl",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/8640107852"
+  },
+  {
+    "nom": "IBM",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "site": "https://www.ibm.com/planetwide/lu/",
+    "horaires": "Lun-Ven 09:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/11539773288"
+  },
+  {
+    "nom": "Adecco",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "horaires": "Lun-Jeu 09:00-12:00, 13:30-17:30 ; Ven 09:00-12:00",
+    "source": "OpenStreetMap",
+    "osm": "node/12047967401"
+  },
+  {
+    "nom": "LIP Event",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "telephone": "+352 27 76 81 52",
+    "site": "https://www.lipluxembourg.lu/agence-interim-dudelange-batiment-tertiaire-services",
+    "horaires": "Lun-Ven 09:00-12:00, 14:00-16:00",
+    "source": "OpenStreetMap",
+    "osm": "node/12172318619"
+  },
+  {
+    "nom": "LIP Event",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "telephone": "+352 54 20 30",
+    "site": "https://www.lipluxembourg.lu/agence-interim-dudelange-transport-logistique-industrie-commerce",
+    "horaires": "Lun-Ven 09:00-12:00, 14:00-16:00",
+    "source": "OpenStreetMap",
+    "osm": "node/12172334403"
+  },
+  {
+    "nom": "H2O Partners",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/13905422390"
+  },
+  {
+    "nom": "KPMG",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "node/13946185567"
+  },
+  {
+    "nom": "ADEM",
+    "groupe": "services-entreprises",
+    "metier": "ressources-humaines",
+    "horaires": "Lun-Ven 08:00-12:00, 13:00-17:00",
+    "source": "OpenStreetMap",
+    "osm": "node/14078631542"
+  },
+  {
+    "nom": "KPMG",
+    "groupe": "services-entreprises",
+    "metier": "conseil",
+    "source": "OpenStreetMap",
+    "osm": "way/159598119"
   }
 ]
