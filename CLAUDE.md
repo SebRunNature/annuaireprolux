@@ -27,3 +27,6 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 - Un article = un fichier `data/articles/<slug>.md` (modèle : `data/articles/_modele.md`, les fichiers commençant par `_` sont ignorés). En-tête `clé: valeur`, puis `---`, puis le texte (mini-Markdown : `##`, `- `, `**gras**`, `[texte](url)`).
 - `sponsorise: oui` (défaut) : badge « Article sponsorisé » + tous les liens externes en rel="sponsored noopener". `sponsorise: non` : article éditorial, liens rel="noopener".
 - La page /blog/ est en noindex et hors sitemap tant qu'il n'y a aucun article ; elle devient indexable dès le premier article.
+
+## Rédaction (voix de Sébastien)
+- Avant d'écrire tout texte (descriptions de fiches, intros de pages, blog, X, e-mails), lire `REDACTION.md` et l'appliquer. Aucune donnée, statistique, avis ou opinion inventés ; hashtags : 4 minimum sur X ; vouvoiement sur le site.
