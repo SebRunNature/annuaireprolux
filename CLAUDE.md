@@ -22,3 +22,8 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 - Commit : `git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit`, push : `git -c push.negotiate=true push origin HEAD`.
 - Terminer les messages de commit par les lignes Co-Authored-By et Claude-Session.
 - Après déploiement, demander à l'utilisateur de faire Ctrl+F5.
+
+## Blog (articles invités / sponsorisés)
+- Un article = un fichier `data/articles/<slug>.md` (modèle : `data/articles/_modele.md`, les fichiers commençant par `_` sont ignorés). En-tête `clé: valeur`, puis `---`, puis le texte (mini-Markdown : `##`, `- `, `**gras**`, `[texte](url)`).
+- `sponsorise: oui` (défaut) : badge « Article sponsorisé » + tous les liens externes en rel="sponsored noopener". `sponsorise: non` : article éditorial, liens rel="noopener".
+- La page /blog/ est en noindex et hors sitemap tant qu'il n'y a aucun article ; elle devient indexable dès le premier article.

@@ -93,6 +93,65 @@ PAGES_VILLE = {v for v, l in PAR_VILLE.items() if len(l) >= SEUIL}
 PAGES_METIER = {k for k, l in PAR_METIER.items() if len(l) >= SEUIL}
 
 
+# ---------------------------------------------------------------- blog
+def md_html(texte, rel):
+    """Mini-Markdown : ## titres, - listes, **gras**, [texte](url). Les liens externes reçoivent `rel`."""
+    def inline(t):
+        t = esc(t)
+        t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
+
+        def lien(m):
+            href = html.unescape(m.group(2))
+            if href.startswith(("http://", "https://")):
+                return f'<a href="{esc(href)}" rel="{rel}" target="_blank">{m.group(1)}</a>'
+            return f'<a href="{esc(href)}">{m.group(1)}</a>'
+        return re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", lien, t)
+
+    sortie, liste_ouverte = [], False
+    for bloc in re.split(r"\n\s*\n", texte.strip()):
+        lignes = bloc.strip().splitlines()
+        if all(l.startswith("- ") for l in lignes):
+            sortie.append("<ul>" + "".join(f"<li>{inline(l[2:])}</li>" for l in lignes) + "</ul>")
+        elif bloc.startswith("## "):
+            sortie.append(f"<h2>{inline(bloc[3:].strip())}</h2>")
+        else:
+            sortie.append(f"<p>{inline(' '.join(l.strip() for l in lignes))}</p>")
+    return "\n".join(sortie)
+
+
+def charger_articles():
+    dossier = os.path.join(ROOT, "data", "articles")
+    res = []
+    for nom in sorted(os.listdir(dossier)) if os.path.isdir(dossier) else []:
+        if not nom.endswith(".md") or nom.startswith("_"):
+            continue
+        brut = open(os.path.join(dossier, nom), encoding="utf-8").read()
+        entete, _, corps = brut.partition("\n---\n")
+        meta = {}
+        for l in entete.splitlines():
+            if ":" in l:
+                k, v = l.split(":", 1)
+                meta[k.strip()] = v.strip()
+        for k in ("titre", "date", "resume"):
+            if not meta.get(k):
+                raise SystemExit(f"Article {nom} : champ « {k} » manquant")
+        meta["slug"] = meta.get("slug") or slugify(nom[:-3])
+        meta["sponsorise"] = meta.get("sponsorise", "oui").lower() in ("oui", "true", "1")
+        meta["corps"] = corps
+        res.append(meta)
+    return sorted(res, key=lambda a: a["date"], reverse=True)
+
+
+ARTICLES = charger_articles()
+
+
+def date_fr(iso):
+    mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
+            "septembre", "octobre", "novembre", "décembre"]
+    a, m, j = iso.split("-")
+    return f"{int(j)} {mois[int(m) - 1]} {a}"
+
+
 # ---------------------------------------------------------------- gabarits
 def page(titre, description, chemin, corps, extra_head="", noindex=False):
     canon = f"{SITE_URL}{chemin}"
@@ -115,6 +174,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
     <a class="brand" href="{url('/')}">{esc(SITE_NAME)}</a>
     <nav>
       <a href="{url('/ajouter/')}">Ajouter votre entreprise</a>
+      <a href="{url('/blog/')}">Blog</a>
       <a href="{url('/visibilite/')}">Visibilité</a>
     </nav>
   </div>
@@ -126,6 +186,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
   <div class="wrap">
     <a href="{url('/ajouter/')}">Ajouter une entreprise</a> ·
     <a href="{url('/visibilite/')}">Boostez votre visibilité</a> ·
+    <a href="{url('/blog/')}">Blog</a> ·
     <a href="{url('/mentions-legales/')}">Mentions légales</a> ·
     <a href="{url('/confidentialite/')}">Confidentialité</a>
     <p>© {date.today().year} {esc(SITE_NAME)} · Certaines données : © <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">contributeurs OpenStreetMap</a></p>
@@ -463,6 +524,64 @@ def build():
 <p class="small">Dernière mise à jour : {esc(L['maj'])}. Éditeur : {editeur}.</p>
 """
     ecrire("/confidentialite/", page(f"Confidentialité – {SITE_NAME}", "Politique de confidentialité de l'annuaire.", "/confidentialite/", corps, noindex=True))
+
+    # blog
+    L = CFG["legal"]
+    mail_contact = L["contact"]
+    blog_indexe = bool(ARTICLES)
+    cartes = ""
+    for a in ARTICLES:
+        ch = f"/blog/{a['slug']}/"
+        rel = "sponsored noopener" if a["sponsorise"] else "noopener"
+        if a["sponsorise"]:
+            bandeau = '<p class="small"><span class="badge">Article sponsorisé</span> Cet article est un contenu sponsorisé : les liens sortants sont balisés rel="sponsored".</p>'
+        else:
+            bandeau = ""
+        auteur = esc(a.get("auteur", "")) if a.get("auteur") else ""
+        if a.get("auteur") and a.get("auteur_url"):
+            auteur = f'<a href="{esc(a["auteur_url"])}" rel="{rel}" target="_blank">{auteur}</a>'
+        ld = {"@context": "https://schema.org", "@type": "Article", "headline": a["titre"],
+              "datePublished": a["date"], "description": a["resume"],
+              "mainEntityOfPage": f"{SITE_URL}{ch}",
+              "publisher": {"@type": "Organization", "name": SITE_NAME}}
+        if a.get("auteur"):
+            ld["author"] = {"@type": "Person", "name": a["auteur"]}
+        corps = f"""
+<p class="meta"><a href="{url('/blog/')}">Blog</a> › {esc(a['titre'])}</p>
+<article>
+<h1>{esc(a['titre'])}</h1>
+<p class="meta">Publié le {date_fr(a['date'])}{(' · par ' + auteur) if auteur else ''}</p>
+{bandeau}
+{md_html(a['corps'], rel)}
+</article>
+<p class="small">Vous souhaitez publier un article sur l'annuaire ? <a href="{url('/blog/')}#publier">Découvrez les conditions</a>.</p>
+"""
+        ecrire(ch, page(f"{a['titre']} – {SITE_NAME}", a["resume"], ch, corps,
+                        extra_head='<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"))
+        urls.append(ch)
+        cartes += (f'<li class="card"><h3><a href="{url(ch)}">{esc(a["titre"])}</a>'
+                   + (' <span class="badge">Sponsorisé</span>' if a["sponsorise"] else "")
+                   + f'</h3><p class="meta">{date_fr(a["date"])}</p><p>{esc(a["resume"])}</p></li>')
+    liste_blog = f'<ul class="list">{cartes}</ul>' if cartes else "<p>Les premiers articles arrivent bientôt.</p>"
+    sujet = urlquote("Proposition d'article invité")
+    corps = f"""
+<h1>Blog : actualités et conseils pour les professionnels au Luxembourg</h1>
+<p>Articles sur la vie des entreprises, le référencement local et la visibilité en ligne au Luxembourg, la Belgique et la France.</p>
+{liste_blog}
+<h2 id="publier">Publier un article invité</h2>
+<p>Vous êtes une entreprise, une agence ou un indépendant et souhaitez publier un article sur {esc(SITE_NAME)} ? Nous acceptons des articles utiles pour nos lecteurs, sur des sujets en lien avec les entreprises, les métiers et les services au Luxembourg.</p>
+<ul class="plain">
+<li><strong>Article original</strong> : texte inédit, rédigé en français, de 600 mots minimum, sans contenu copié.</li>
+<li><strong>Lien sponsorisé</strong> : les articles proposés par des annonceurs sont signalés comme sponsorisés et leurs liens sortants portent l'attribut rel="sponsored", conformément aux recommandations de Google.</li>
+<li><strong>Validation éditoriale</strong> : nous relisons chaque article et nous réservons le droit de le refuser ou de demander des modifications.</li>
+</ul>
+<p><a class="btn" href="mailto:{esc(mail_contact)}?subject={sujet}">Proposer un article</a> · <a href="{url('/visibilite/')}">Voir les offres de visibilité</a></p>
+"""
+    if blog_indexe:
+        urls.append("/blog/")
+    ecrire("/blog/", page(f"Blog – {SITE_NAME}",
+                          "Articles et conseils pour les professionnels au Luxembourg : visibilité, référencement local, vie des entreprises.",
+                          "/blog/", corps, noindex=not blog_indexe))
 
     # sitemap + robots
     today = date.today().isoformat()
