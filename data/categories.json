@@ -80,7 +80,9 @@
     "metiers": {
       "depannage-informatique": "Dépannage informatique",
       "agence-web": "Agences web",
-      "hebergement-cloud": "Hébergement et cloud"
+      "hebergement-cloud": "Hébergement et cloud",
+      "services-informatiques": "Services informatiques",
+      "telecom": "Télécoms et réseaux"
     }
   },
   "auto-transport": {

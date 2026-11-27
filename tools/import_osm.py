@@ -52,6 +52,8 @@ SINGULIER = {
     "avocat": "Avocat", "notaire": "Notaire", "huissier": "Huissier de justice", "comptable": "Comptable",
     "fiduciaire": "Fiduciaire ou conseil fiscal", "assurance": "Assurance", "banque": "Banque",
     "conseil-financier": "Conseil financier",
+    "services-informatiques": "Entreprise de services informatiques", "telecom": "Télécoms et réseaux",
+    "depannage-informatique": "Dépannage informatique", "agence-web": "Agence web", "marketing": "Agence de marketing et communication",
     "psychotherapeute": "Psychothérapeute", "autre-sante": "Professionnel de santé",
 }
 SHOP = {
@@ -134,6 +136,14 @@ def classer(t):
         return ("droit-finance", "banque")
     if off in ("financial", "financial_advisor", "mortgage_broker"):
         return ("droit-finance", "conseil-financier")
+    if off == "it":
+        return ("informatique-web", "services-informatiques")
+    if off in ("telecommunication", "telecom"):
+        return ("informatique-web", "telecom")
+    if t.get("craft") == "electronics_repair":
+        return ("informatique-web", "depannage-informatique")
+    if off in ("advertising_agency", "marketing", "graphic_design"):
+        return ("services-entreprises", "marketing")
     if shop == "hairdresser":
         return ("beaute-loisirs", "coiffeur")
     if shop in ("beauty", "nails", "massage", "tattoo", "cosmetics") or am == "spa" or leis == "sauna":

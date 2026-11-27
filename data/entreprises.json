@@ -17151,7 +17151,9 @@
     "site": "http://www.lecouturierdelacuisine.lu/",
     "description": "Magasin maison et décoration à Bereldange.",
     "source": "OpenStreetMap",
-    "osm": "way/120795890"
+    "osm": "way/120795890",
+    "telephone": "+352 26 33 14 52",
+    "email": "info@interieur-decor.lu"
   },
   {
     "nom": "Le Fin Gourmand",
