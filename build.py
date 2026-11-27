@@ -304,12 +304,18 @@ def build():
                         ch, corps, extra_head=extra))
 
     # Ajouter
+    options_cat = '<option value="">Choisissez une catégorie…</option>' + "".join(
+        f'<optgroup label="{esc(info["nom"])}">'
+        + "".join(f'<option value="{esc(info["nom"])} – {esc(lib)}">{esc(lib)}</option>' for lib in info["metiers"].values())
+        + "</optgroup>"
+        for info in GROUPES.values()
+    ) + '<optgroup label="Autre"><option value="Autre (précisé dans la description)">Autre (précisez dans la description)</option></optgroup>'
     corps = f"""
 <h1>Ajouter votre entreprise</h1>
 <p>L'inscription est <strong>gratuite</strong>. Votre fiche est vérifiée puis publiée sous quelques jours.</p>
 <form action="{esc(FORM_ACTION)}" method="POST" class="form">
   <label>Nom de l'entreprise <input name="nom" required></label>
-  <label>Catégorie <input name="categorie" required placeholder="ex. Plombiers"></label>
+  <label>Catégorie <select name="categorie" required>{options_cat}</select></label>
   <label>Adresse <input name="adresse" required></label>
   <label>Code postal et ville <input name="ville" required></label>
   <label>Téléphone <input name="telephone"></label>
