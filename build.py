@@ -148,7 +148,7 @@ def build():
     index = [
         {
             "n": e["nom"], "c": CATEGORIES[e["categorie"]], "v": e["ville"],
-            "w": bool(e.get("site")), "m": bool(e.get("email")),
+            "w": bool(e.get("site")), "m": bool(e.get("email")), "t": bool(e.get("telephone")),
             "p": e["premium"], "u": url(f"/entreprise/{e['slug']}/"),
         }
         for e in ENTREPRISES
@@ -177,6 +177,7 @@ def build():
   <div class="filters">
     <label><input id="f-web" type="checkbox"> Avec site web</label>
     <label><input id="f-mail" type="checkbox"> Avec e-mail</label>
+    <label><input id="f-tel" type="checkbox"> Avec téléphone</label>
   </div>
   <p class="chips">{raccourcis}</p>
   <ul id="results" class="list"></ul>

@@ -36,8 +36,10 @@ h2 { font-size: 1.15rem; margin: 24px 0 8px; }
 button, .btn { background: var(--accent); color: #fff; border: 0; padding: 10px 18px; border-radius: 6px; font: inherit; cursor: pointer; display: inline-block; }
 .btn:hover { text-decoration: none; opacity: .9; }
 .foot { margin-top: 48px; padding: 20px 0; border-top: 1px solid var(--bord); color: var(--gris); font-size: .9rem; text-align: center; }
-.band { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin: 8px 0 4px; font-size: .95rem; color: #0f172a; }
 .band strong { color: var(--accent); }
 .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
 .tiles li { border: 1px solid var(--bord); border-left: 4px solid var(--accent); border-radius: 6px; padding: 10px 12px; background: #fff; }
 .tiles span { color: var(--gris); font-size: .85rem; }
+.hero h1 { font-size: 2.4rem; margin: 36px 0 28px; }
+@media (max-width: 640px) { .hero h1 { font-size: 1.9rem; } }
+.band { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; max-width: 640px; margin: 0 auto 28px; padding: 14px 18px; border: 1px solid var(--accent); border-radius: 10px; background: #f0f8f4; font-size: .98rem; }

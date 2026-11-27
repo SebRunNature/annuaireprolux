@@ -3,6 +3,7 @@
   var q = document.getElementById("q");
   var fw = document.getElementById("f-web");
   var fm = document.getElementById("f-mail");
+  var ft = document.getElementById("f-tel");
   var out = document.getElementById("results");
   if (!q || !out) return;
   var data = [];
@@ -13,10 +14,11 @@
 
   function render() {
     var term = norm(q.value.trim());
-    if (!term && !fw.checked && !fm.checked) { out.innerHTML = ""; return; }
+    if (!term && !fw.checked && !fm.checked && !ft.checked) { out.innerHTML = ""; return; }
     var res = data.filter(function (e) {
       if (fw.checked && !e.w) return false;
       if (fm.checked && !e.m) return false;
+      if (ft.checked && !e.t) return false;
       return !term || norm(e.n + " " + e.c + " " + e.v).indexOf(term) !== -1;
     }).slice(0, 50);
     out.innerHTML = res.length ? res.map(function (e) {
@@ -34,6 +36,6 @@
 
   fetch(window.SITE_SEARCH).then(function (r) { return r.json(); }).then(function (d) {
     data = d;
-    [q, fw, fm].forEach(function (el) { el.addEventListener("input", render); el.addEventListener("change", render); });
+    [q, fw, fm, ft].forEach(function (el) { el.addEventListener("input", render); el.addEventListener("change", render); });
   });
 })();
