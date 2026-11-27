@@ -38,13 +38,13 @@ button, .btn { background: var(--accent); color: #fff; border: 0; padding: 10px 
 .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
 .tiles li { border: 1px solid var(--bord); border-left: 4px solid var(--accent); border-radius: 6px; padding: 10px 12px; background: #fff; }
 .tiles span { color: var(--gris); font-size: .85rem; }
-@media (max-width: 640px) { .hero h1 { font-size: 2.4rem; margin: 40px 0 44px; }
+.hero h1 { font-size: 2.4rem; margin: 40px 0 44px; }
 @media (max-width: 640px) { .hero h1 { font-size: 1.9rem; } }
 .band { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; max-width: 640px; margin: 0 auto 48px; padding: 14px 18px; border: 1px solid var(--accent); border-radius: 10px; background: #f0f8f4; font-size: .98rem; }
 .searchbox { position: relative; max-width: 620px; margin: 0 auto; }
 .searchbox .loupe { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--accent); pointer-events: none; }
 .hero .searchbox input[type=search] { width: 100%; height: 58px; padding: 0 18px 0 52px; font-size: 1.1rem; border: 2px solid var(--accent); border-radius: 999px; background: #fff; box-shadow: 0 4px 14px rgba(33,114,78,.15); }
 .hero .searchbox input[type=search]:focus { outline: none; box-shadow: 0 4px 18px rgba(33,114,78,.35); }
-.filters { margin: 28px 0 22px; color: var(--gris); font-size: .95rem; }
+.filters { margin: 44px 0 26px; color: var(--gris); font-size: .95rem; }
 .filters label { margin: 0 12px; }
 .chips { margin: 22px 0; }
