@@ -42,27 +42,37 @@ def url(path):
 
 # ---------------------------------------------------------------- données
 with open(os.path.join(ROOT, "data", "categories.json"), encoding="utf-8") as f:
-    CATEGORIES = json.load(f)  # {slug: libellé}
+    GROUPES = json.load(f)  # {slug: {"nom": ..., "metiers": {slug: libellé}}}
 with open(os.path.join(ROOT, "data", "entreprises.json"), encoding="utf-8") as f:
     ENTREPRISES = json.load(f)
 
+SEUIL = int(CFG.get("seuil_pages", 3))  # nb min. de fiches pour créer une page métier / commune
+
 for e in ENTREPRISES:
+    g, m = e["groupe"], e["metier"]
+    if g not in GROUPES or m not in GROUPES[g]["metiers"]:
+        raise SystemExit(f"Groupe/métier inconnu: {g}/{m} ({e['nom']})")
+    e["groupe_nom"] = GROUPES[g]["nom"]
+    e["metier_nom"] = GROUPES[g]["metiers"][m]
     e["slug"] = slugify(f"{e['nom']}-{e['ville']}")
     e["ville_slug"] = slugify(e["ville"])
     e["premium"] = bool(e.get("premium"))
-    if e["categorie"] not in CATEGORIES:
-        raise SystemExit(f"Catégorie inconnue: {e['categorie']} ({e['nom']})")
 
 # Premium d'abord, puis ordre alphabétique
 ENTREPRISES.sort(key=lambda e: (not e["premium"], e["nom"].lower()))
 
-PAR_CAT = defaultdict(list)
+PAR_GROUPE = defaultdict(list)
+PAR_METIER = defaultdict(list)
 PAR_VILLE = defaultdict(list)
 VILLES = {}
 for e in ENTREPRISES:
-    PAR_CAT[e["categorie"]].append(e)
+    PAR_GROUPE[e["groupe"]].append(e)
+    PAR_METIER[(e["groupe"], e["metier"])].append(e)
     PAR_VILLE[e["ville_slug"]].append(e)
     VILLES[e["ville_slug"]] = e["ville"]
+
+PAGES_VILLE = {v for v, l in PAR_VILLE.items() if len(l) >= SEUIL}
+PAGES_METIER = {k for k, l in PAR_METIER.items() if len(l) >= SEUIL}
 
 
 # ---------------------------------------------------------------- gabarits
@@ -111,7 +121,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
 def carte(e):
     lignes = [f'<h3><a href="{url("/entreprise/" + e["slug"] + "/")}">{esc(e["nom"])}</a>'
               + (' <span class="badge">Premium</span>' if e["premium"] else "") + "</h3>"]
-    lignes.append(f'<p class="meta">{esc(CATEGORIES[e["categorie"]])} · {esc(e["ville"])}</p>')
+    lignes.append(f'<p class="meta">{esc(e["groupe_nom"])} · {esc(e["metier_nom"])} · {esc(e["ville"])}</p>')
     if e.get("description"):
         lignes.append(f'<p>{esc(e["description"])}</p>')
     return '<li class="card">' + "".join(lignes) + "</li>"
@@ -147,7 +157,7 @@ def build():
 
     index = [
         {
-            "n": e["nom"], "c": CATEGORIES[e["categorie"]], "v": e["ville"],
+            "n": e["nom"], "c": f"{e['groupe_nom']} · {e['metier_nom']}", "v": e["ville"],
             "w": bool(e.get("site")), "m": bool(e.get("email")), "t": bool(e.get("telephone")),
             "p": e["premium"], "u": url(f"/entreprise/{e['slug']}/"),
         }
@@ -156,19 +166,23 @@ def build():
     with open(os.path.join(OUT, "search.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False)
 
+    def lien_ville(v, avec_nb=True):
+        nb = f' <span>({len(PAR_VILLE[v])})</span>' if avec_nb else ""
+        if v in PAGES_VILLE:
+            return f'<li><a href="{url("/ville/" + v + "/")}">{esc(VILLES[v])}</a>{nb}</li>'
+        return f"<li>{esc(VILLES[v])}{nb}</li>"
+
     # Accueil
-    cats_pop = sorted(PAR_CAT, key=lambda c: -len(PAR_CAT[c]))[:6]
+    pop = [g for g in sorted(PAR_GROUPE, key=lambda g: -len(PAR_GROUPE[g]))][:6]
     raccourcis = " ".join(
-        f'<a class="chip" href="{url("/categorie/" + c + "/")}">{esc(CATEGORIES[c])}</a>' for c in cats_pop
+        f'<a class="chip" href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a>' for g in pop
     )
-    par_cat = "".join(
-        f'<li><a href="{url("/categorie/" + c + "/")}">{esc(CATEGORIES[c])}</a> <span>({len(PAR_CAT[c])})</span></li>'
-        for c in sorted(PAR_CAT, key=lambda c: CATEGORIES[c])
+    tuiles = "".join(
+        f'<li><a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a> <span>({len(PAR_GROUPE.get(g, []))})</span></li>'
+        for g in GROUPES
     )
-    par_ville = "".join(
-        f'<li><a href="{url("/ville/" + v + "/")}">{esc(VILLES[v])}</a> <span>({len(PAR_VILLE[v])})</span></li>'
-        for v in sorted(PAR_VILLE, key=lambda v: VILLES[v])
-    )
+    top_villes = sorted(PAR_VILLE, key=lambda v: (-len(PAR_VILLE[v]), VILLES[v]))[:10]
+    par_ville = "".join(lien_ville(v) for v in sorted(top_villes, key=lambda v: VILLES[v]))
     corps = f"""
 <section class="hero">
   <h1>L'annuaire des professionnels au Luxembourg</h1>
@@ -186,33 +200,63 @@ def build():
   <ul id="results" class="list"></ul>
 </section>
 <section class="cols">
-  <div><h2>Parcourir par catégorie</h2><ul class="tiles">{par_cat}</ul></div>
-  <div><h2>Parcourir par ville</h2><ul class="plain">{par_ville}</ul></div>
+  <div><h2>Parcourir par catégorie</h2><ul class="tiles">{tuiles}</ul></div>
+  <div><h2>Parcourir par commune</h2><ul class="plain">{par_ville}</ul>
+  <p><a href="{url('/communes/')}">Toutes les communes →</a></p></div>
 </section>
 <script>window.SITE_SEARCH = "{url('/search.json')}";</script>
 <script src="{url('/search.js')}" defer></script>
 """
     ecrire("/", page(f"{SITE_NAME} – L'annuaire des professionnels au Luxembourg",
-                     "Trouvez une entreprise au Luxembourg par métier ou par ville : coordonnées, site web et e-mail.",
+                     "Trouvez une entreprise au Luxembourg par métier ou par commune : coordonnées, site web et e-mail.",
                      "/", corps))
 
-    # Catégories
-    for c, items in PAR_CAT.items():
-        ch = f"/categorie/{c}/"
+    # Groupes (12 catégories principales)
+    for g, info in GROUPES.items():
+        ch = f"/categorie/{g}/"
+        items = PAR_GROUPE.get(g, [])
+        vide = not items
+        if not vide:
+            urls.append(ch)
+        chips = "".join(
+            f'<a class="chip" href="{url("/categorie/" + g + "/" + m + "/")}">{esc(lib)} ({len(PAR_METIER[(g, m)])})</a>'
+            for m, lib in info["metiers"].items() if (g, m) in PAGES_METIER
+        )
+        if vide:
+            liste_html = f'<p>Les premières entreprises arrivent bientôt. <a href="{url("/ajouter/")}">Ajoutez la vôtre gratuitement.</a></p>'
+        else:
+            liste_html = liste(items)
+        corps = f'<h1>{esc(info["nom"])} au Luxembourg</h1>' + (f'<p class="chips">{chips}</p>' if chips else "") + liste_html
+        ecrire(ch, page(f"{info['nom']} au Luxembourg – {SITE_NAME}",
+                        f"Annuaire des entreprises : {info['nom'].lower()} au Luxembourg. Coordonnées et site web.",
+                        ch, corps, noindex=vide))
+
+    # Métiers (seulement à partir de SEUIL fiches)
+    for (g, m) in PAGES_METIER:
+        ch = f"/categorie/{g}/{m}/"
         urls.append(ch)
-        corps = f"<h1>{esc(CATEGORIES[c])} au Luxembourg</h1>{liste(items)}"
-        ecrire(ch, page(f"{CATEGORIES[c]} au Luxembourg – {SITE_NAME}",
-                        f"Annuaire des entreprises : {CATEGORIES[c].lower()} au Luxembourg. Coordonnées et site web.",
+        lib = GROUPES[g]["metiers"][m]
+        corps = (f'<p class="crumbs"><a href="{url("/")}">Accueil</a> › <a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a></p>'
+                 f"<h1>{esc(lib)} au Luxembourg</h1>{liste(PAR_METIER[(g, m)])}")
+        ecrire(ch, page(f"{lib} au Luxembourg – {SITE_NAME}",
+                        f"Annuaire : {lib.lower()} au Luxembourg. Coordonnées, téléphone et site web.",
                         ch, corps))
 
-    # Villes
-    for v, items in PAR_VILLE.items():
+    # Communes (seulement à partir de SEUIL fiches)
+    for v in PAGES_VILLE:
         ch = f"/ville/{v}/"
         urls.append(ch)
-        corps = f"<h1>Entreprises à {esc(VILLES[v])}</h1>{liste(items)}"
+        corps = f"<h1>Entreprises à {esc(VILLES[v])}</h1>{liste(PAR_VILLE[v])}"
         ecrire(ch, page(f"Entreprises à {VILLES[v]} – {SITE_NAME}",
                         f"Annuaire des entreprises et professionnels à {VILLES[v]} (Luxembourg).",
                         ch, corps))
+
+    # Liste de toutes les communes
+    toutes = "".join(lien_ville(v) for v in sorted(PAR_VILLE, key=lambda v: VILLES[v]))
+    urls.append("/communes/")
+    ecrire("/communes/", page(f"Toutes les communes – {SITE_NAME}",
+                              "Liste des communes du Luxembourg ayant des entreprises référencées.",
+                              "/communes/", f'<h1>Toutes les communes</h1><ul class="plain">{toutes}</ul>'))
 
     # Fiches
     for e in ENTREPRISES:
@@ -239,16 +283,18 @@ def build():
         if e.get("site"):
             ld["url"] = e["site"]
         extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+        ville_crumb = (f'<a href="{url("/ville/" + e["ville_slug"] + "/")}">{esc(e["ville"])}</a>'
+                       if e["ville_slug"] in PAGES_VILLE else esc(e["ville"]))
         corps = f"""
-<p class="crumbs"><a href="{url('/')}">Accueil</a> › <a href="{url('/categorie/' + e['categorie'] + '/')}">{esc(CATEGORIES[e['categorie']])}</a> › <a href="{url('/ville/' + e['ville_slug'] + '/')}">{esc(e['ville'])}</a></p>
+<p class="crumbs"><a href="{url('/')}">Accueil</a> › <a href="{url('/categorie/' + e['groupe'] + '/')}">{esc(e['groupe_nom'])}</a> › {ville_crumb}</p>
 <h1>{esc(e['nom'])}{' <span class="badge">Premium</span>' if e['premium'] else ''}</h1>
-<p class="meta">{esc(CATEGORIES[e['categorie']])} · {esc(e['ville'])}</p>
+<p class="meta">{esc(e['metier_nom'])} · {esc(e['ville'])}</p>
 <p>{esc(e.get('description', ''))}</p>
 <dl class="infos">{''.join(lignes)}</dl>
 <p class="small">Une information est incorrecte ? <a href="{url('/ajouter/')}">Écrivez-nous</a> pour la corriger ou la supprimer.</p>
 """
-        ecrire(ch, page(f"{e['nom']} – {CATEGORIES[e['categorie']]} à {e['ville']}",
-                        f"{e['nom']} : {CATEGORIES[e['categorie']].lower()} à {e['ville']}. Adresse, téléphone et site web.",
+        ecrire(ch, page(f"{e['nom']} – {e['metier_nom']} à {e['ville']}",
+                        f"{e['nom']} : {e['metier_nom'].lower()} à {e['ville']}. Adresse, téléphone et site web.",
                         ch, corps, extra_head=extra))
 
     # Ajouter
@@ -317,7 +363,7 @@ conformément aux recommandations de Google.</p>
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
 
-    print(f"OK : {len(ENTREPRISES)} fiches, {len(PAR_CAT)} catégories, {len(PAR_VILLE)} villes, {len(urls)} URLs.")
+    print(f"OK : {len(ENTREPRISES)} fiches, {len(GROUPES)} groupes, {len(PAGES_METIER)} pages métier, {len(PAGES_VILLE)} pages commune, {len(urls)} URLs.")
 
 
 if __name__ == "__main__":

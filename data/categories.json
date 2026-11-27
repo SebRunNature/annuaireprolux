@@ -1,10 +1,108 @@
 {
-  "plombiers": "Plombiers",
-  "electriciens": "Électriciens",
-  "restaurants": "Restaurants",
-  "comptables": "Comptables",
-  "avocats": "Avocats",
-  "medecins": "Médecins",
-  "informatique": "Services informatiques",
-  "immobilier": "Agences immobilières"
+  "sante": {
+    "nom": "Santé et bien-être",
+    "metiers": {
+      "medecin-generaliste": "Médecins généralistes",
+      "ophtalmologue": "Ophtalmologues",
+      "dentiste": "Dentistes",
+      "kinesitherapeute": "Kinésithérapeutes",
+      "pharmacie": "Pharmacies",
+      "association-sante": "Associations de santé"
+    }
+  },
+  "batiment": {
+    "nom": "Bâtiment et artisans",
+    "metiers": {
+      "plombier": "Plombiers",
+      "electricien": "Électriciens",
+      "chauffagiste": "Chauffagistes",
+      "peintre": "Peintres",
+      "menuisier": "Menuisiers"
+    }
+  },
+  "restauration": {
+    "nom": "Restauration et hôtellerie",
+    "metiers": {
+      "restaurant": "Restaurants",
+      "cafe": "Cafés et bars",
+      "hotel": "Hôtels"
+    }
+  },
+  "commerces": {
+    "nom": "Commerces et magasins",
+    "metiers": {
+      "alimentation": "Alimentation",
+      "mode": "Vêtements et mode",
+      "maison": "Maison et décoration",
+      "fleuriste": "Fleuristes"
+    }
+  },
+  "droit-finance": {
+    "nom": "Droit, comptabilité et finance",
+    "metiers": {
+      "avocat": "Avocats",
+      "comptable": "Comptables",
+      "fiduciaire": "Fiduciaires",
+      "assurance": "Assurances"
+    }
+  },
+  "immobilier": {
+    "nom": "Immobilier",
+    "metiers": {
+      "agence-immobiliere": "Agences immobilières",
+      "promoteur": "Promoteurs",
+      "syndic": "Syndics de copropriété"
+    }
+  },
+  "informatique-web": {
+    "nom": "Informatique et web",
+    "metiers": {
+      "depannage-informatique": "Dépannage informatique",
+      "agence-web": "Agences web",
+      "hebergement-cloud": "Hébergement et cloud"
+    }
+  },
+  "auto-transport": {
+    "nom": "Auto et transport",
+    "metiers": {
+      "garage": "Garages",
+      "taxi": "Taxis",
+      "demenagement": "Déménagement",
+      "location-vehicules": "Location de véhicules"
+    }
+  },
+  "services-entreprises": {
+    "nom": "Services aux entreprises",
+    "metiers": {
+      "nettoyage": "Nettoyage",
+      "conseil": "Conseil",
+      "marketing": "Marketing et communication",
+      "ressources-humaines": "Ressources humaines"
+    }
+  },
+  "education": {
+    "nom": "Éducation, formation et enfance",
+    "metiers": {
+      "ecole-formation": "Écoles et formations",
+      "creche": "Crèches et garde d'enfants",
+      "cours-particuliers": "Cours particuliers"
+    }
+  },
+  "beaute-loisirs": {
+    "nom": "Beauté, mode et loisirs",
+    "metiers": {
+      "coiffeur": "Coiffeurs",
+      "institut-beaute": "Instituts de beauté",
+      "salle-sport": "Salles de sport",
+      "loisirs": "Loisirs"
+    }
+  },
+  "industrie": {
+    "nom": "Industrie",
+    "metiers": {
+      "fabrication": "Fabricants et producteurs",
+      "logistique": "Logistique et entrepôts",
+      "energie": "Énergie et environnement"
+    }
+  }
 }

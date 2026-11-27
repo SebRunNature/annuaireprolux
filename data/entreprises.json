@@ -1,7 +1,6 @@
 [
   {
     "nom": "Exemple Plomberie SARL",
-    "categorie": "plombiers",
     "ville": "Luxembourg",
     "adresse": "1 rue d'Exemple",
     "code_postal": "L-1111",
@@ -9,94 +8,105 @@
     "email": "contact@exemple-plomberie.example",
     "site": "https://exemple-plomberie.example",
     "description": "FICHE D'EXEMPLE. Dépannage et installation sanitaire.",
-    "premium": true
+    "premium": true,
+    "groupe": "batiment",
+    "metier": "plombier"
   },
   {
     "nom": "Exemple Sanitaire",
-    "categorie": "plombiers",
     "ville": "Esch-sur-Alzette",
     "adresse": "2 rue d'Exemple",
     "code_postal": "L-4001",
     "telephone": "+352 00 00 00 02",
-    "description": "FICHE D'EXEMPLE. Chauffage et sanitaire."
+    "description": "FICHE D'EXEMPLE. Chauffage et sanitaire.",
+    "groupe": "batiment",
+    "metier": "plombier"
   },
   {
     "nom": "Exemple Électricité",
-    "categorie": "electriciens",
     "ville": "Differdange",
     "adresse": "3 rue d'Exemple",
     "code_postal": "L-4501",
     "telephone": "+352 00 00 00 03",
     "email": "info@exemple-electricite.example",
-    "description": "FICHE D'EXEMPLE. Installations électriques résidentielles."
+    "description": "FICHE D'EXEMPLE. Installations électriques résidentielles.",
+    "groupe": "batiment",
+    "metier": "electricien"
   },
   {
     "nom": "Restaurant Exemple",
-    "categorie": "restaurants",
     "ville": "Luxembourg",
     "adresse": "4 place d'Exemple",
     "code_postal": "L-1112",
     "telephone": "+352 00 00 00 04",
     "site": "https://restaurant-exemple.example",
-    "description": "FICHE D'EXEMPLE. Cuisine locale."
+    "description": "FICHE D'EXEMPLE. Cuisine locale.",
+    "groupe": "restauration",
+    "metier": "restaurant"
   },
   {
     "nom": "Café Exemple",
-    "categorie": "restaurants",
     "ville": "Dudelange",
     "adresse": "5 rue d'Exemple",
     "code_postal": "L-3401",
-    "description": "FICHE D'EXEMPLE. Café et petite restauration."
+    "description": "FICHE D'EXEMPLE. Café et petite restauration.",
+    "groupe": "restauration",
+    "metier": "cafe"
   },
   {
     "nom": "Exemple Comptabilité",
-    "categorie": "comptables",
     "ville": "Luxembourg",
     "adresse": "6 avenue d'Exemple",
     "code_postal": "L-1113",
     "telephone": "+352 00 00 00 06",
     "email": "bonjour@exemple-compta.example",
     "site": "https://exemple-compta.example",
-    "description": "FICHE D'EXEMPLE. Comptabilité et fiscalité pour PME."
+    "description": "FICHE D'EXEMPLE. Comptabilité et fiscalité pour PME.",
+    "groupe": "droit-finance",
+    "metier": "comptable"
   },
   {
     "nom": "Cabinet Exemple Avocats",
-    "categorie": "avocats",
     "ville": "Luxembourg",
     "adresse": "7 boulevard d'Exemple",
     "code_postal": "L-1114",
     "telephone": "+352 00 00 00 07",
     "site": "https://cabinet-exemple.example",
-    "description": "FICHE D'EXEMPLE. Droit des sociétés et droit immobilier."
+    "description": "FICHE D'EXEMPLE. Droit des sociétés et droit immobilier.",
+    "groupe": "droit-finance",
+    "metier": "avocat"
   },
   {
     "nom": "Cabinet Médical Exemple",
-    "categorie": "medecins",
     "ville": "Ettelbruck",
     "adresse": "8 rue d'Exemple",
     "code_postal": "L-9001",
     "telephone": "+352 00 00 00 08",
-    "description": "FICHE D'EXEMPLE. Médecine générale."
+    "description": "FICHE D'EXEMPLE. Médecine générale.",
+    "groupe": "sante",
+    "metier": "medecin-generaliste"
   },
   {
     "nom": "Exemple Informatique",
-    "categorie": "informatique",
     "ville": "Esch-sur-Alzette",
     "adresse": "9 rue d'Exemple",
     "code_postal": "L-4002",
     "telephone": "+352 00 00 00 09",
     "email": "support@exemple-it.example",
     "site": "https://exemple-it.example",
-    "description": "FICHE D'EXEMPLE. Maintenance et support informatique."
+    "description": "FICHE D'EXEMPLE. Maintenance et support informatique.",
+    "groupe": "informatique-web",
+    "metier": "depannage-informatique"
   },
   {
     "nom": "Exemple Immobilier",
-    "categorie": "immobilier",
     "ville": "Mersch",
     "adresse": "10 rue d'Exemple",
     "code_postal": "L-7501",
     "telephone": "+352 00 00 00 10",
     "site": "https://exemple-immo.example",
-    "description": "FICHE D'EXEMPLE. Vente et location de biens."
+    "description": "FICHE D'EXEMPLE. Vente et location de biens.",
+    "groupe": "immobilier",
+    "metier": "agence-immobiliere"
   }
 ]
