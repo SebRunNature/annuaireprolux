@@ -365,6 +365,7 @@ def build():
   <li><strong>De la visibilité locale :</strong> votre entreprise apparaît en tête de sa catégorie et de sa commune.</li>
   <li><strong>Des visiteurs qualifiés :</strong> des internautes qui cherchent justement votre métier et peuvent cliquer vers votre site.</li>
   <li><strong>Une citation d'entreprise :</strong> vos coordonnées (nom, adresse, téléphone) publiées de façon cohérente sur un annuaire luxembourgeois.</li>
+  <li><strong>Une image de votre entreprise :</strong> avec la fiche Premium, une bannière (logo, façade, équipe, réalisation) s'affiche en haut de votre fiche.</li>
   <li><strong>Une mention de marque :</strong> votre nom associé à un site spécialisé sur les professionnels du Luxembourg.</li>
 </ul>
 
@@ -386,6 +387,7 @@ def build():
 <details><summary>Cela améliore-t-il mon classement sur Google ?</summary><p>Nous ne promettons aucun classement. Une fiche ou un article sponsorisé apporte de la visibilité, des visiteurs et une citation locale, qui complètent un travail de référencement.</p></details>
 <details><summary>Quelles entreprises acceptez-vous ?</summary><p>Des entreprises et des professionnels réels, avec un contenu légal et pertinent pour l'annuaire. Nous refusons les contenus trompeurs, illégaux ou sans rapport avec l'activité de l'entreprise.</p></details>
 <details><summary>Je suis une agence ou un indépendant, puis-je commander pour mes clients ?</summary><p>Oui, le pack agences et indépendants est prévu pour cela. Écrivez-nous avec le nombre de clients ou de projets concernés.</p></details>
+<details><summary>Puis-je ajouter une image de mon entreprise ?</summary><p>Oui, avec la fiche Premium. Vous nous envoyez une image (logo, façade, équipe ou réalisation, idéalement au format 1200 × 400 px) et nous l'affichons en bannière en haut de votre fiche.</p></details>
 <details><summary>Quels sont les tarifs ?</summary><p>Les tarifs dépendent de l'offre et du volume. Demandez un devis par e-mail : <a href="mailto:{esc(contact)}">{esc(contact)}</a>.</p></details>
 
 <p style="margin-top:28px">{cta("Fiche Premium ou article sponsorisé")}</p>
