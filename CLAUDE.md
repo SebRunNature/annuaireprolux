@@ -34,3 +34,6 @@ Site : https://annuaireproluxembourg.eu (GitHub Pages, branche main, dossier /do
 ## Fiches Premium (logo et ancre)
 - Champs : `premium: true`, `logo` (fichier dans assets/logos/, préparé avec `tools/logo.py`), `ancre` (texte du lien), `banniere` optionnelle.
 - Description Premium : **100 à 115 mots**, uniquement des faits fournis. `ancre` = phrase présente dans la description, rendue en lien rel="sponsored" vers le site ; l'URL complète reste affichée dans « Site web ». Ancre courte, descriptive, jamais composée uniquement de mots-clés.
+
+## Réseaux de succursales
+- Banques : une seule fiche par enseigne (la maison mère, repérée à Luxembourg-Ville, sinon la fiche la plus complète), via `SIEGE_UNIQUE` dans `tools/import_osm.py`. Ne pas lister chaque agence par commune.

@@ -276,6 +276,21 @@ for membres in groupes.values():
     fiche = {k: v for k, v in fiche.items() if v != ""}
     (fiches if base["ville"] else a_completer).append(fiche)
 
+# Réseaux de succursales : une seule fiche par enseigne (la maison mère), pas une par commune.
+# La maison mère est repérée à Luxembourg-Ville, sinon à la fiche la plus complète.
+SIEGE_UNIQUE = {"banque"}
+par_enseigne = {}
+for f_ in fiches:
+    if f_["metier"] in SIEGE_UNIQUE:
+        par_enseigne.setdefault((f_["metier"], norm(f_["nom"])), []).append(f_)
+retirees = []
+for cle, liste_ in par_enseigne.items():
+    if len(liste_) > 1:
+        liste_.sort(key=lambda x: (x["ville"] != "Luxembourg", -len(x)))
+        retirees += [id(x) for x in liste_[1:]]
+        print(f"enseigne regroupée : {liste_[0]['nom']} ({len(liste_)} -> 1, gardée : {liste_[0]['ville']})")
+fiches = [f_ for f_ in fiches if id(f_) not in set(retirees)]
+
 chemin = os.path.join(ROOT, "data", "entreprises.json")
 with open(chemin, encoding="utf-8") as f:
     existantes = json.load(f)
