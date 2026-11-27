@@ -722,7 +722,7 @@ def build():
 <p class="meta"><a href="{url('/blog/')}">Blog</a> › {esc(a['titre'])}</p>
 <article>
 <h1>{esc(a['titre'])}</h1>
-<p class="meta">Publié le {date_fr(a['date'])}{(' · par ' + auteur) if auteur else ''}</p>
+{('<p class="meta">Par ' + auteur + '</p>') if auteur else ''}
 {bandeau}
 {img_html}
 {md_html(a['corps'], rel)}
@@ -734,14 +734,14 @@ def build():
         urls.append(ch)
         cartes += (f'<li class="card"><h3><a href="{url(ch)}">{esc(a["titre"])}</a>'
                    + (' <span class="badge">Sponsorisé</span>' if a["sponsorise"] else "")
-                   + f'</h3><p class="meta">{date_fr(a["date"])}</p><p>{esc(a["resume"])}</p></li>')
+                   + f'</h3><p>{esc(a["resume"])}</p></li>')
     liste_blog = f'<ul class="list">{cartes}</ul>' if cartes else "<p>Les premiers articles arrivent bientôt.</p>"
     sujet = urlquote("Proposition d'article invité")
     corps = f"""
 <h1>Blog : actualités et conseils pour les professionnels au Luxembourg</h1>
 <p>Articles sur la vie des entreprises, le référencement local et la visibilité en ligne au Luxembourg, la Belgique et la France.</p>
-{liste_blog}
-<h2 id="publier">Publier un article invité</h2>
+<aside class="encart" id="publier">
+<h2>Publier un article invité</h2>
 <p>Vous êtes une entreprise, une agence ou un indépendant et souhaitez publier un article sur {esc(SITE_NAME)} ? Nous acceptons des articles utiles pour nos lecteurs, sur des sujets en lien avec les entreprises, les métiers et les services au Luxembourg.</p>
 <ul class="plain">
 <li><strong>Article original</strong> : texte inédit, rédigé en français, de 600 mots minimum, sans contenu copié.</li>
@@ -749,6 +749,9 @@ def build():
 <li><strong>Validation éditoriale</strong> : nous relisons chaque article et nous réservons le droit de le refuser ou de demander des modifications.</li>
 </ul>
 <p><a class="btn" href="mailto:{esc(mail_contact)}?subject={sujet}">Proposer un article</a> · <a href="{url('/visibilite/')}">Voir les offres de visibilité</a></p>
+</aside>
+<h2>Derniers articles</h2>
+{liste_blog}
 """
     if blog_indexe:
         urls.append("/blog/")

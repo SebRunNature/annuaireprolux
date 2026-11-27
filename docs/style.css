@@ -70,3 +70,6 @@ main .plain li, main .tiles li, main .card h3 { text-align: left; hyphens: none;
 .logo-box img, .logo-mini img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 .logo-mini { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 36px; margin-right: 10px; vertical-align: middle; background: #fff; border: 1px solid var(--bord); border-radius: 6px; padding: 3px; }
 .art-img{max-width:100%;height:auto;border-radius:8px;display:block}
+.encart { margin: 16px 0 24px; padding: 16px 18px; border: 1px solid var(--bord); border-left: 4px solid #21724e; border-radius: 8px; background: var(--fond); }
+.encart h2 { margin: 0 0 8px; font-size: 1.15rem; }
+.encart p, .encart ul { margin: 6px 0; }
