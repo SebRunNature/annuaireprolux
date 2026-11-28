@@ -33930,5 +33930,17 @@
     "description": "Crèche, enseigne présente dans plusieurs communes du Luxembourg.",
     "source": "OpenStreetMap",
     "enseigne": "e:nascht"
+  },
+  {
+    "nom": "Superman.lu",
+    "groupe": "batiment",
+    "metier": "amenagement-interieur",
+    "ville": "Dahlem",
+    "adresse": "19 Rue de Hivange",
+    "code_postal": "L-8351",
+    "telephone": "+352 661 251 177",
+    "site": "https://superman.lu/",
+    "description": "Aménagement d'intérieur à Dahlem. L'entreprise propose des travaux intérieurs (peinture, tapisserie, revêtements de sol, rénovation), le montage de meubles, le jardinage, le débarras et le nettoyage extérieur, au Luxembourg et alentours.",
+    "source": "Saisie manuelle"
   }
 ]
