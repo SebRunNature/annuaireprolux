@@ -9,9 +9,7 @@
     "telephone": "",
     "email": "montredevie@proton.me",
     "site": "https://montre-de-vie.com/",
-    "ancre": "calculateur d'âge biologique",
     "logo": "montre-de-vie.webp",
-    "premium": true,
     "source": "Inscription",
     "description": "Montre de Vie est un calculateur d'âge biologique et d'espérance de vie sur mesure. Un seul outil, deux informations : vous remplissez un formulaire sur votre mode de vie et vos biomarqueurs, puis un algorithme calcule votre âge biologique et votre espérance de vie, avec une seule réponse, qui se veut honnête. L'outil vous indique ensuite trois leviers prioritaires sur lesquels agir. Son slogan résume l'idée : « Ta vie en temps réel ». Montre de Vie est un outil d'information, qui ne remplace pas l'avis d'un médecin. Vous pouvez contacter son éditeur par e-mail pour toute question sur l'outil ou sur son fonctionnement."
   },
@@ -25,10 +23,8 @@
     "telephone": "",
     "email": "sebrunnature@gmail.com",
     "site": "https://run-nature.com/",
-    "premium": true,
     "source": "Inscription",
     "description": "Run Nature est un blog de trail et d'ultra-trail au Luxembourg, consacré aussi à la course à pied et aux activités de plein air dans la Grande Région. Vous y trouverez des retours d'expérience de courses et d'entraînements, des parcours avec traces GPX, des tests de matériel, des articles sur la nutrition et l'entraînement, des idées de randonnée et des outils pour les coureurs. Le blog est tenu par un pratiquant passionné, qui n'est ni médecin du sport, ni diététicien, ni entraîneur diplômé. Les articles s'appuient sur des données réelles et sur le vécu de l'auteur, et distinguent son expérience personnelle de ce qui vaut pour tout le monde. L'auteur peut être contacté par e-mail.",
-    "ancre": "blog de trail et d'ultra-trail au Luxembourg",
     "logo": "run-nature.webp"
   },
   {
@@ -33969,5 +33965,23 @@
     "horaires": "7j/7, 24h/24",
     "description": "Le Centre National pour Victimes de Violences (CNVV) reçoit les personnes victimes de violences, qu'elles soient physiques, sexuelles ou psychiques, quel que soit leur âge. Une équipe pluridisciplinaire assure une prise en charge ambulatoire d'urgence : soutien psychosocial, assistance médicale, intervention policière et dépôt de plainte, information juridique. Le centre se trouve au Val Sainte-Croix, près de l'arrêt de tram et de bus Stäreplaz – Etoile. Le portail violence.lu complète cette offre avec des informations, des campagnes de sensibilisation, des outils et des formations.",
     "source": "Saisie manuelle"
+  },
+  {
+    "nom": "Nappilla",
+    "groupe": "beaute-loisirs",
+    "metier": "loisirs",
+    "ville": "Walferdange",
+    "site": "https://nappilla.home.blog/",
+    "description": "Nappilla est un blog généraliste tourné vers l'écologie. Ses articles se répartissent en six rubriques : zéro déchet et maison, hygiène et règles, santé naturelle et alimentation, bébé et famille, planète et climat, nature et sport durable.",
+    "source": "Inscription"
+  },
+  {
+    "nom": "Agence R-P Visibility",
+    "groupe": "services-entreprises",
+    "metier": "marketing",
+    "ville": "Walferdange",
+    "site_texte": "agencerpvisibility.eu",
+    "description": "Agence de relations publiques et de communication basée au Luxembourg, qui travaille avec des entreprises, des indépendants et des porteurs de projets. Ses services : communication d'entreprise, relations avec les médias, image de marque et visibilité en ligne. L'agence édite aussi l'annuaire Annuaire Pro Luxembourg.",
+    "source": "Inscription"
   }
 ]

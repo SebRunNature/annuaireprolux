@@ -530,6 +530,8 @@ def build():
             lignes.append(f'<dt>E-mail</dt><dd><a href="mailto:{esc(e["email"])}">{esc(e["email"])}</a></dd>')
         if e.get("site"):
             lignes.append(f'<dt>Site web</dt><dd><a href="{esc(e["site"])}" rel="{rel}" target="_blank">{esc(e["site"])}</a></dd>')
+        elif e.get("site_texte"):  # adresse affichée en simple texte, sans lien (domaine pas encore actif)
+            lignes.append(f'<dt>Site web</dt><dd>{esc(e["site_texte"])}</dd>')
         ld = {
             "@context": "https://schema.org", "@type": "LocalBusiness", "name": e["nom"],
             "address": {"@type": "PostalAddress", "streetAddress": e.get("adresse", ""),
