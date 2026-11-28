@@ -33984,5 +33984,15 @@
     "site_texte": "agencerpvisibility.eu",
     "description": "Agence de relations publiques et de communication basée au Luxembourg, qui travaille avec des entreprises, des indépendants et des porteurs de projets. Ses services : communication d'entreprise, relations avec les médias, image de marque et visibilité en ligne. L'agence édite aussi l'annuaire Annuaire Pro Luxembourg.",
     "source": "Inscription"
+  },
+  {
+    "nom": "Plum'Art",
+    "groupe": "commerces",
+    "metier": "maison",
+    "ville": "Luxembourg",
+    "telephone": "+352 26 35 14 20",
+    "site": "https://www.plum-art.lu/",
+    "description": "Plum'Art est une entreprise familiale de literie, présente depuis 2009 en Belgique et au Luxembourg. Elle propose des matelas, des lits, des boxsprings, des sommiers, des oreillers, des couettes, des canapés-lits et du linge de lit. Parmi ses services : Click & Collect, livraison sur rendez-vous, reprise de l'ancienne literie et service après-vente.",
+    "source": "Saisie manuelle"
   }
 ]
