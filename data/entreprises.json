@@ -5789,10 +5789,12 @@
     "groupe": "commerces",
     "metier": "alimentation",
     "ville": "Luxembourg",
+    "telephone": "+352 28 28 - 3461",
     "site": "https://www.cactus.lu/",
-    "description": "Commerce d'alimentation, enseigne présente dans plusieurs communes du Luxembourg.",
-    "source": "OpenStreetMap",
-    "enseigne": "e:cactus"
+    "description": "Cactus est un groupe de distribution familial luxembourgeois, dont le siège se trouve à la Belle-Étoile, à Bertrange. L'histoire commence en 1900, quand Joseph Leesch ouvre une épicerie près de la gare de Luxembourg-Ville. Le premier supermarché Cactus ouvre à Bereldange en 1967, et le premier Cactus shoppi à Ettelbruck en 2008. L'enseigne regroupe aujourd'hui des supermarchés, des magasins Cactus hobbi (électronique, maison, jardin, loisirs), des Cactus shoppi franchisés pour la vente à emporter et des restaurants. Le site cactus.lu présente aussi la livraison à domicile, les cartes cadeaux, le service après-vente, un service photo et la Carte Cactus gratuite. Le service client répond au +352 28 28 - 3461 les jours ouvrables.",
+    "source": "Rédaction",
+    "enseigne": "e:cactus",
+    "index": true
   },
   {
     "nom": "Cactus Hobby",
