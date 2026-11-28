@@ -162,7 +162,7 @@ def date_fr(iso):
 
 
 # ---------------------------------------------------------------- gabarits
-def page(titre, description, chemin, corps, extra_head="", noindex=False):
+def page(titre, description, chemin, corps, extra_head="", noindex=False, classe_body=""):
     canon = f"{SITE_URL}{chemin}"
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ""
     return f"""<!DOCTYPE html>
@@ -180,7 +180,7 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
 <link rel="stylesheet" href="{url('/style.css')}">
 {extra_head}
 </head>
-<body>
+<body{(f' class="{classe_body}"' if classe_body else "")}>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="{url('/')}">{esc(SITE_NAME)}</a>
@@ -387,18 +387,38 @@ def pagination(ch, n, total):
     return f'<nav class="pager" aria-label="Pagination">{prev}{"".join(out)}{suiv}</nav>'
 
 
-def ecrire_liste(ch, items, titre, description, haut, intro, noindex=False):
+def annonces_html(items):
+    """Encart « Annonces » (colonne de droite) : fiches Premium (sponsorisées) de la page, 4 au maximum."""
+    prem = [e for e in items if e["premium"]][:4]
+    if prem:
+        blocs = ""
+        for e in prem:
+            site = re.sub(r"^https?://(www\.)?", "", e.get("site", "")).rstrip("/")
+            blocs += (f'<div class="annonce"><a class="t" href="{url("/entreprise/" + e["slug"] + "/")}">{esc(e["nom"])}</a>'
+                      + (f'<p>{esc(e["description"])}</p>' if e.get("description") else "")
+                      + (f'<span class="u">{esc(site)}</span>' if site else "") + "</div>")
+    else:
+        blocs = '<p class="libre">Cet emplacement est disponible pour votre entreprise.</p>'
+    return (f'<aside class="annonces" aria-label="Annonces sponsorisées"><h2>Annonces</h2><p class="spons">Contenus sponsorisés</p>{blocs}'
+            f'<a class="plus" href="{url("/visibilite/")}">Affichez votre annonce ici »</a></aside>')
+
+
+def ecrire_liste(ch, items, titre, description, crumbs, h1, intro, noindex=False):
     """Écrit une page de liste, découpée en pages de PAR_PAGE fiches (/…/page/2/, etc.).
-    `haut` = fil d'Ariane + h1 ; `intro` = textes d'introduction, affichés seulement sur la page 1."""
+    Mise en page : colonne de liste (fil d'Ariane, titre, nombre d'entreprises) + colonne « Annonces ».
+    `intro` = textes d'introduction, affichés seulement sur la page 1."""
     total = max(1, -(-len(items) // PAR_PAGE))
+    tete = (f'<div class="tete"><div><p class="crumbs">{crumbs}</p><h1>{h1}</h1></div>'
+            f'<p class="compte">{_pl(len(items), "entreprise", "entreprises")}</p></div>')
     for n in range(1, total + 1):
         chemin = ch if n == 1 else f"{ch}page/{n}/"
         morceau = items[(n - 1) * PAR_PAGE: n * PAR_PAGE]
         milieu = intro if n == 1 else f'<p class="small">Page {n} sur {total}</p>'
-        corps = haut + milieu + liste(morceau) + pagination(ch, n, total)
+        corps = (f'<div class="mise-en-page"><div class="col-liste">{tete}{milieu}{liste(morceau)}{pagination(ch, n, total)}</div>'
+                 f'{annonces_html(items)}</div>')
         t = titre if n == 1 else f"{titre} (page {n})"
         d = description if n == 1 else f"{description} Page {n} sur {total}."
-        ecrire(chemin, page(f"{t} – {SITE_NAME}", d, chemin, corps, noindex=noindex))
+        ecrire(chemin, page(f"{t} – {SITE_NAME}", d, chemin, corps, noindex=noindex, classe_body="liste"))
 
 
 def ecrire(chemin, contenu):
@@ -515,18 +535,19 @@ def build():
             corps = haut + (f'<p class="chips">{chips}</p>' if chips else "") + f'<p>Les premières entreprises arrivent bientôt. <a href="{url("/ajouter/")}">Ajoutez la vôtre gratuitement.</a></p>'
             ecrire(ch, page(f"{info['nom']} au Luxembourg – {SITE_NAME}", desc, ch, corps, noindex=True))
         else:
-            ecrire_liste(ch, items, f"{info['nom']} au Luxembourg", desc, haut, f'<p class="chips">{chips}</p>' if chips else "")
+            ecrire_liste(ch, items, f"{info['nom']} au Luxembourg", desc,
+                         f'<a href="{url("/")}">Accueil</a> › {esc(info["nom"])}', f'{esc(info["nom"])} au Luxembourg',
+                         f'<p class="chips">{chips}</p>' if chips else "")
 
     # Métiers (seulement à partir de SEUIL fiches)
     for (g, m) in PAGES_METIER:
         ch = f"/categorie/{g}/{m}/"
         urls.append(ch)
         lib = GROUPES[g]["metiers"][m]
-        haut = (f'<p class="crumbs"><a href="{url("/")}">Accueil</a> › <a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a></p>'
-                f"<h1>{esc(lib)} au Luxembourg</h1>")
         ecrire_liste(ch, PAR_METIER[(g, m)], f"{lib} au Luxembourg",
                      f"Annuaire : {lib.lower()} au Luxembourg. Coordonnées, téléphone et site web.",
-                     haut, intro_metier(g, m))
+                     f'<a href="{url("/")}">Accueil</a> › <a href="{url("/categorie/" + g + "/")}">{esc(GROUPES[g]["nom"])}</a> › {esc(lib)}',
+                     f"{esc(lib)} au Luxembourg", intro_metier(g, m))
 
     # Communes (seulement à partir de SEUIL fiches)
     for v in PAGES_VILLE:
@@ -534,7 +555,8 @@ def build():
         urls.append(ch)
         ecrire_liste(ch, PAR_VILLE[v], f"Entreprises à {VILLES[v]}",
                      f"Annuaire des entreprises et professionnels à {VILLES[v]} (Luxembourg).",
-                     f"<h1>Entreprises à {esc(VILLES[v])}</h1>", intro_ville(v))
+                     f'<a href="{url("/")}">Accueil</a> › <a href="{url("/communes/")}">Communes</a> › {esc(VILLES[v])}',
+                     f"Entreprises à {esc(VILLES[v])}", intro_ville(v))
 
     # Liste de toutes les communes
     toutes = "".join(lien_ville(v) for v in sorted(PAR_VILLE, key=lambda v: VILLES[v]))
