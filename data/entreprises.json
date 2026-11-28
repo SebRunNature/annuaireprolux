@@ -33942,5 +33942,18 @@
     "site": "https://superman.lu/",
     "description": "Aménagement d'intérieur à Dahlem. L'entreprise propose des travaux intérieurs (peinture, tapisserie, revêtements de sol, rénovation), le montage de meubles, le jardinage, le débarras et le nettoyage extérieur, au Luxembourg et alentours.",
     "source": "Saisie manuelle"
+  },
+  {
+    "nom": "Miolux",
+    "groupe": "batiment",
+    "metier": "menuisier",
+    "ville": "Strassen",
+    "adresse": "152 Rue du Cimetière",
+    "code_postal": "L-8018",
+    "telephone": "+352 24 55 96 79",
+    "email": "info@miolux.lu",
+    "site": "https://www.miolux.lu/",
+    "description": "Menuiserie à Strassen, où se trouve son siège d'exploitation (le siège social est à Baschleiden). Miolux fabrique et pose des cloisons mobiles, fabrique des châssis en aluminium et installe des pergolas bioclimatiques de la marque Renson, dont elle est ambassadrice.",
+    "source": "Saisie manuelle"
   }
 ]
