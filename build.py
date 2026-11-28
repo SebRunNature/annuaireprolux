@@ -173,6 +173,9 @@ def page(titre, description, chemin, corps, extra_head="", noindex=False):
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(canon)}">
 {robots}
+<link rel="icon" href="{url('/favicon.ico')}" sizes="any">
+<link rel="icon" href="{url('/favicon.svg')}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{url('/apple-touch-icon.png')}">
 <link rel="stylesheet" href="{url('/style.css')}">
 {extra_head}
 </head>
@@ -379,6 +382,10 @@ def build():
     # CSS + recherche
     shutil.copy(os.path.join(ROOT, "assets", "style.css"), os.path.join(OUT, "style.css"))
     shutil.copy(os.path.join(ROOT, "assets", "search.js"), os.path.join(OUT, "search.js"))
+    fav_src = os.path.join(ROOT, "assets", "favicon")
+    if os.path.isdir(fav_src):
+        for f in os.listdir(fav_src):
+            shutil.copy(os.path.join(fav_src, f), os.path.join(OUT, f))
     logo_src = os.path.join(ROOT, "assets", "logos")
     if os.path.isdir(logo_src):
         shutil.copytree(logo_src, os.path.join(OUT, "logos"))
