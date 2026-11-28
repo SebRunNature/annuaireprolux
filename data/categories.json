@@ -39,7 +39,8 @@
     "metiers": {
       "restaurant": "Restaurants",
       "cafe": "Cafés et bars",
-      "hotel": "Hôtels"
+      "hotel": "Hôtels",
+      "traiteur": "Traiteurs et restauration mobile"
     }
   },
   "commerces": {

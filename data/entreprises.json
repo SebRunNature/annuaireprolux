@@ -33994,5 +33994,18 @@
     "site": "https://www.plum-art.lu/",
     "description": "Plum'Art est une entreprise familiale de literie, présente depuis 2009 en Belgique et au Luxembourg. Elle propose des matelas, des lits, des boxsprings, des sommiers, des oreillers, des couettes, des canapés-lits et du linge de lit. Parmi ses services : Click & Collect, livraison sur rendez-vous, reprise de l'ancienne literie et service après-vente.",
     "source": "Saisie manuelle"
+  },
+  {
+    "nom": "D'Humeur Végétale",
+    "groupe": "restauration",
+    "metier": "traiteur",
+    "ville": "Dillingen",
+    "adresse": "6 route de Beaufort",
+    "code_postal": "L-6350",
+    "telephone": "+352 621 485 734",
+    "email": "info@dhumeurvegetale.lu",
+    "site": "https://dhumeurvegetale.lu",
+    "description": "D'Humeur Végétale est une entreprise de restauration mobile installée au Luxembourg. Elle est spécialisée dans les boissons détox, sans alcool et faites maison, et propose aussi de la restauration vegan. On la retrouve sur des marchés locaux, notamment à Luxembourg-Ville, et lors d'événements publics ou privés.",
+    "source": "Saisie manuelle"
   }
 ]
